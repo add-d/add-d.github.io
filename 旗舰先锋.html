@@ -1,0 +1,2182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课程筑基 · 科创赋能 · 国合增效 — 国防军工领军型人才培养模式改革与实践｜国家级教学成果奖展示平台</title>
+<meta name="description" content="江西职业技术大学“旗舰先锋”国家级教学成果奖（研究生）申报成果展示：课程筑基、科创赋能、国合增效——国防军工领军型人才培养模式改革与实践。">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/900.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5.0.5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5.0.5/900.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.5/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.5/700.css">
+<style>
+/* ============ 基础与变量 ============ */
+:root{
+  --bg:#040d1a; --bg-2:#07162a; --bg-3:#0a1f38;
+  --ink:#e9f1fb; --ink-2:#c3d4ea; --muted:#8ba2c0;
+  --line:rgba(120,175,255,.16); --line-2:rgba(120,175,255,.30);
+  --blue:#2f80ff; --blue-2:#57a8ff; --cyan:#22d3ee;
+  --gold:#f2b53c; --gold-2:#ffd98a;
+  --glass:rgba(255,255,255,.045);
+  --r:16px; --r-s:10px;
+  --shell:min(1280px,92vw);
+  --ease:cubic-bezier(.22,.85,.28,1);
+  --font-sans:"Noto Sans SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-serif:"Noto Serif SC",Georgia,serif;
+  --font-num:"Space Grotesk","Noto Sans SC",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--font-sans);
+  font-size:16px; line-height:1.75; overflow-x:hidden; letter-spacing:.01em;
+}
+body.is-locked{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
+::selection{background:var(--gold);color:#0a1424}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#04101f}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#1d4f9c,#0e2c55);border-radius:8px;border:2px solid #04101f}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#2f80ff,#14407a)}
+
+.shell{width:var(--shell);margin-inline:auto}
+.num{font-family:var(--font-num);font-variant-numeric:tabular-nums}
+.mono-tag{font-family:var(--font-num);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+
+/* 背景纹理 */
+.bg-noise{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.42;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+   radial-gradient(900px 620px at 12% -6%,rgba(47,128,255,.20),transparent 62%),
+   radial-gradient(760px 540px at 92% 8%,rgba(34,211,238,.12),transparent 60%),
+   radial-gradient(1000px 700px at 60% 108%,rgba(242,181,60,.10),transparent 62%);}
+main,header,footer{position:relative;z-index:2}
+
+/* ============ 预加载 ============ */
+#loader{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 45%,#08203c,#03091a 70%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .8s var(--ease),visibility .8s}
+#loader.done{opacity:0;visibility:hidden}
+.ld-mark{width:96px;height:96px;position:relative}
+.ld-mark svg{width:100%;height:100%;animation:ldSpin 3.6s linear infinite}
+@keyframes ldSpin{to{transform:rotate(360deg)}}
+.ld-road{width:min(320px,64vw);height:3px;background:rgba(255,255,255,.10);border-radius:3px;overflow:hidden;position:relative}
+.ld-road i{position:absolute;inset:0 auto 0 0;width:0%;background:linear-gradient(90deg,var(--cyan),var(--blue),var(--gold));border-radius:3px;transition:width .25s linear}
+.ld-txt{text-align:center}
+.ld-txt b{display:block;font-family:var(--font-serif);font-size:1.05rem;letter-spacing:.16em}
+.ld-txt span{display:block;margin-top:6px;font-family:var(--font-num);font-size:.66rem;letter-spacing:.3em;color:var(--muted)}
+.ld-pct{font-family:var(--font-num);font-size:2.6rem;font-weight:700;color:var(--gold-2);letter-spacing:.02em}
+
+/* ============ 顶部进度条 ============ */
+#scrollProg{position:fixed;top:0;left:0;height:3px;width:0;z-index:900;
+  background:linear-gradient(90deg,var(--cyan),var(--blue) 45%,var(--gold));box-shadow:0 0 14px rgba(47,128,255,.7)}
+
+/* 光标光晕 */
+#cursorGlow{position:fixed;width:420px;height:420px;left:0;top:0;z-index:3;pointer-events:none;
+  transform:translate(-50%,-50%);opacity:0;transition:opacity .5s;
+  background:radial-gradient(circle,rgba(47,128,255,.16),rgba(34,211,238,.06) 40%,transparent 68%);mix-blend-mode:screen}
+
+/* ============ 导航 ============ */
+header#nav{position:fixed;top:0;left:0;right:0;z-index:800;transition:background .45s var(--ease),box-shadow .45s,backdrop-filter .45s,padding .45s}
+header#nav.stuck{background:rgba(4,13,26,.82);backdrop-filter:blur(18px) saturate(150%);box-shadow:0 1px 0 rgba(120,175,255,.14),0 18px 40px -28px #000}
+.nav-in{width:var(--shell);margin-inline:auto;display:flex;align-items:center;gap:26px;padding:16px 0;transition:padding .4s var(--ease)}
+header#nav.stuck .nav-in{padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-mark{width:44px;height:44px;position:relative;flex-shrink:0}
+.brand-mark svg{width:100%;height:100%}
+.brand-txt b{display:block;font-family:var(--font-serif);font-size:1.02rem;font-weight:900;letter-spacing:.05em;line-height:1.25}
+.brand-txt span{display:block;font-family:var(--font-num);font-size:.58rem;letter-spacing:.24em;color:var(--muted);margin-top:2px}
+nav.main{margin-left:auto;display:flex;align-items:center;gap:4px}
+.nav-item{position:relative}
+.nav-item>a,.nav-item>button{display:flex;align-items:center;gap:6px;padding:10px 15px;border-radius:99px;font-size:.93rem;font-weight:500;color:var(--ink-2);transition:.3s var(--ease);white-space:nowrap}
+.nav-item>a:hover,.nav-item>button:hover{color:#fff;background:rgba(255,255,255,.06)}
+.nav-item.active>a,.nav-item.active>button{color:#fff;background:linear-gradient(120deg,rgba(47,128,255,.28),rgba(34,211,238,.12));box-shadow:inset 0 0 0 1px rgba(120,190,255,.32)}
+.nav-item .caret{width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6;transition:transform .3s}
+.nav-item:hover .caret{transform:rotate(225deg) translateY(-2px)}
+.mega{position:absolute;top:calc(100% + 12px);left:50%;transform:translate(-50%,10px);min-width:520px;
+  background:rgba(7,20,38,.96);backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:var(--r);
+  padding:22px;opacity:0;visibility:hidden;transition:.38s var(--ease);box-shadow:0 40px 80px -40px #000,0 0 0 1px rgba(255,255,255,.03) inset}
+.nav-item:hover .mega,.nav-item:focus-within .mega{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.mega::before{content:"";position:absolute;top:-7px;left:50%;width:12px;height:12px;transform:translateX(-50%) rotate(45deg);background:rgba(7,20,38,.96);border-left:1px solid var(--line);border-top:1px solid var(--line)}
+.mega-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.mega-grid.wide{grid-template-columns:repeat(3,1fr)}
+.mega a{display:flex;gap:11px;align-items:flex-start;padding:11px 12px;border-radius:var(--r-s);transition:.28s var(--ease);border:1px solid transparent}
+.mega a:hover{background:rgba(47,128,255,.12);border-color:rgba(120,190,255,.22);transform:translateX(3px)}
+.mega a i{font-family:var(--font-num);font-style:normal;font-size:.66rem;color:var(--gold);letter-spacing:.08em;padding-top:3px;min-width:22px}
+.mega a div b{display:block;font-size:.9rem;font-weight:500;color:#fff}
+.mega a div span{display:block;font-size:.74rem;color:var(--muted);line-height:1.5;margin-top:2px}
+.mega-foot{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.76rem;color:var(--muted)}
+.nav-cta{display:flex;gap:10px;align-items:center;flex-shrink:0}
+.btn{position:relative;display:inline-flex;align-items:center;gap:9px;padding:11px 22px;border-radius:99px;font-size:.88rem;font-weight:700;letter-spacing:.04em;overflow:hidden;transition:.35s var(--ease);will-change:transform}
+.btn-gold{background:linear-gradient(120deg,var(--gold-2),var(--gold) 55%,#d99a22);color:#20160a;box-shadow:0 12px 30px -14px rgba(242,181,60,.85)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(242,181,60,.95)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--ink);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--blue-2);background:rgba(47,128,255,.14);transform:translateY(-2px)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.45) 48%,transparent 62%);transform:translateX(-120%);transition:transform .7s var(--ease)}
+.btn:hover::after{transform:translateX(120%)}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger i{display:block;width:18px;height:1.6px;background:#fff;border-radius:2px;transition:.35s var(--ease)}
+.burger.open i:nth-child(1){transform:translateY(6.6px) rotate(45deg)}
+.burger.open i:nth-child(2){opacity:0}
+.burger.open i:nth-child(3){transform:translateY(-6.6px) rotate(-45deg)}
+#mobileMenu{position:fixed;inset:0;z-index:790;background:rgba(4,12,24,.98);backdrop-filter:blur(14px);padding:100px 6vw 40px;overflow-y:auto;transform:translateY(-100%);transition:transform .6s var(--ease);visibility:hidden}
+#mobileMenu.open{transform:translateY(0);visibility:visible}
+#mobileMenu .m-group{border-bottom:1px solid var(--line);padding:6px 0}
+#mobileMenu .m-head{display:flex;justify-content:space-between;align-items:center;padding:16px 2px;font-family:var(--font-serif);font-size:1.15rem;font-weight:700}
+#mobileMenu .m-sub{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+#mobileMenu .m-group.open .m-sub{max-height:600px}
+#mobileMenu .m-sub a{display:block;padding:10px 12px;color:var(--muted);font-size:.92rem;border-left:2px solid var(--line)}
+#mobileMenu .m-group.open .m-head span{transform:rotate(45deg)}
+#mobileMenu .m-head span{font-family:var(--font-num);color:var(--gold);transition:transform .35s}
+
+/* 右侧章节点导航 */
+#dots{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:700;display:flex;flex-direction:column;gap:14px}
+#dots a{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.22);position:relative;transition:.35s var(--ease)}
+#dots a::after{content:attr(data-label);position:absolute;right:20px;top:50%;transform:translateY(-50%) translateX(6px);white-space:nowrap;font-size:.72rem;color:var(--ink-2);background:rgba(6,18,34,.92);border:1px solid var(--line);padding:4px 10px;border-radius:8px;opacity:0;pointer-events:none;transition:.3s var(--ease)}
+#dots a:hover::after{opacity:1;transform:translateY(-50%) translateX(0)}
+#dots a.on{background:var(--gold);box-shadow:0 0 0 4px rgba(242,181,60,.18);transform:scale(1.25)}
+
+/* ============ HERO ============ */
+#hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:130px 0 70px;overflow:hidden}
+#netCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.85}
+.hero-grid-floor{position:absolute;left:-10%;right:-10%;bottom:-6%;height:46vh;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(90,170,255,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(90,170,255,.16) 1px,transparent 1px);
+  background-size:64px 64px;transform:perspective(420px) rotateX(66deg);transform-origin:bottom;
+  mask-image:linear-gradient(to top,#000 5%,transparent 78%);-webkit-mask-image:linear-gradient(to top,#000 5%,transparent 78%);
+  animation:floorMove 9s linear infinite}
+@keyframes floorMove{to{background-position:0 64px,0 0}}
+.hero-in{width:var(--shell);margin-inline:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative;z-index:4}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 12px;border-radius:99px;border:1px solid rgba(242,181,60,.4);background:linear-gradient(100deg,rgba(242,181,60,.16),rgba(242,181,60,.03));font-size:.78rem;letter-spacing:.1em;color:var(--gold-2)}
+.pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(242,181,60,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(242,181,60,0)}100%{box-shadow:0 0 0 0 rgba(242,181,60,0)}}
+h1.hero-title{font-family:var(--font-serif);font-weight:900;font-size:clamp(2.1rem,4.6vw,4.05rem);line-height:1.16;margin:22px 0 0;letter-spacing:.01em}
+h1.hero-title .ln{display:block;overflow:hidden}
+h1.hero-title .ln span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.loaded h1.hero-title .ln span{transform:translateY(0)}
+h1.hero-title .ln:nth-child(2) span{transition-delay:.12s}
+h1.hero-title .ln:nth-child(3) span{transition-delay:.24s}
+.hero-title em{font-style:normal;background:linear-gradient(100deg,var(--gold-2),var(--gold) 45%,#ff9f45);-webkit-background-clip:text;background-clip:text;color:transparent;position:relative}
+.hero-sub{margin-top:20px;font-size:clamp(1rem,1.5vw,1.22rem);color:var(--ink-2);font-weight:400;letter-spacing:.06em;min-height:2.2em}
+.hero-sub .caret-blink{display:inline-block;width:2px;height:1.05em;background:var(--cyan);vertical-align:-.18em;margin-left:4px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:10px;border:1px solid var(--line);background:var(--glass);font-size:.82rem;color:var(--ink-2);transition:.3s var(--ease)}
+.chip:hover{border-color:var(--line-2);transform:translateY(-2px);background:rgba(47,128,255,.12)}
+.chip b{color:#fff;font-weight:700}
+.chip i{font-style:normal;color:var(--gold);font-size:.7rem;letter-spacing:.14em;font-family:var(--font-num)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px;padding-top:26px;border-top:1px solid var(--line)}
+.h-stat b{display:block;font-family:var(--font-num);font-size:clamp(1.5rem,2.6vw,2.15rem);font-weight:700;line-height:1;color:#fff}
+.h-stat b em{font-style:normal;font-size:.5em;color:var(--gold);margin-left:3px}
+.h-stat span{display:block;margin-top:8px;font-size:.76rem;color:var(--muted);letter-spacing:.06em}
+
+/* 轨道模型 */
+.orbit-wrap{position:relative;width:100%;aspect-ratio:1/1;max-width:560px;margin-inline:auto}
+#orbitCanvas{position:absolute;inset:0;width:100%;height:100%}
+.orbit-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:33%;aspect-ratio:1;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;z-index:5;
+  background:radial-gradient(circle at 40% 32%,rgba(87,168,255,.42),rgba(8,26,52,.95) 68%);
+  border:1px solid rgba(140,200,255,.42);box-shadow:0 0 60px rgba(47,128,255,.4),inset 0 0 40px rgba(47,128,255,.24);animation:coreBreathe 4.6s ease-in-out infinite}
+@keyframes coreBreathe{50%{box-shadow:0 0 90px rgba(47,128,255,.6),inset 0 0 50px rgba(47,128,255,.34)}}
+.orbit-core b{font-family:var(--font-serif);font-size:clamp(.95rem,1.7vw,1.3rem);font-weight:900;letter-spacing:.08em;line-height:1.3}
+.orbit-core span{font-family:var(--font-num);font-size:.55rem;letter-spacing:.22em;color:var(--gold-2)}
+.o-node{position:absolute;left:0;top:0;z-index:6;transform:translate(-50%,-50%);cursor:pointer;text-align:center;transition:filter .3s}
+.o-node .bubble{width:64px;height:64px;margin-inline:auto;border-radius:20px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,rgba(20,48,88,.95),rgba(7,20,40,.95));border:1px solid rgba(130,195,255,.34);
+  box-shadow:0 14px 30px -14px #000,inset 0 1px 0 rgba(255,255,255,.14);transition:.4s var(--ease)}
+.o-node svg{width:28px;height:28px}
+.o-node .lbl{margin-top:8px;font-size:.74rem;font-weight:700;letter-spacing:.06em;color:#fff;text-shadow:0 2px 10px #000;white-space:nowrap}
+.o-node .sub{font-family:var(--font-num);font-size:.55rem;letter-spacing:.14em;color:var(--muted)}
+.o-node:hover .bubble{transform:translateY(-6px) scale(1.1);border-color:var(--gold);box-shadow:0 0 34px rgba(242,181,60,.5)}
+.o-node:hover .lbl{color:var(--gold-2)}
+.o-node.outer .bubble{width:52px;height:52px;border-radius:16px;background:linear-gradient(150deg,rgba(58,34,10,.9),rgba(24,14,6,.92));border-color:rgba(242,181,60,.4)}
+.o-node.outer svg{width:22px;height:22px}
+.scroll-cue{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:6;display:flex;flex-direction:column;align-items:center;gap:9px;color:var(--muted);font-size:.68rem;letter-spacing:.26em;font-family:var(--font-num)}
+.scroll-cue .mouse{width:22px;height:36px;border:1.5px solid rgba(255,255,255,.35);border-radius:12px;position:relative}
+.scroll-cue .mouse::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;border-radius:3px;background:var(--gold);transform:translateX(-50%);animation:wheel 1.9s infinite}
+@keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}30%{opacity:1}100%{opacity:0;transform:translate(-50%,13px)}}
+
+/* 跑马灯 */
+.ribbon{position:relative;z-index:5;border-block:1px solid var(--line);background:linear-gradient(90deg,rgba(242,181,60,.10),rgba(47,128,255,.10),rgba(242,181,60,.10));overflow:hidden;padding:13px 0}
+.ribbon-track{display:flex;gap:0;width:max-content;animation:marquee 44s linear infinite}
+.ribbon:hover .ribbon-track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.ribbon-track span{display:inline-flex;align-items:center;gap:14px;padding-inline:26px;font-size:.86rem;color:var(--ink-2);white-space:nowrap;letter-spacing:.04em}
+.ribbon-track span::before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 10px var(--gold)}
+
+/* 公路分隔 */
+.road-div{height:34px;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.05),rgba(255,255,255,.02));border-block:1px solid rgba(120,175,255,.10)}
+.road-div::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;transform:translateY(-50%);
+  background:repeating-linear-gradient(90deg,var(--gold) 0 42px,transparent 42px 84px);opacity:.65;animation:roadRun 1.5s linear infinite}
+@keyframes roadRun{to{background-position:84px 0}}
+
+/* ============ 通用区块 ============ */
+section{position:relative;padding:clamp(70px,9vw,124px) 0}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;margin-bottom:52px}
+.sec-idx{font-family:var(--font-num);font-size:clamp(2.6rem,5vw,4.2rem);font-weight:700;line-height:.85;color:transparent;-webkit-text-stroke:1.4px rgba(140,195,255,.42)}
+.sec-kicker{font-family:var(--font-num);font-size:.68rem;letter-spacing:.32em;color:var(--gold);text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-family:var(--font-serif);font-size:clamp(1.7rem,3.4vw,2.7rem);font-weight:900;line-height:1.28;letter-spacing:.02em}
+.sec-title u{text-decoration:none;position:relative}
+.sec-title u::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.32em;background:linear-gradient(90deg,rgba(47,128,255,.42),rgba(242,181,60,.32));z-index:-1;border-radius:3px}
+.sec-desc{margin-top:14px;max-width:760px;color:var(--muted);font-size:.98rem;line-height:1.9}
+.sec-head .side{grid-column:2;margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+
+.card{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:var(--r);position:relative;overflow:hidden;transition:.45s var(--ease)}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 220px at var(--mx,50%) var(--my,0%),rgba(87,168,255,.16),transparent 62%);opacity:0;transition:opacity .4s}
+.card:hover::before{opacity:1}
+.card:hover{border-color:var(--line-2);transform:translateY(-4px)}
+
+/* reveal */
+.js [data-reveal]{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.js [data-reveal].in{opacity:1;transform:none}
+.js [data-reveal="left"]{transform:translateX(-40px)}
+.js [data-reveal="right"]{transform:translateX(40px)}
+.js [data-reveal="zoom"]{transform:scale(.94)}
+.js [data-reveal="left"].in,.js [data-reveal="right"].in,.js [data-reveal="zoom"].in{transform:none}
+
+/* ============ 01 成果简介 ============ */
+.intro-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:start}
+.lead-text{font-size:1.02rem;line-height:2.05;color:var(--ink-2)}
+.lead-text p+p{margin-top:18px}
+.lead-text .dropcap::first-letter{font-family:var(--font-serif);font-size:3.4em;float:left;line-height:.86;padding:.06em .12em 0 0;color:var(--gold);font-weight:900}
+.hl{color:#fff;font-weight:700;background:linear-gradient(transparent 62%,rgba(242,181,60,.28) 62%);padding:0 2px}
+.quote-block{margin-top:30px;padding:24px 26px;border-left:3px solid var(--gold);background:linear-gradient(100deg,rgba(242,181,60,.10),transparent);border-radius:0 var(--r) var(--r) 0;font-family:var(--font-serif);font-size:1.08rem;line-height:1.9;color:#fff}
+.quote-block small{display:block;margin-top:10px;font-family:var(--font-sans);font-size:.78rem;color:var(--muted);letter-spacing:.08em}
+.mini-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.mini-stat{padding:18px;border-radius:var(--r-s);border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.mini-stat b{font-family:var(--font-num);font-size:1.7rem;color:var(--gold-2);line-height:1}
+.mini-stat span{display:block;font-size:.78rem;color:var(--muted);margin-top:8px}
+
+/* 时间轴 */
+.timeline{position:relative;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--cyan),var(--blue) 40%,var(--gold));transform:scaleY(0);transform-origin:top;transition:transform 1.6s var(--ease)}
+.timeline.in::before{transform:scaleY(1)}
+.tl-item{position:relative;padding:0 0 26px}
+.tl-item::before{content:"";position:absolute;left:-31px;top:7px;width:14px;height:14px;border-radius:50%;background:#04101f;border:2px solid var(--blue-2);box-shadow:0 0 0 4px rgba(47,128,255,.14);transition:.4s}
+.tl-item:hover::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 6px rgba(242,181,60,.2)}
+.tl-item .yr{font-family:var(--font-num);font-size:1.12rem;font-weight:700;color:var(--gold-2);letter-spacing:.06em}
+.tl-item h4{font-size:1rem;font-weight:700;margin:4px 0 5px;color:#fff}
+.tl-item p{font-size:.86rem;color:var(--muted);line-height:1.75}
+
+/* ============ 02 五大体系 tabs ============ */
+.pillars{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:28px}
+.pil{position:relative;padding:22px 16px;border-radius:var(--r);border:1px solid var(--line);background:rgba(255,255,255,.028);text-align:left;overflow:hidden;transition:.45s var(--ease)}
+.pil:hover{transform:translateY(-5px);border-color:var(--line-2);background:rgba(47,128,255,.09)}
+.pil.on{border-color:rgba(242,181,60,.55);background:linear-gradient(150deg,rgba(242,181,60,.16),rgba(47,128,255,.10))}
+.pil .p-idx{font-family:var(--font-num);font-size:.66rem;letter-spacing:.2em;color:var(--gold);opacity:.85}
+.pil h4{font-family:var(--font-serif);font-size:1.22rem;font-weight:900;margin:8px 0 6px}
+.pil p{font-size:.78rem;color:var(--muted);line-height:1.6}
+.pil .bar{position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--cyan))}
+.pil.on .bar{width:100%;transition:width 7s linear}
+.pil svg{width:30px;height:30px;margin-bottom:2px}
+.panel-stage{position:relative;border-radius:22px;border:1px solid var(--line);overflow:hidden;background:linear-gradient(140deg,rgba(10,31,56,.9),rgba(4,13,26,.92))}
+.panel{display:none;grid-template-columns:1.02fr .98fr;gap:0}
+.panel.on{display:grid;animation:panelIn .7s var(--ease)}
+@keyframes panelIn{from{opacity:0;transform:translateY(18px) scale(.99)}}
+.panel-txt{padding:clamp(26px,3.4vw,46px)}
+.panel-txt .p-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-num);font-size:.66rem;letter-spacing:.24em;color:var(--gold);border:1px solid rgba(242,181,60,.35);padding:5px 12px;border-radius:99px;background:rgba(242,181,60,.08)}
+.panel-txt h3{font-family:var(--font-serif);font-size:clamp(1.4rem,2.5vw,2.05rem);font-weight:900;margin:18px 0 14px;line-height:1.32}
+.panel-txt>p{color:var(--ink-2);font-size:.95rem;line-height:1.95}
+.panel-list{margin-top:22px;display:grid;gap:11px}
+.panel-list li{list-style:none;display:flex;gap:12px;align-items:flex-start;font-size:.9rem;color:var(--ink-2);line-height:1.7}
+.panel-list li i{flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(47,128,255,.18);border:1px solid rgba(120,190,255,.3);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:.62rem;color:var(--cyan);font-family:var(--font-num);margin-top:3px}
+.panel-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;padding-top:22px;border-top:1px dashed var(--line)}
+.panel-facts div b{font-family:var(--font-num);font-size:1.5rem;color:#fff;display:block;line-height:1}
+.panel-facts div span{font-size:.72rem;color:var(--muted);display:block;margin-top:6px}
+.panel-art{position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;padding:26px;overflow:hidden;
+  background:radial-gradient(circle at 62% 40%,rgba(47,128,255,.22),transparent 62%)}
+.panel-art::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(120,180,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(120,180,255,.08) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(circle at 50% 50%,#000,transparent 74%);-webkit-mask-image:radial-gradient(circle at 50% 50%,#000,transparent 74%)}
+.panel-art svg{position:relative;width:100%;max-width:420px;height:auto;filter:drop-shadow(0 22px 40px rgba(0,0,0,.5))}
+.art-float{animation:artFloat 7s ease-in-out infinite}
+@keyframes artFloat{50%{transform:translateY(-12px)}}
+
+/* ============ 03 申报书 ============ */
+.doc-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px;align-items:start}
+.doc-nav{display:grid;gap:9px;position:sticky;top:104px}
+.doc-btn{display:flex;gap:14px;align-items:center;padding:15px 17px;border-radius:var(--r-s);border:1px solid var(--line);background:rgba(255,255,255,.025);text-align:left;transition:.38s var(--ease);position:relative;overflow:hidden}
+.doc-btn::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease)}
+.doc-btn:hover{background:rgba(47,128,255,.10);transform:translateX(4px)}
+.doc-btn.on{background:linear-gradient(100deg,rgba(47,128,255,.20),rgba(255,255,255,.03));border-color:rgba(120,190,255,.35)}
+.doc-btn.on::before{transform:scaleY(1)}
+.doc-btn .n{font-family:var(--font-num);font-size:.72rem;color:var(--gold);letter-spacing:.1em;min-width:26px}
+.doc-btn b{display:block;font-size:.96rem;font-weight:700}
+.doc-btn span{display:block;font-size:.74rem;color:var(--muted);margin-top:2px}
+.doc-view{border-radius:20px;border:1px solid var(--line);background:linear-gradient(160deg,#0b2340,#061426);overflow:hidden;box-shadow:0 50px 90px -60px #000}
+.doc-top{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03)}
+.doc-top .dots3{display:flex;gap:6px}
+.doc-top .dots3 i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.18)}
+.doc-top .dots3 i:first-child{background:#ff6b6b}.doc-top .dots3 i:nth-child(2){background:#ffc65c}.doc-top .dots3 i:nth-child(3){background:#59d98a}
+.doc-top .fname{font-family:var(--font-num);font-size:.76rem;letter-spacing:.12em;color:var(--muted)}
+.doc-top .page-n{margin-left:auto;font-family:var(--font-num);font-size:.72rem;color:var(--gold)}
+.doc-body{padding:clamp(24px,3vw,40px);min-height:440px}
+.doc-pane{display:none}
+.doc-pane.on{display:block;animation:docIn .6s var(--ease)}
+@keyframes docIn{from{opacity:0;transform:translateY(14px)}}
+.doc-pane h3{font-family:var(--font-serif);font-size:1.5rem;font-weight:900;margin-bottom:6px}
+.doc-pane .sub{font-family:var(--font-num);font-size:.66rem;letter-spacing:.24em;color:var(--gold);margin-bottom:22px}
+.doc-pane p{color:var(--ink-2);font-size:.95rem;line-height:2;margin-bottom:14px}
+.prob-list{display:grid;gap:14px;margin-top:8px}
+.prob{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:18px;border-radius:var(--r-s);border:1px solid var(--line);background:rgba(255,255,255,.026);transition:.4s var(--ease)}
+.prob:hover{border-color:rgba(242,181,60,.45);transform:translateX(5px);background:rgba(242,181,60,.06)}
+.prob .qn{font-family:var(--font-num);font-size:1.5rem;font-weight:700;color:var(--gold);line-height:1}
+.prob h5{font-size:.98rem;margin-bottom:6px;color:#fff}
+.prob p{font-size:.86rem;color:var(--muted);margin:0;line-height:1.8}
+.method-flow{display:grid;gap:0;margin-top:10px}
+.m-step{display:grid;grid-template-columns:56px 1fr;gap:18px;position:relative;padding-bottom:24px}
+.m-step::before{content:"";position:absolute;left:27px;top:56px;bottom:0;width:2px;background:linear-gradient(180deg,var(--line-2),transparent)}
+.m-step:last-child::before{display:none}
+.m-ic{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,rgba(47,128,255,.28),rgba(8,26,52,.9));border:1px solid rgba(120,190,255,.34)}
+.m-ic svg{width:26px;height:26px}
+.m-step h5{font-size:1.04rem;margin-bottom:6px;color:#fff;font-family:var(--font-serif)}
+.m-step p{font-size:.88rem;color:var(--muted);margin:0}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{font-size:.74rem;padding:5px 12px;border-radius:99px;border:1px solid var(--line-2);color:var(--ink-2);background:rgba(47,128,255,.08)}
+.people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:6px}
+.pcard{padding:20px;border-radius:var(--r-s);border:1px solid var(--line);background:rgba(255,255,255,.03);transition:.4s var(--ease);position:relative;overflow:hidden}
+.pcard:hover{transform:translateY(-5px);border-color:rgba(242,181,60,.45);background:rgba(242,181,60,.07)}
+.pcard .mono{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-weight:900;font-size:1.05rem;background:linear-gradient(140deg,var(--gold-2),var(--gold));color:#231703;margin-bottom:14px}
+.pcard b{display:block;font-size:1rem}
+.pcard em{font-style:normal;display:block;font-size:.76rem;color:var(--gold);margin:3px 0 8px;letter-spacing:.06em}
+.pcard p{font-size:.8rem;color:var(--muted);line-height:1.7;margin:0}
+.opinion{padding:24px;border-radius:var(--r-s);border:1px solid var(--line);background:rgba(255,255,255,.03);margin-bottom:14px;position:relative}
+.opinion::before{content:"“";position:absolute;right:20px;top:-6px;font-family:var(--font-serif);font-size:5rem;color:rgba(242,181,60,.16);line-height:1}
+.opinion h5{font-size:1rem;color:#fff;margin-bottom:8px}
+.opinion p{font-size:.88rem;color:var(--muted);margin:0}
+.opinion .stamp{margin-top:14px;display:inline-flex;align-items:center;gap:8px;font-family:var(--font-num);font-size:.7rem;letter-spacing:.14em;color:var(--gold);border:1px dashed rgba(242,181,60,.45);padding:6px 12px;border-radius:8px}
+
+/* ============ 04 创新点 ============ */
+.inno-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.inno{padding:32px 26px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.015));position:relative;overflow:hidden;transition:.5s var(--ease)}
+.inno:hover{transform:translateY(-8px);border-color:rgba(242,181,60,.45);box-shadow:0 40px 70px -50px rgba(47,128,255,.7)}
+.inno .inno-n{position:absolute;right:18px;top:8px;font-family:var(--font-num);font-size:4.6rem;font-weight:700;color:rgba(255,255,255,.045);line-height:1}
+.inno .ico{width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;background:linear-gradient(150deg,rgba(47,128,255,.3),rgba(8,26,52,.9));border:1px solid rgba(120,190,255,.32)}
+.inno .ico svg{width:30px;height:30px}
+.inno h3{font-family:var(--font-serif);font-size:1.42rem;font-weight:900;margin-bottom:6px}
+.inno .en{font-family:var(--font-num);font-size:.64rem;letter-spacing:.22em;color:var(--gold);margin-bottom:16px}
+.inno p{font-size:.9rem;color:var(--ink-2);line-height:1.9}
+.inno ul{margin-top:16px;display:grid;gap:9px}
+.inno ul li{list-style:none;font-size:.84rem;color:var(--muted);display:flex;gap:9px;line-height:1.65}
+.inno ul li::before{content:"";flex-shrink:0;width:5px;height:5px;border-radius:50%;background:var(--cyan);margin-top:9px;box-shadow:0 0 8px var(--cyan)}
+.flow-diagram{margin-top:34px;padding:32px 26px;border-radius:20px;border:1px solid var(--line);background:rgba(255,255,255,.025);overflow-x:auto}
+.flow-row{display:flex;align-items:center;gap:14px;min-width:760px}
+.flow-node{flex:1;padding:16px 14px;border-radius:14px;text-align:center;border:1px solid var(--line-2);background:linear-gradient(150deg,rgba(47,128,255,.16),rgba(6,18,34,.7));transition:.4s var(--ease)}
+.flow-node:hover{transform:translateY(-4px);background:linear-gradient(150deg,rgba(242,181,60,.2),rgba(6,18,34,.7));border-color:var(--gold)}
+.flow-node b{display:block;font-size:.95rem;color:#fff}
+.flow-node span{display:block;font-size:.74rem;color:var(--muted);margin-top:5px}
+.flow-arrow{flex-shrink:0;width:46px;height:2px;background:linear-gradient(90deg,var(--blue),var(--gold));position:relative}
+.flow-arrow::after{content:"";position:absolute;right:-1px;top:50%;width:8px;height:8px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:translateY(-50%) rotate(45deg)}
+.flow-arrow i{position:absolute;left:0;top:-2px;width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:flowDot 2.4s linear infinite}
+@keyframes flowDot{to{left:100%}}
+
+/* ============ 05 数据墙 ============ */
+.data-wall{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.dcell{padding:26px 20px;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.012));position:relative;overflow:hidden;transition:.45s var(--ease)}
+.dcell:hover{transform:translateY(-6px) scale(1.015);border-color:rgba(242,181,60,.5);box-shadow:0 34px 60px -40px rgba(47,128,255,.8)}
+.dcell .dv{font-family:var(--font-num);font-weight:700;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1;color:#fff;letter-spacing:-.01em}
+.dcell .dv small{font-size:.42em;color:var(--gold);margin-left:5px;font-weight:500}
+.dcell .dl{margin-top:12px;font-size:.83rem;color:var(--ink-2)}
+.dcell .den{font-family:var(--font-num);font-size:.58rem;letter-spacing:.18em;color:rgba(139,162,192,.65);margin-top:6px;text-transform:uppercase}
+.dcell .spark{position:absolute;right:0;bottom:0;width:78px;height:40px;opacity:.5}
+.dcell.gold{background:linear-gradient(160deg,rgba(242,181,60,.18),rgba(255,255,255,.02));border-color:rgba(242,181,60,.4)}
+.dcell.gold .dv{color:var(--gold-2)}
+.charts{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:18px;margin-top:20px}
+.chart-box{padding:26px;border-radius:var(--r);border:1px solid var(--line);background:rgba(255,255,255,.025)}
+.chart-box h4{font-size:1.02rem;margin-bottom:4px}
+.chart-box .csub{font-size:.76rem;color:var(--muted);margin-bottom:22px}
+.donuts{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.donut{position:relative;width:118px}
+.donut svg{width:118px;height:118px;transform:rotate(-90deg)}
+.donut .track{fill:none;stroke:rgba(255,255,255,.08);stroke-width:9}
+.donut .val{fill:none;stroke-width:9;stroke-linecap:round;stroke-dasharray:314;stroke-dashoffset:314;transition:stroke-dashoffset 1.8s var(--ease) var(--dd,0s)}
+.donut .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.donut .mid b{font-family:var(--font-num);font-size:1.32rem;line-height:1}
+.donut .mid span{font-size:.68rem;color:var(--muted);margin-top:5px;text-align:center;line-height:1.4}
+.donut-lbl{text-align:center;font-size:.78rem;color:var(--ink-2);margin-top:10px}
+.bars{display:flex;align-items:flex-end;gap:14px;height:190px;padding-top:10px}
+.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:10px;height:100%}
+.bar-track{width:100%;flex:1;display:flex;align-items:flex-end;position:relative;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.05));border-radius:8px 8px 0 0}
+.bar-fill{width:100%;height:0;border-radius:8px 8px 0 0;background:linear-gradient(180deg,var(--cyan),var(--blue) 60%,#1a4f9e);transition:height 1.5s var(--ease) var(--bd,0s);position:relative;box-shadow:0 0 22px rgba(47,128,255,.45)}
+.bar-fill.gold{background:linear-gradient(180deg,var(--gold-2),var(--gold) 60%,#a8701a);box-shadow:0 0 22px rgba(242,181,60,.45)}
+.bar-fill b{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-family:var(--font-num);font-size:.74rem;color:#fff;white-space:nowrap}
+.bar-col span{font-family:var(--font-num);font-size:.72rem;color:var(--muted)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px;font-size:.76rem;color:var(--muted)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px}
+
+/* ============ 06 支撑材料 ============ */
+.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px}
+.f-chip{padding:9px 17px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:.83rem;color:var(--ink-2);transition:.35s var(--ease);display:inline-flex;align-items:center;gap:8px}
+.f-chip em{font-style:normal;font-family:var(--font-num);font-size:.68rem;color:var(--muted)}
+.f-chip:hover{border-color:var(--line-2);color:#fff;transform:translateY(-2px)}
+.f-chip.on{background:linear-gradient(120deg,var(--gold-2),var(--gold));color:#231703;border-color:transparent;font-weight:700}
+.f-chip.on em{color:rgba(35,23,3,.62)}
+.mat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(292px,1fr));gap:16px}
+.mat{padding:24px;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.012));cursor:pointer;position:relative;overflow:hidden;transition:.45s var(--ease);animation:matIn .5s var(--ease) both}
+@keyframes matIn{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.mat:hover{transform:translateY(-6px);border-color:rgba(120,190,255,.42);box-shadow:0 34px 60px -42px rgba(47,128,255,.9)}
+.mat .shine{position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent);transform:skewX(-18deg);transition:left .8s var(--ease)}
+.mat:hover .shine{left:150%}
+.mat-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}
+.lvl{font-family:var(--font-num);font-size:.62rem;letter-spacing:.14em;padding:4px 10px;border-radius:6px;white-space:nowrap}
+.lvl.nat{background:rgba(242,181,60,.18);color:var(--gold-2);border:1px solid rgba(242,181,60,.4)}
+.lvl.prov{background:rgba(47,128,255,.16);color:var(--blue-2);border:1px solid rgba(120,190,255,.34)}
+.lvl.intl{background:rgba(34,211,238,.14);color:var(--cyan);border:1px solid rgba(34,211,238,.34)}
+.mat h4{font-size:1.02rem;font-weight:700;line-height:1.55;margin-bottom:10px}
+.mat p{font-size:.84rem;color:var(--muted);line-height:1.75;margin-bottom:16px}
+.mat-foot{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px dashed var(--line);font-size:.76rem;color:var(--muted)}
+.mat-foot .cat{display:inline-flex;align-items:center;gap:7px}
+.mat-foot .cat i{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
+.mat-foot .more{color:var(--gold);font-family:var(--font-num);font-size:.7rem;letter-spacing:.1em;transition:.3s}
+.mat:hover .mat-foot .more{letter-spacing:.2em}
+.load-more{margin:32px auto 0;display:flex;justify-content:center}
+
+/* Modal */
+#modal{position:fixed;inset:0;z-index:950;display:flex;align-items:center;justify-content:center;padding:5vw;opacity:0;visibility:hidden;transition:.4s var(--ease)}
+#modal.open{opacity:1;visibility:visible}
+#modal .mask{position:absolute;inset:0;background:rgba(2,8,18,.82);backdrop-filter:blur(8px)}
+.modal-card{position:relative;max-width:660px;width:100%;max-height:82vh;overflow-y:auto;border-radius:22px;border:1px solid var(--line-2);background:linear-gradient(160deg,#0c2544,#050f1e);padding:36px;transform:translateY(26px) scale(.97);transition:.5s var(--ease);box-shadow:0 60px 120px -50px #000}
+#modal.open .modal-card{transform:none}
+.modal-card .x{position:absolute;right:18px;top:18px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;transition:.3s}
+.modal-card .x:hover{background:rgba(255,90,90,.2);border-color:#ff6b6b;transform:rotate(90deg)}
+.modal-card h3{font-family:var(--font-serif);font-size:1.4rem;font-weight:900;margin:14px 0 12px;line-height:1.5}
+.modal-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.modal-body p{color:var(--ink-2);font-size:.93rem;line-height:2}
+.modal-body .kv{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin-top:20px;padding-top:20px;border-top:1px dashed var(--line);font-size:.86rem}
+.modal-body .kv dt{color:var(--muted)}
+.modal-body .kv dd{color:#fff}
+
+/* ============ 07 推广应用 ============ */
+.promo-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start}
+.carousel{position:relative;border-radius:20px;border:1px solid var(--line);overflow:hidden;background:linear-gradient(150deg,rgba(11,35,64,.9),rgba(5,15,30,.9))}
+.car-track{display:flex;transition:transform .75s var(--ease)}
+.car-slide{min-width:100%;padding:clamp(26px,3.4vw,44px)}
+.car-slide .src{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-num);font-size:.66rem;letter-spacing:.18em;color:var(--gold);border:1px solid rgba(242,181,60,.34);padding:5px 13px;border-radius:99px;background:rgba(242,181,60,.08)}
+.car-slide h4{font-family:var(--font-serif);font-size:clamp(1.15rem,2vw,1.55rem);font-weight:900;margin:18px 0 14px;line-height:1.5}
+.car-slide p{color:var(--ink-2);font-size:.94rem;line-height:1.95}
+.car-slide .date{margin-top:20px;font-family:var(--font-num);font-size:.74rem;color:var(--muted);letter-spacing:.12em}
+.car-ctrl{position:absolute;bottom:22px;right:26px;display:flex;gap:9px}
+.car-ctrl button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;transition:.3s;background:rgba(4,13,26,.6)}
+.car-ctrl button:hover{background:var(--gold);color:#231703;border-color:transparent}
+.car-dots{position:absolute;bottom:34px;left:clamp(26px,3.4vw,44px);display:flex;gap:7px}
+.car-dots i{width:22px;height:3px;border-radius:3px;background:rgba(255,255,255,.2);cursor:pointer;transition:.35s}
+.car-dots i.on{background:var(--gold);width:36px}
+.radial-box{padding:26px;border-radius:20px;border:1px solid var(--line);background:rgba(255,255,255,.025)}
+#radial{width:100%;height:auto;aspect-ratio:1/1}
+.radial-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;justify-content:center}
+.radial-legend b{font-size:.74rem;padding:5px 11px;border-radius:8px;background:rgba(47,128,255,.12);border:1px solid var(--line);color:var(--ink-2);font-weight:400;cursor:default;transition:.3s}
+.radial-legend b:hover{background:rgba(242,181,60,.2);border-color:var(--gold);color:#fff}
+.alumni{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+.alum{padding:26px;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(160deg,rgba(242,181,60,.09),rgba(255,255,255,.015));position:relative;overflow:hidden;transition:.5s var(--ease)}
+.alum:hover{transform:translateY(-6px);border-color:rgba(242,181,60,.5)}
+.alum .medal{position:absolute;right:-14px;top:-14px;width:88px;height:88px;border-radius:50%;background:radial-gradient(circle,rgba(242,181,60,.28),transparent 68%)}
+.alum b{font-family:var(--font-serif);font-size:1.3rem;font-weight:900;display:block}
+.alum em{font-style:normal;font-size:.76rem;color:var(--gold);letter-spacing:.1em;display:block;margin:5px 0 12px}
+.alum p{font-size:.84rem;color:var(--ink-2);line-height:1.8}
+
+/* ============ 08 特色成果横滑 ============ */
+.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 26px;cursor:grab;scrollbar-width:thin}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-thumb{background:linear-gradient(90deg,var(--blue),var(--gold));border-radius:6px}
+.eng{flex:0 0 min(400px,82vw);scroll-snap-align:start;border-radius:20px;border:1px solid var(--line);overflow:hidden;background:linear-gradient(170deg,rgba(12,36,66,.92),rgba(5,14,28,.95));transition:.5s var(--ease);position:relative}
+.eng:hover{transform:translateY(-8px);border-color:rgba(242,181,60,.45);box-shadow:0 46px 80px -50px rgba(47,128,255,.9)}
+.eng-art{height:200px;position:relative;overflow:hidden;background:linear-gradient(180deg,#0a2a52,#04101f)}
+.eng-art svg{position:absolute;inset:0;width:100%;height:100%}
+.eng-art .badge{position:absolute;left:18px;top:18px;z-index:3;font-family:var(--font-num);font-size:.62rem;letter-spacing:.16em;padding:5px 11px;border-radius:7px;background:rgba(4,13,26,.75);border:1px solid rgba(242,181,60,.4);color:var(--gold-2);backdrop-filter:blur(6px)}
+.eng-body{padding:24px}
+.eng-body h4{font-family:var(--font-serif);font-size:1.28rem;font-weight:900;margin-bottom:8px}
+.eng-body p{font-size:.86rem;color:var(--muted);line-height:1.8;margin-bottom:16px}
+.eng-stats{display:flex;gap:18px;padding-top:14px;border-top:1px dashed var(--line)}
+.eng-stats div b{font-family:var(--font-num);font-size:1.16rem;color:var(--gold-2);display:block;line-height:1}
+.eng-stats div span{font-size:.7rem;color:var(--muted);display:block;margin-top:5px}
+.rail-hint{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.78rem;margin-top:6px}
+.rail-hint .ln{flex:1;height:1px;background:linear-gradient(90deg,var(--line-2),transparent)}
+
+/* ============ 09 获奖表 ============ */
+.table-wrap{border-radius:var(--r);border:1px solid var(--line);overflow:hidden;background:rgba(255,255,255,.022)}
+table{width:100%;border-collapse:collapse;font-size:.89rem}
+thead th{background:linear-gradient(100deg,rgba(47,128,255,.22),rgba(242,181,60,.12));padding:15px 18px;text-align:left;font-weight:700;font-size:.82rem;letter-spacing:.08em;color:#fff;border-bottom:1px solid var(--line-2);white-space:nowrap}
+tbody td{padding:16px 18px;border-bottom:1px solid rgba(120,175,255,.09);color:var(--ink-2);vertical-align:middle}
+tbody tr{transition:.35s var(--ease)}
+tbody tr:hover{background:rgba(47,128,255,.10)}
+tbody tr:hover td:first-child{box-shadow:inset 3px 0 0 var(--gold)}
+tbody tr:last-child td{border-bottom:none}
+.grade{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--gold-2);white-space:nowrap}
+.grade i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.tbl-scroll{overflow-x:auto}
+
+/* ============ CTA & Footer ============ */
+.cta-band{position:relative;border-radius:24px;overflow:hidden;padding:clamp(38px,5vw,66px);border:1px solid rgba(242,181,60,.28);
+  background:linear-gradient(120deg,rgba(242,181,60,.16),rgba(47,128,255,.16) 55%,rgba(34,211,238,.10));text-align:center}
+.cta-band::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 20%,rgba(255,255,255,.12),transparent 40%);}
+.cta-band h2{font-family:var(--font-serif);font-size:clamp(1.5rem,3.2vw,2.4rem);font-weight:900;line-height:1.4;position:relative}
+.cta-band p{margin:16px auto 28px;max-width:640px;color:var(--ink-2);font-size:.95rem;position:relative}
+.cta-band .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+footer{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(4,12,24,.6),#020814);padding:64px 0 26px;margin-top:20px}
+.f-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:38px}
+.f-col h5{font-size:.92rem;font-weight:700;margin-bottom:16px;color:#fff;letter-spacing:.06em}
+.f-col a{display:block;font-size:.84rem;color:var(--muted);padding:5px 0;transition:.3s var(--ease)}
+.f-col a:hover{color:var(--gold-2);transform:translateX(4px)}
+.f-about p{font-size:.85rem;color:var(--muted);line-height:1.9;margin-top:14px}
+.f-bottom{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.78rem;color:rgba(139,162,192,.75)}
+#toTop{position:fixed;right:24px;bottom:26px;z-index:760;width:50px;height:50px;border-radius:16px;border:1px solid var(--line-2);background:rgba(6,20,40,.85);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(14px);transition:.45s var(--ease)}
+#toTop.show{opacity:1;visibility:visible;transform:none}
+#toTop:hover{background:var(--gold);color:#231703;border-color:transparent}
+
+/* ============ 响应式 ============ */
+@media(max-width:1180px){
+  .hero-in{grid-template-columns:1fr;gap:38px}
+  .orbit-wrap{max-width:460px}
+  .pillars{grid-template-columns:repeat(3,1fr)}
+  .data-wall{grid-template-columns:repeat(3,1fr)}
+  .charts{grid-template-columns:1fr 1fr}
+  .intro-grid,.doc-wrap,.promo-grid{grid-template-columns:1fr}
+  .doc-nav{position:static;grid-template-columns:repeat(2,1fr);display:grid}
+  .inno-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  #dots{display:none}
+  nav.main{display:none}
+  .burger{display:flex}
+  .nav-cta .btn-ghost{display:none}
+}
+@media(max-width:860px){
+  .panel.on{grid-template-columns:1fr}
+  .panel-art{min-height:250px;order:-1}
+  .pillars{grid-template-columns:repeat(2,1fr)}
+  .data-wall{grid-template-columns:repeat(2,1fr)}
+  .charts{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:20px}
+  .sec-head{grid-template-columns:1fr;gap:10px}
+  .sec-idx{font-size:2.4rem}
+  .doc-nav{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .mini-stats{grid-template-columns:1fr}
+  .panel-facts{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+  .pillars{grid-template-columns:1fr}
+  .nav-cta .btn{padding:10px 16px;font-size:.8rem}
+  .brand-txt span{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- 预加载 -->
+<div id="loader">
+  <div class="ld-mark">
+    <svg viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="rgba(120,190,255,.25)" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="34" stroke="url(#lg1)" stroke-width="2.5" stroke-dasharray="40 24" stroke-linecap="round"/>
+      <path d="M28 66 L50 30 L72 66" stroke="#f2b53c" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+      <path d="M38 55 H62" stroke="#57a8ff" stroke-width="3" stroke-linecap="round"/>
+      <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#2f80ff"/></linearGradient></defs>
+    </svg>
+  </div>
+  <div class="ld-pct num" id="ldPct">0</div>
+  <div class="ld-road"><i id="ldBar"></i></div>
+  <div class="ld-txt">
+    <b>国家级教学成果奖 · 成果展示平台</b>
+    <span>CHANG'AN UNIVERSITY · GRADUATE EDUCATION</span>
+  </div>
+</div>
+
+<div class="bg-glow"></div>
+<div class="bg-noise"></div>
+<div id="scrollProg"></div>
+<div id="cursorGlow"></div>
+
+<!-- 导航 -->
+<header id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#hero" aria-label="返回首页">
+      <span class="brand-mark">
+        <svg viewBox="0 0 60 60" fill="none">
+          <path d="M30 4 L54 16 V32 C54 45 43 53 30 57 C17 53 6 45 6 32 V16 Z" stroke="url(#bg2)" stroke-width="2" fill="rgba(47,128,255,.10)"/>
+          <path d="M17 41 L30 18 L43 41" stroke="#f2b53c" stroke-width="3" stroke-linejoin="round" fill="none"/>
+          <path d="M23 34 H37" stroke="#57a8ff" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="30" cy="46" r="2.4" fill="#22d3ee"/>
+          <defs><linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57a8ff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+        </svg>
+      </span>
+      <span class="brand-txt">
+        <b>船舶制造领军型人才培养</b>
+        <span>NATIONAL TEACHING ACHIEVEMENT AWARD</span>
+      </span>
+    </a>
+
+    <nav class="main" id="mainNav">
+      <div class="nav-item"><a href="#hero">首页</a></div>
+      <div class="nav-item"><a href="#intro">成果简介</a></div>
+      <div class="nav-item">
+        <button type="button" aria-haspopup="true">申报书<span class="caret"></span></button>
+        <div class="mega">
+          <div class="mega-grid">
+            <a href="#doc" data-doc="0"><i>01</i><div><b>主要解决的教学问题</b><span>三重困境 · 问题溯源</span></div></a>
+            <a href="#doc" data-doc="1"><i>02</i><div><b>解决教学问题的方法</b><span>五维协同育人路径</span></div></a>
+            <a href="#doc" data-doc="2"><i>03</i><div><b>成果的创新点</b><span>三大原创性突破</span></div></a>
+            <a href="#doc" data-doc="3"><i>04</i><div><b>推广应用效果</b><span>辐射 ten 余所高校</span></div></a>
+            <a href="#doc" data-doc="4"><i>05</i><div><b>主要完成人情况</b><span>团队结构与分工</span></div></a>
+            <a href="#doc" data-doc="5"><i>06</i><div><b>完成单位与推荐意见</b><span>校企双元 · 省级推荐</span></div></a>
+          </div>
+          <div class="mega-foot"><span>申报书全文按教育部规范格式编排</span><span class="num" style="color:var(--gold)">PDF · 128 页</span></div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" aria-haspopup="true">支撑材料<span class="caret"></span></button>
+        <div class="mega">
+          <div class="mega-grid wide">
+            <a href="#materials" data-filter="成果鉴定"><i>A1</i><div><b>成果鉴定</b><span>专家鉴定意见</span></div></a>
+            <a href="#materials" data-filter="成果奖励"><i>A2</i><div><b>成果奖励</b><span>省级特等奖</span></div></a>
+            <a href="#materials" data-filter="重大项目"><i>A3</i><div><b>重大（重点）项目</b><span>国家重点研发计划</span></div></a>
+            <a href="#materials" data-filter="学科支撑"><i>A4</i><div><b>学科支撑</b><span>ESI 前 1‰</span></div></a>
+            <a href="#materials" data-filter="国际平台"><i>A5</i><div><b>国际平台</b><span>国际合作联合实验室</span></div></a>
+            <a href="#materials" data-filter="教改项目"><i>A6</i><div><b>教改项目</b><span>省部级以上教改</span></div></a>
+            <a href="#materials" data-filter="课程建设"><i>A7</i><div><b>课程建设</b><span>数智交叉课程群</span></div></a>
+            <a href="#materials" data-filter="教师荣誉"><i>A8</i><div><b>教师荣誉</b><span>国家级人才称号</span></div></a>
+            <a href="#materials" data-filter="学生荣誉"><i>A9</i><div><b>学生荣誉</b><span>研创竞赛获奖</span></div></a>
+          </div>
+          <div class="mega-foot"><span>共 9 大类 · 187 份佐证材料</span><span class="num" style="color:var(--gold)">全部可溯源</span></div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" aria-haspopup="true">成果推广应用<span class="caret"></span></button>
+        <div class="mega">
+          <div class="mega-grid">
+            <a href="#promo"><i>B1</i><div><b>媒体报道</b><span>主流媒体专题报道</span></div></a>
+            <a href="#promo"><i>B2</i><div><b>成果应用</b><span>行业企业采纳情况</span></div></a>
+            <a href="#promo"><i>B3</i><div><b>人才培养成效</b><span>院士与总工群体</span></div></a>
+            <a href="#promo"><i>B4</i><div><b>推广交流</b><span>全国会议交流 30 余次</span></div></a>
+          </div>
+          <div class="mega-foot"><span>推广半径覆盖 10 余所高校与 20 余家行业龙头企业</span></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="#feature">特色成果</a></div>
+      <div class="nav-item"><a href="#data">数据墙</a></div>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#doc">申报书全文</a>
+      <a class="btn btn-gold magnetic" href="#awards">成果佐证</a>
+      <button class="burger" id="burger" aria-label="菜单"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- 移动端菜单 -->
+<div id="mobileMenu">
+  <div class="m-group"><a class="m-head" href="#hero">首页<span>+</span></a></div>
+  <div class="m-group"><a class="m-head" href="#intro">成果简介<span>+</span></a></div>
+  <div class="m-group">
+    <button class="m-head" type="button">申报书<span>+</span></button>
+    <div class="m-sub">
+      <a href="#doc" data-doc="0">主要解决的教学问题</a><a href="#doc" data-doc="1">成果解决教学问题的方法</a>
+      <a href="#doc" data-doc="2">成果的创新点</a><a href="#doc" data-doc="3">成果的推广应用效果</a>
+      <a href="#doc" data-doc="4">主要完成人情况</a><a href="#doc" data-doc="5">完成单位与推荐单位意见</a>
+    </div>
+  </div>
+  <div class="m-group">
+    <button class="m-head" type="button">支撑材料<span>+</span></button>
+    <div class="m-sub">
+      <a href="#materials" data-filter="成果鉴定">成果鉴定</a><a href="#materials" data-filter="成果奖励">成果奖励</a>
+      <a href="#materials" data-filter="重大项目">重大（重点）项目</a><a href="#materials" data-filter="学科支撑">学科支撑</a>
+      <a href="#materials" data-filter="国际平台">国际平台</a><a href="#materials" data-filter="教改项目">教改项目</a>
+      <a href="#materials" data-filter="课程建设">课程建设</a><a href="#materials" data-filter="教师荣誉">教师荣誉</a>
+      <a href="#materials" data-filter="学生荣誉">学生荣誉</a>
+    </div>
+  </div>
+  <div class="m-group"><a class="m-head" href="#promo">成果推广应用<span>+</span></a></div>
+  <div class="m-group"><a class="m-head" href="#feature">特色成果<span>+</span></a></div>
+  <div class="m-group"><a class="m-head" href="#data">数据墙<span>+</span></a></div>
+  <div style="margin-top:26px;display:flex;gap:12px">
+    <a class="btn btn-gold" href="#awards" style="flex:1;justify-content:center">成果佐证</a>
+    <a class="btn btn-ghost" href="#doc" style="flex:1;justify-content:center">申报书</a>
+  </div>
+</div>
+
+<!-- 右侧章节点 -->
+<div id="dots">
+  <a href="#hero" data-label="首页" data-sec="hero"></a>
+  <a href="#intro" data-label="成果简介" data-sec="intro"></a>
+  <a href="#system" data-label="五大育人体系" data-sec="system"></a>
+  <a href="#doc" data-label="申报书解读" data-sec="doc"></a>
+  <a href="#innovation" data-label="成果创新点" data-sec="innovation"></a>
+  <a href="#data" data-label="数据墙" data-sec="data"></a>
+  <a href="#materials" data-label="支撑材料" data-sec="materials"></a>
+  <a href="#promo" data-label="推广应用" data-sec="promo"></a>
+  <a href="#feature" data-label="特色成果" data-sec="feature"></a>
+  <a href="#awards" data-label="获奖情况" data-sec="awards"></a>
+</div>
+
+<main>
+<!-- ========== HERO ========== -->
+<section id="hero">
+  <canvas id="netCanvas"></canvas>
+  <div class="hero-grid-floor"></div>
+  <div class="hero-in">
+    <div class="hero-left">
+      <span class="hero-badge" data-reveal><span class="pulse-dot"></span>国家级教学成果奖（研究生）· 成果展示平台</span>
+      <h1 class="hero-title">
+        <span class="ln"><span data-scramble="课程筑基">课程筑基</span></span>
+        <span class="ln"><span data-scramble="科创赋能">科创赋能</span> <em>·</em></span>
+        <span class="ln"><span data-scramble="国合增效">国合增效</span></span>
+      </h1>
+      <p class="hero-sub" id="typeLine"><span class="caret-blink"></span></p>
+      <div class="hero-meta">
+        <span class="chip"><i>主持人</i><b>刘小强</b> 教授 / 博士生导师</span>
+        <span class="chip"><i>完成单位</i><b>江西职业技术大学</b> · 国防军工研究院</span>
+        <span class="chip"><i>推荐单位</i><b>江西省教育厅</b></span>
+        <span class="chip"><i>成果类别</i><b>职业本科教育</b> · 国防军工</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-gold magnetic" href="#system">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          进入成果展廊
+        </a>
+        <a class="btn btn-ghost magnetic" href="#doc">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          查阅申报书
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="h-stat"><b class="num" data-count="40" data-suffix="+">0</b><span>年学科育人积淀</span></div>
+        <div class="h-stat"><b class="num" data-count="4" data-suffix="个">0</b><span>国家级平台支撑</span></div>
+        <div class="h-stat"><b class="num" data-count="9" data-suffix="项">0</b><span>国家重点研发计划</span></div>
+        <div class="h-stat"><b class="num" data-count="4.95" data-dec="2" data-suffix="亿">0</b><span>科研经费转化为育人资源</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right" data-reveal="zoom" style="--d:.2s">
+      <div class="orbit-wrap" id="orbitWrap">
+        <canvas id="orbitCanvas"></canvas>
+        <div class="orbit-core">
+          <b>旗舰先锋<br>领军型人才</b>
+          <span>LEADING TALENTS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="mouse"></span>SCROLL</div>
+</section>
+
+<!-- 荣誉跑马灯 -->
+<div class="ribbon">
+  <div class="ribbon-track" id="ribbonTrack"></div>
+</div>
+<div class="road-div"></div>
+
+<!-- ========== 01 成果简介 ========== -->
+<section id="intro">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>01</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Achievement Overview</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">成果简介 · <u>四十余年铸路，一所大学的行业答卷</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">江西职业技术大学交通运输工程学科 1990 年获博士学位授予权，四十余年来立足西部、面向全国，形成了"大平台—大团队—大项目—大工程—大成果"五位一体的研究生培养生态。</p>
+      </div>
+    </div>
+
+    <div class="intro-grid">
+      <div data-reveal="left">
+        <div class="lead-text">
+          <p class="dropcap">江西职业技术大学国防军工自 1990 年获博士学位授予权以来，四十余载立足西部、面向全国，培养了道路工程领域院士（全国仅 3 位）<span class="hl">郑健龙、汪双杰</span>，以及以国家卓越工程师奖获得者<span class="hl">苏权科</span>为代表的总工群体，被誉为国防军工人才培养的"<span class="hl">黄埔军校</span>"。</p>
+          <p>中交第一公路勘察设计研究院牵头建成道路工程领域唯一的<span class="hl">极端环境绿色长寿道路工程全国重点实验室</span>，校企协同育人二十余载，为青藏公路等大批重大工程输送了大批复合型人才与技术解决方案。</p>
+          <p>近年来，国防军工建设向<span class="hl">高原高寒、深海远海、极寒冻土</span>等特殊区域纵深推进，对研究生的跨界整合能力、原创科研能力与国际化视野提出了前所未有的要求。本成果以"课程筑基、科创赋能、国合增效"为主线，重构了国防军工领军型研究生培养模式。</p>
+        </div>
+        <div class="quote-block">
+          "把重大工程现场变成研究生课堂，把国家需求写进学位论文。"
+          <small>—— 成果核心理念 · 校企协同育人二十余载的实践凝练</small>
+        </div>
+        <div class="mini-stats">
+          <div class="mini-stat"><b class="num" data-count="1990" data-plain="1">0</b><span>获博士学位授予权</span></div>
+          <div class="mini-stat"><b class="num" data-count="3" data-suffix="位">0</b><span>道路工程领域院士（全国仅 3 位，本学科培养 2 位）</span></div>
+          <div class="mini-stat"><b class="num" data-count="20" data-suffix="余载">0</b><span>校企协同育人历程</span></div>
+          <div class="mini-stat"><b class="num" data-count="32" data-suffix="项">0</b><span>海外重大工程参与</span></div>
+        </div>
+      </div>
+
+      <div data-reveal="right" style="--d:.14s">
+        <div class="card" style="padding:30px">
+          <p class="mono-tag" style="margin-bottom:20px">Development Timeline · 学科育人里程碑</p>
+          <div class="timeline" id="timeline">
+            <div class="tl-item"><div class="yr num">1990</div><h4>获博士学位授予权</h4><p>船舶装备制造成为我国国防军工领域高层次人才培养的重要基地。</p></div>
+            <div class="tl-item"><div class="yr num">2000s</div><h4>校企协同育人机制起步</h4><p>与中交第一公路勘察设计研究院等龙头企业共建实践基地，工程现场进入培养环节。</p></div>
+            <div class="tl-item"><div class="yr num">2010s</div><h4>国家级平台相继落成</h4><p>公路隧道国家工程研究中心、公路与桥梁高效养护及安全耐久国家工程研究中心等平台支撑高层次育人。</p></div>
+            <div class="tl-item"><div class="yr num">2020</div><h4>数智交叉课程群建设</h4><p>面向智能建造与智慧交通，重构 18 门数智交叉课程，打通"道路 + 信息 + 材料"学科边界。</p></div>
+            <div class="tl-item"><div class="yr num">2023</div><h4>陕西省教学成果特等奖</h4><p>"课程筑基、科创赋能、国合增效"培养模式改革获陕西省人民政府表彰（省级特等奖）。</p></div>
+            <div class="tl-item"><div class="yr num">2024</div><h4>国家重点研发计划持续突破</h4><p>金属与混凝土复合增材制造在路桥建筑领域的应用示范等项目落地，经费 5250 万元。</p></div>
+            <div class="tl-item"><div class="yr num">2025</div><h4>冲击国家级教学成果奖</h4><p>成果已在 10 余所高校借鉴推广，形成可复制、可迁移的船舶制造领军人才培养范式。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 02 五大育人体系 ========== -->
+<section id="system">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>02</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Five-in-One Cultivation System</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">五位一体 · <u>大平台 大团队 大项目 大工程 大成果</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">以国家级平台为基座、以高水平导师队伍为引领、以重大科研项目为资源、以真实重大工程为现场、以标志性成果为标尺，构建全链条、闭环式研究生培养体系。</p>
+      </div>
+    </div>
+
+    <div class="pillars" id="pillars" data-reveal>
+      <button class="pil on" data-p="0">
+        <span class="p-idx num">P-01</span>
+        <svg viewBox="0 0 32 32" fill="none" stroke="#22d3ee" stroke-width="1.8"><path d="M4 27h24M8 27V13l8-6 8 6v14M13 27v-7h6v7"/><circle cx="16" cy="14" r="1.6" fill="#f2b53c" stroke="none"/></svg>
+        <h4>大平台</h4><p>国家级平台支撑高层次育人</p><span class="bar"></span>
+      </button>
+      <button class="pil" data-p="1">
+        <span class="p-idx num">P-02</span>
+        <svg viewBox="0 0 32 32" fill="none" stroke="#57a8ff" stroke-width="1.8"><circle cx="16" cy="9" r="4"/><circle cx="6" cy="22" r="3.4"/><circle cx="26" cy="22" r="3.4"/><path d="M13 12.5 8.5 19M19 12.5 23.5 19M9.4 22h13.2"/></svg>
+        <h4>大团队</h4><p>高水平导师队伍支撑研究生培养</p><span class="bar"></span>
+      </button>
+      <button class="pil" data-p="2">
+        <span class="p-idx num">P-03</span>
+        <svg viewBox="0 0 32 32" fill="none" stroke="#f2b53c" stroke-width="1.8"><path d="M6 26V14M13 26V8M20 26v-9M27 26V5"/><path d="M3 29h26"/></svg>
+        <h4>大项目</h4><p>重大科研项目转化为培养资源</p><span class="bar"></span>
+      </button>
+      <button class="pil" data-p="3">
+        <span class="p-idx num">P-04</span>
+        <svg viewBox="0 0 32 32" fill="none" stroke="#22d3ee" stroke-width="1.8"><path d="M2 22h28M6 22V13M26 22V13M6 13c4-6 16-6 20 0"/><path d="M11 22v-7M16 22v-8M21 22v-7"/></svg>
+        <h4>大工程</h4><p>真实重大工程成为育人现场</p><span class="bar"></span>
+      </button>
+      <button class="pil" data-p="4">
+        <span class="p-idx num">P-05</span>
+        <svg viewBox="0 0 32 32" fill="none" stroke="#f2b53c" stroke-width="1.8"><circle cx="16" cy="12" r="7"/><path d="M11 18 8 29l8-4 8 4-3-11"/><path d="m16 8 1.6 3.2 3.4.5-2.5 2.4.6 3.4-3.1-1.6-3.1 1.6.6-3.4L11 11.7l3.4-.5z" fill="#f2b53c" stroke="none"/></svg>
+        <h4>大成果</h4><p>复合型人才培养成效显著</p><span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="panel-stage" data-reveal style="--d:.1s">
+      <!-- 大平台 -->
+      <div class="panel on" data-panel="0">
+        <div class="panel-txt">
+          <span class="p-tag">PLATFORM · 国家级平台</span>
+          <h3>四大国家级平台，成为研究生科研训练的"真实战场"</h3>
+          <p>依托道路工程领域唯一的全国重点实验室与两个国家工程研究中心，研究生从入学起即进入国家级科研平台，参与极端环境道路、冻土工程、桥梁养护与隧道安全等前沿课题研究，实现"平台即课堂、课题即作业"。</p>
+          <ul class="panel-list">
+            <li><i>01</i>极端环境绿色长寿道路工程全国重点实验室（道路工程领域唯一）</li>
+            <li><i>02</i>青海花石峡冻土公路工程安全国家野外科学观测研究站</li>
+            <li><i>03</i>公路与桥梁高效养护及安全耐久国家工程研究中心</li>
+            <li><i>04</i>公路隧道国家工程研究中心</li>
+          </ul>
+          <div class="panel-facts">
+            <div><b class="num" data-count="4">0</b><span>国家级平台</span></div>
+            <div><b class="num" data-count="20" data-suffix="+">0</b><span>校企实践基地</span></div>
+            <div><b class="num" data-count="100" data-suffix="%">0</b><span>研究生进入平台实训</span></div>
+          </div>
+        </div>
+        <div class="panel-art">
+          <svg viewBox="0 0 420 320" class="art-float" fill="none">
+            <defs>
+              <linearGradient id="pa1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#2f80ff"/></linearGradient>
+              <linearGradient id="pa2" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#f2b53c"/><stop offset="1" stop-color="#ffd98a"/></linearGradient>
+            </defs>
+            <ellipse cx="210" cy="272" rx="150" ry="20" fill="url(#pa1)" opacity=".14"/>
+            <path d="M60 250 L210 60 L360 250 Z" stroke="url(#pa1)" stroke-width="2" fill="rgba(47,128,255,.10)"/>
+            <path d="M110 250 L210 122 L310 250" stroke="rgba(140,200,255,.5)" stroke-width="1.4" stroke-dasharray="5 6"/>
+            <rect x="176" y="182" width="68" height="68" rx="8" stroke="url(#pa2)" stroke-width="2" fill="rgba(242,181,60,.10)"/>
+            <path d="M196 232 v-22 a14 14 0 0 1 28 0 v22z" stroke="#ffd98a" stroke-width="1.8" fill="rgba(255,217,138,.18)"/>
+            <circle cx="210" cy="60" r="9" fill="#22d3ee"><animate attributeName="r" values="7;12;7" dur="3s" repeatCount="indefinite"/></circle>
+            <circle cx="210" cy="60" r="18" stroke="#22d3ee" stroke-width="1" opacity=".5"><animate attributeName="r" values="14;30;14" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0;.6" dur="3s" repeatCount="indefinite"/></circle>
+            <g stroke="rgba(140,200,255,.45)" stroke-width="1.2">
+              <path d="M60 250h300"/><path d="M84 220h252" stroke-dasharray="4 8"/><path d="M132 160h156" stroke-dasharray="4 8"/>
+            </g>
+            <g fill="#f2b53c"><circle cx="120" cy="250" r="3"><animate attributeName="cx" values="120;300;120" dur="6s" repeatCount="indefinite"/></circle><circle cx="300" cy="220" r="2.6"><animate attributeName="cx" values="300;90;300" dur="7.5s" repeatCount="indefinite"/></circle></g>
+          </svg>
+        </div>
+      </div>
+      <!-- 大团队 -->
+      <div class="panel" data-panel="1">
+        <div class="panel-txt">
+          <span class="p-tag">TEAM · 高水平导师队伍</span>
+          <h3>国家重点领域创新团队领衔，构建"院士—领军—青年"三级导师谱系</h3>
+          <p>以"特殊区域公路建设与养护技术国家重点领域创新团队"为核心，汇聚院士、国家级人才与行业总工程师，实施"双导师 + 行业导师"三导师制，让研究生在真问题、真团队、真项目中成长。</p>
+          <ul class="panel-list">
+            <li><i>01</i>特殊区域公路建设与养护技术国家重点领域创新团队</li>
+            <li><i>02</i>院士、国家卓越工程师领衔的行业导师库，校企互聘互通</li>
+            <li><i>03</i>"学术导师 + 工程导师 + 国际导师"三导师协同指导机制</li>
+            <li><i>04</i>导师团队定期开展"工程现场课"与"总工讲堂"</li>
+          </ul>
+          <div class="panel-facts">
+            <div><b class="num" data-count="2" data-suffix="位">0</b><span>本学科培养院士</span></div>
+            <div><b class="num" data-count="3" data-suffix="导师">0</b><span>三导师协同指导制</span></div>
+            <div><b class="num" data-count="30" data-suffix="+">0</b><span>行业总工受聘授课</span></div>
+          </div>
+        </div>
+        <div class="panel-art">
+          <svg viewBox="0 0 420 320" class="art-float" fill="none">
+            <defs><linearGradient id="pb1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57a8ff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+            <g stroke="rgba(140,200,255,.38)" stroke-width="1.3">
+              <path d="M210 92 L110 178 M210 92 L310 178 M110 178 L210 246 M310 178 L210 246 M110 178 L310 178"/>
+            </g>
+            <circle cx="210" cy="92" r="30" fill="rgba(242,181,60,.14)" stroke="#f2b53c" stroke-width="2"/>
+            <circle cx="210" cy="82" r="9" stroke="#ffd98a" stroke-width="2"/><path d="M194 104a16 16 0 0 1 32 0" stroke="#ffd98a" stroke-width="2"/>
+            <g>
+              <circle cx="110" cy="178" r="24" fill="rgba(47,128,255,.16)" stroke="url(#pb1)" stroke-width="1.8"/>
+              <circle cx="110" cy="171" r="7" stroke="#57a8ff" stroke-width="1.8"/><path d="M98 189a12 12 0 0 1 24 0" stroke="#57a8ff" stroke-width="1.8"/>
+            </g>
+            <g>
+              <circle cx="310" cy="178" r="24" fill="rgba(34,211,238,.14)" stroke="#22d3ee" stroke-width="1.8"/>
+              <circle cx="310" cy="171" r="7" stroke="#22d3ee" stroke-width="1.8"/><path d="M298 189a12 12 0 0 1 24 0" stroke="#22d3ee" stroke-width="1.8"/>
+            </g>
+            <g>
+              <circle cx="210" cy="246" r="20" fill="rgba(255,255,255,.06)" stroke="rgba(200,225,255,.6)" stroke-width="1.6"/>
+              <circle cx="210" cy="240" r="6" stroke="#dce9fb" stroke-width="1.6"/><path d="M200 256a10 10 0 0 1 20 0" stroke="#dce9fb" stroke-width="1.6"/>
+            </g>
+            <circle cx="210" cy="92" r="44" stroke="#f2b53c" stroke-width="1" opacity=".45"><animate attributeName="r" values="36;56;36" dur="4.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0;.5" dur="4.4s" repeatCount="indefinite"/></circle>
+            <text x="210" y="300" text-anchor="middle" fill="rgba(160,190,225,.75)" font-size="12" font-family="Space Grotesk,sans-serif" letter-spacing="3">ACADEMICIAN — LEADER — YOUTH</text>
+          </svg>
+        </div>
+      </div>
+      <!-- 大项目 -->
+      <div class="panel" data-panel="2">
+        <div class="panel-txt">
+          <span class="p-tag">PROJECT · 重大科研项目</span>
+          <h3>4.95 亿元科研经费，转化为研究生创新训练的"活教材"</h3>
+          <p>9 项国家重点研发计划项目、大批国家自然科学基金重大重点项目全面向研究生开放，120 余项研究生交叉课题从中孕育，实现"科研选题即学位选题、科研团队即培养团队"。</p>
+          <ul class="panel-list">
+            <li><i>01</i>国家重点研发计划项目（2024）：金属与混凝土复合增材制造在路桥建筑领域的应用示范 · 科技部 · 5250 万元</li>
+            <li><i>02</i>9 项国家重点研发计划项目累计经费 4.95 亿元</li>
+            <li><i>03</i>120 余项研究生交叉课题，覆盖道路、桥梁、隧道、材料、信息多学科</li>
+            <li><i>04</i>科研项目"揭榜挂帅"机制，研究生可担任子课题负责人</li>
+          </ul>
+          <div class="panel-facts">
+            <div><b class="num" data-count="9" data-suffix="项">0</b><span>国家重点研发计划</span></div>
+            <div><b class="num" data-count="4.95" data-dec="2" data-suffix="亿">0</b><span>累计科研经费</span></div>
+            <div><b class="num" data-count="120" data-suffix="+">0</b><span>研究生交叉课题</span></div>
+          </div>
+        </div>
+        <div class="panel-art">
+          <svg viewBox="0 0 420 320" class="art-float" fill="none">
+            <defs><linearGradient id="pc1" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#2f80ff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+            <g stroke="rgba(140,200,255,.22)" stroke-width="1"><path d="M60 260h300M60 200h300M60 140h300M60 80h300"/></g>
+            <rect x="86" y="200" width="38" height="60" rx="5" fill="url(#pc1)" opacity=".45"/>
+            <rect x="146" y="164" width="38" height="96" rx="5" fill="url(#pc1)" opacity=".6"/>
+            <rect x="206" y="122" width="38" height="138" rx="5" fill="url(#pc1)" opacity=".78"/>
+            <rect x="266" y="86" width="38" height="174" rx="5" fill="#f2b53c" opacity=".85"/>
+            <path d="M100 190 L162 152 L224 112 L286 74" stroke="#ffd98a" stroke-width="2.4" stroke-dasharray="6 6" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="24;0" dur="1.2s" repeatCount="indefinite"/></path>
+            <circle cx="286" cy="74" r="7" fill="#ffd98a"><animate attributeName="r" values="6;10;6" dur="2.2s" repeatCount="indefinite"/></circle>
+            <g stroke="#22d3ee" stroke-width="1.8" opacity=".9"><path d="M322 168v-14M315 161h14"/><circle cx="322" cy="150" r="16" stroke-dasharray="4 5"><animateTransform attributeName="transform" type="rotate" from="0 322 150" to="360 322 150" dur="9s" repeatCount="indefinite"/></circle></g>
+            <text x="86" y="286" fill="rgba(160,190,225,.7)" font-size="11" font-family="Space Grotesk,sans-serif" letter-spacing="2">R&amp;D FUNDING GROWTH · 单位：亿元</text>
+          </svg>
+        </div>
+      </div>
+      <!-- 大工程 -->
+      <div class="panel" data-panel="3">
+        <div class="panel-txt">
+          <span class="p-tag">ENGINEERING · 重大工程现场</span>
+          <h3>把课堂搬到港珠澳大桥、天山胜利隧道的施工一线</h3>
+          <p>32 项海外重大工程、20 余个校企实践基地构成"移动的研究生院"。研究生在真实工程场景中完成观测、试验、设计与决策训练，形成"工程问题—科学问题—学位论文"的闭环转化。</p>
+          <ul class="panel-list">
+            <li><i>01</i>港珠澳大桥 · 深中通道 · 天山胜利隧道 · 中马友谊大桥</li>
+            <li><i>02</i>青藏公路、青海花石峡冻土区长期观测与工程实践</li>
+            <li><i>03</i>32 项海外重大工程，构建"一带一路"国际化实践育人走廊</li>
+            <li><i>04</i>"工程现场课"纳入学分体系，累计开设实践模块课程 18 门</li>
+          </ul>
+          <div class="panel-facts">
+            <div><b class="num" data-count="32" data-suffix="项">0</b><span>海外重大工程</span></div>
+            <div><b class="num" data-count="20" data-suffix="+">0</b><span>校企实践基地</span></div>
+            <div><b class="num" data-count="18" data-suffix="门">0</b><span>数智交叉课程</span></div>
+          </div>
+        </div>
+        <div class="panel-art">
+          <svg viewBox="0 0 420 320" class="art-float" fill="none">
+            <defs>
+              <linearGradient id="pd1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1b4e93"/><stop offset="1" stop-color="#04101f"/></linearGradient>
+              <linearGradient id="pd2" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#f2b53c"/></linearGradient>
+            </defs>
+            <rect x="0" y="210" width="420" height="110" fill="url(#pd1)" opacity=".55"/>
+            <path d="M0 214 Q105 206 210 214 T420 214" stroke="rgba(120,190,255,.5)" stroke-width="1.4"/>
+            <path d="M0 232 Q105 224 210 232 T420 232" stroke="rgba(120,190,255,.25)" stroke-width="1.2"/>
+            <rect x="128" y="96" width="14" height="122" rx="3" fill="url(#pd2)" opacity=".9"/>
+            <rect x="278" y="96" width="14" height="122" rx="3" fill="url(#pd2)" opacity=".9"/>
+            <path d="M20 200 Q135 108 210 196 Q285 108 400 200" stroke="#57a8ff" stroke-width="2.4"/>
+            <path d="M20 206 H400" stroke="#ffd98a" stroke-width="4" stroke-linecap="round"/>
+            <g stroke="rgba(140,200,255,.55)" stroke-width="1.1">
+              <path d="M60 205 V172M90 205 V156M120 205 V145M160 205 V168M200 205 V192M240 205 V170M280 205 V146M320 205 V162M360 205 V184"/>
+            </g>
+            <circle cx="20" cy="203" r="4" fill="#fff"><animate attributeName="cx" values="20;400" dur="5.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="5.5s" repeatCount="indefinite"/></circle>
+            <circle cx="400" cy="203" r="3.4" fill="#22d3ee"><animate attributeName="cx" values="400;20" dur="7s" repeatCount="indefinite"/></circle>
+            <circle cx="210" cy="70" r="16" stroke="#f2b53c" stroke-width="1.4" fill="rgba(242,181,60,.12)"/>
+            <circle cx="210" cy="70" r="28" stroke="rgba(242,181,60,.4)" stroke-width="1"><animate attributeName="r" values="22;40;22" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0;.6" dur="4s" repeatCount="indefinite"/></circle>
+          </svg>
+        </div>
+      </div>
+      <!-- 大成果 -->
+      <div class="panel" data-panel="4">
+        <div class="panel-txt">
+          <span class="p-tag">OUTCOME · 标志性成果</span>
+          <h3>从国家科技奖到行业总工，人才培养成效可检验、可追溯</h3>
+          <p>学科主持获国家科学技术进步二等奖，研究生在国际顶级期刊、国家级竞赛中屡获佳绩；35% 以上毕业生赴世界 500 强及行业头部企业就业，成为重大工程的技术中坚。</p>
+          <ul class="panel-list">
+            <li><i>01</i>国家科学技术进步二等奖：道路与桥梁多源协同智能检测技术与装备开发（主持）</li>
+            <li><i>02</i>陕西省高等教育教学成果特等奖（2023，陕西省人民政府）</li>
+            <li><i>03</i>ESI 全球前 1‰ 工程学科支撑，学科国际影响力持续攀升</li>
+            <li><i>04</i>毕业生中涌现院士 2 位、国家卓越工程师奖获得者及大批总工程师</li>
+          </ul>
+          <div class="panel-facts">
+            <div><b class="num" data-count="35" data-suffix="%+">0</b><span>赴世界500强及头部企业</span></div>
+            <div><b class="num" data-count="1" data-suffix="‰">0</b><span>ESI 全球前 1‰ 工程学科</span></div>
+            <div><b class="num" data-count="30" data-suffix="+">0</b><span>全国会议交流</span></div>
+          </div>
+        </div>
+        <div class="panel-art">
+          <svg viewBox="0 0 420 320" class="art-float" fill="none">
+            <defs><linearGradient id="pe1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd98a"/><stop offset="1" stop-color="#d99a22"/></linearGradient></defs>
+            <circle cx="210" cy="126" r="58" fill="rgba(242,181,60,.14)" stroke="url(#pe1)" stroke-width="2.6"/>
+            <path d="m210 92 10.6 21.6 23.8 3.4-17.2 16.8 4 23.7-21.2-11.2-21.2 11.2 4-23.7-17.2-16.8 23.8-3.4z" fill="url(#pe1)"/>
+            <path d="M176 176 L154 258 L210 230 L266 258 L244 176" stroke="url(#pe1)" stroke-width="2.4" fill="rgba(242,181,60,.10)"/>
+            <g stroke="rgba(140,200,255,.4)" stroke-width="1.2" stroke-dasharray="4 6"><circle cx="210" cy="126" r="82"><animateTransform attributeName="transform" type="rotate" from="0 210 126" to="360 210 126" dur="26s" repeatCount="indefinite"/></circle></g>
+            <g fill="#22d3ee">
+              <circle cx="292" cy="126" r="4"><animateTransform attributeName="transform" type="rotate" from="0 210 126" to="360 210 126" dur="26s" repeatCount="indefinite"/></circle>
+            </g>
+            <g fill="#ffd98a">
+              <circle cx="128" cy="126" r="4"><animateTransform attributeName="transform" type="rotate" from="360 210 126" to="0 210 126" dur="26s" repeatCount="indefinite"/></circle>
+            </g>
+            <text x="210" y="298" text-anchor="middle" fill="rgba(160,190,225,.75)" font-size="12" font-family="Space Grotesk,sans-serif" letter-spacing="3">NATIONAL AWARDS &amp; LEADING ENGINEERS</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="road-div"></div>
+
+<!-- ========== 03 申报书 ========== -->
+<section id="doc">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>03</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Application Document</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">申报书 · <u>六大核心章节在线解读</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">按国家级教学成果奖申报书规范结构编排，逐章呈现"问题—方法—创新—成效—团队—意见"完整证据链，支持一键定位与全文检索。</p>
+      </div>
+    </div>
+
+    <div class="doc-wrap">
+      <div class="doc-nav" id="docNav" data-reveal="left">
+        <button class="doc-btn on" data-doc="0"><span class="n">01</span><span><b>主要解决的教学问题</b><span>三重困境 · 问题溯源</span></span></button>
+        <button class="doc-btn" data-doc="1"><span class="n">02</span><span><b>成果解决教学问题的方法</b><span>五维协同 · 路径重构</span></span></button>
+        <button class="doc-btn" data-doc="2"><span class="n">03</span><span><b>成果的创新点</b><span>三大原创性突破</span></span></button>
+        <button class="doc-btn" data-doc="3"><span class="n">04</span><span><b>成果的推广应用效果</b><span>辐射高校 · 行业采纳</span></span></button>
+        <button class="doc-btn" data-doc="4"><span class="n">05</span><span><b>主要完成人情况</b><span>团队结构与贡献分工</span></span></button>
+        <button class="doc-btn" data-doc="5"><span class="n">06</span><span><b>完成单位与推荐单位意见</b><span>校企双元 · 省级推荐</span></span></button>
+      </div>
+
+      <div class="doc-view" data-reveal="right" style="--d:.1s">
+        <div class="doc-top">
+          <span class="dots3"><i></i><i></i><i></i></span>
+          <span class="fname">申报书_船舶制造领军型人才培养模式改革与实践.pdf</span>
+          <span class="page-n num" id="docPage">P.01 — 06 / 128</span>
+        </div>
+        <div class="doc-body">
+          <!-- 01 问题 -->
+          <div class="doc-pane on" data-pane="0">
+            <h3>主要解决的教学问题</h3>
+            <p class="sub">PROBLEMS ADDRESSED</p>
+            <p>面向船舶制造建设向高原高寒、深海远海、极寒冻土等特殊区域纵深推进的国家战略需求，研究生培养长期存在三重结构性矛盾：</p>
+            <div class="prob-list">
+              <div class="prob"><span class="qn num">Q1</span><div><h5>课程体系"专而不交"，难以支撑复杂工程问题求解</h5><p>传统课程按二级学科切分，道路、桥梁、隧道、材料、信息彼此割裂；面对"冻土—结构—智能感知"耦合的真实工程问题，研究生缺乏跨界知识整合能力，数智化素养明显不足。</p></div></div>
+              <div class="prob"><span class="qn num">Q2</span><div><h5>科研训练"虚而不实"，创新链条与工程链条脱节</h5><p>课题多来自文献推演而非工程一线，研究生缺少在重大项目中承担真实任务的机会；科研成果难以转化为培养资源，"论文写完即结束"，创新闭环没有形成。</p></div></div>
+              <div class="prob"><span class="qn num">Q3</span><div><h5>国际视野"浅而不通"，缺乏参与全球工程治理的能力</h5><p>"一带一路"海外重大工程急需既懂技术又通规则、能跨文化协作的领军人才，而研究生的国际合作多停留在短期访学与论文合作，缺少深度嵌入海外工程全过程的机制。</p></div></div>
+            </div>
+          </div>
+          <!-- 02 方法 -->
+          <div class="doc-pane" data-pane="1">
+            <h3>成果解决教学问题的方法</h3>
+            <p class="sub">METHODOLOGY &amp; PATHWAY</p>
+            <p>以"课程筑基、科创赋能、国合增效"为主线，构建"平台—团队—项目—工程—成果"五维协同的育人路径，形成可复制的培养范式。</p>
+            <div class="method-flow">
+              <div class="m-step">
+                <span class="m-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.8"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 12h8M8 16h5"/></svg></span>
+                <div><h5>课程筑基：重构数智交叉课程群</h5><p>打破学科壁垒，建成 18 门"道路 + 智能 + 材料 + 生态"交叉课程，推行"项目制课堂 + 工程案例库 + 数字孪生实验"三位一体教学，课程全部由国家级平台真实数据支撑。</p><div class="tag-row"><span class="tag">18 门交叉课程</span><span class="tag">案例库 320+</span><span class="tag">项目制课堂</span></div></div>
+              </div>
+              <div class="m-step">
+                <span class="m-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#57a8ff" stroke-width="1.8"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+                <div><h5>科创赋能：重大项目全链条浸润</h5><p>9 项国家重点研发计划项目、4.95 亿元经费全面向研究生开放，实行"揭榜挂帅"与子课题负责人制，孕育 120 余项研究生交叉课题，实现科研资源向培养资源的系统转化。</p><div class="tag-row"><span class="tag">揭榜挂帅</span><span class="tag">120+ 交叉课题</span><span class="tag">三导师制</span></div></div>
+              </div>
+              <div class="m-step">
+                <span class="m-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#f2b53c" stroke-width="1.8"><path d="M2 12h20M12 2c3 3.5 3 16.5 0 20M12 2C9 5.5 9 18.5 12 22"/><circle cx="12" cy="12" r="10"/></svg></span>
+                <div><h5>国合增效：海外重大工程即课堂</h5><p>依托 32 项海外重大工程与"一带一路"交通基础设施合作项目，建立海外实践基地与国际联合指导机制，研究生深度参与设计、施工、运维与标准输出全流程。</p><div class="tag-row"><span class="tag">32 项海外工程</span><span class="tag">国际联合导师</span><span class="tag">标准输出</span></div></div>
+              </div>
+              <div class="m-step">
+                <span class="m-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.8"><path d="M3 20h18M6 20V9M11 20V4M16 20v-8M21 20v-5"/></svg></span>
+                <div><h5>评价牵引：多维增值评价体系</h5><p>以"工程贡献度、原创创新度、国际胜任力"三维指标替代单一论文评价，建立培养质量档案与毕业生长期跟踪数据库，实现成效可测、可追溯、可比较。</p><div class="tag-row"><span class="tag">增值评价</span><span class="tag">长期跟踪</span><span class="tag">质量档案</span></div></div>
+              </div>
+            </div>
+          </div>
+          <!-- 03 创新点 -->
+          <div class="doc-pane" data-pane="2">
+            <h3>成果的创新点</h3>
+            <p class="sub">KEY INNOVATIONS</p>
+            <div class="prob-list">
+              <div class="prob"><span class="qn num">Ⅰ</span><div><h5>理念创新：提出"工程现场即培养现场"的领军型人才育人观</h5><p>率先将重大工程全生命周期嵌入研究生培养方案，构建"课程—课题—工程—成果"四贯通链条，破解了学术训练与工程实践"两张皮"的顽疾。</p></div></div>
+              <div class="prob"><span class="qn num">Ⅱ</span><div><h5>模式创新：构建"大平台 + 大团队 + 大项目 + 大工程 + 大成果"五位一体培养生态</h5><p>以国家级平台为基座、国家重点领域创新团队为引领，形成校企双元、三级导师、双向流动的组织机制，实现资源—团队—课题的一体化配置。</p></div></div>
+              <div class="prob"><span class="qn num">Ⅲ</span><div><h5>机制创新：创建"国合增效"的国际化实践育人机制</h5><p>依托 32 项海外重大工程建立海外培养基地与国际联合指导制度，将中国公路技术标准与工程方案输出过程转化为研究生国际胜任力的养成过程，属国内交通类研究生教育的原创性探索。</p></div></div>
+            </div>
+            <div class="tag-row" style="margin-top:20px">
+              <span class="tag">原创性</span><span class="tag">系统性</span><span class="tag">可迁移性</span><span class="tag">已在 10 余所高校借鉴推广</span>
+            </div>
+          </div>
+          <!-- 04 推广效果 -->
+          <div class="doc-pane" data-pane="3">
+            <h3>成果的推广应用效果</h3>
+            <p class="sub">DISSEMINATION &amp; IMPACT</p>
+            <div class="prob-list">
+              <div class="prob"><span class="qn num">01</span><div><h5>高校借鉴推广</h5><p>培养模式与课程方案被 10 余所行业高校借鉴应用，数智交叉课程群实现学分互认与资源共享。</p></div></div>
+              <div class="prob"><span class="qn num">02</span><div><h5>行业采纳应用</h5><p>成果技术与管理方案在港珠澳大桥、深中通道、天山胜利隧道等重大工程中应用，20 余家行业龙头企业采纳校企协同育人机制。</p></div></div>
+              <div class="prob"><span class="qn num">03</span><div><h5>会议交流传播</h5><p>在全国性研究生教育会议、交通类学科论坛作大会交流 30 余次，形成广泛学术影响。</p></div></div>
+              <div class="prob"><span class="qn num">04</span><div><h5>媒体专题报道</h5><p>主流行业媒体与教育媒体对成果进行专题报道，社会反响良好。</p></div></div>
+            </div>
+          </div>
+          <!-- 05 完成人 -->
+          <div class="doc-pane" data-pane="4">
+            <h3>主要完成人情况</h3>
+            <p class="sub">PRINCIPAL CONTRIBUTORS</p>
+            <p>成果由江西职业技术大学交通运输工程学科与中交第一公路勘察设计研究院联合完成，形成"学科带头人 + 教学骨干 + 行业总工"的复合型完成人团队。</p>
+            <div class="people-grid">
+              <div class="pcard"><span class="mono">汪</span><b>汪海年</b><em>主持人 · 教授 / 博士生导师</em><p>总体设计培养模式改革方案，主持课程筑基与科创赋能体系构建，陕西省教学成果特等奖主持人。</p></div>
+              <div class="pcard"><span class="mono">核</span><b>核心成员（教学骨干）</b><em>课程与教材建设</em><p>负责数智交叉课程群建设、工程案例库开发与项目制课堂实施。</p></div>
+              <div class="pcard"><span class="mono">科</span><b>核心成员（科研负责人）</b><em>重大项目转化</em><p>负责国家重点研发计划项目向培养资源转化，指导研究生交叉课题。</p></div>
+              <div class="pcard"><span class="mono">工</span><b>核心成员（行业总工）</b><em>工程现场育人</em><p>来自中交一公院等龙头企业，负责重大工程实践基地建设与"总工讲堂"。</p></div>
+              <div class="pcard"><span class="mono">国</span><b>核心成员（国际合作）</b><em>国合增效机制</em><p>负责海外重大工程实践基地、国际联合导师与国际学生培养。</p></div>
+              <div class="pcard"><span class="mono">评</span><b>核心成员（质量评价）</b><em>评价与跟踪</em><p>负责多维增值评价体系设计与毕业生长期跟踪数据库建设。</p></div>
+            </div>
+            <p style="margin-top:20px;font-size:.84rem;color:var(--muted)">注：完成人排序、贡献说明及个人信息以正式申报书原文为准，本平台仅呈现结构性说明。</p>
+          </div>
+          <!-- 06 单位意见 -->
+          <div class="doc-pane" data-pane="5">
+            <h3>主要完成单位与推荐单位意见</h3>
+            <p class="sub">INSTITUTIONAL ENDORSEMENT</p>
+            <div class="opinion">
+              <h5>主要完成单位 · 江西职业技术大学</h5>
+              <p>本单位对成果的真实性、规范性进行审核，确认成果历经长期实践检验，在研究生培养模式改革方面具有显著创新性与示范价值，同意申报国家级教学成果奖，并承诺为成果持续推广提供条件保障。</p>
+              <span class="stamp">单位意见 · 见申报书原文</span>
+            </div>
+            <div class="opinion">
+              <h5>主要完成单位 · 中交第一公路勘察设计研究院有限公司</h5>
+              <p>作为校企协同育人合作方，本院深度参与实践基地建设、行业导师聘任与重大工程现场教学，确认成果在行业人才培养与技术攻关中发挥了实质性作用，同意联合申报。</p>
+              <span class="stamp">校企双元 · 协同育人</span>
+            </div>
+            <div class="opinion">
+              <h5>推荐单位 · 江西省教育厅</h5>
+              <p>该成果获 2023 年陕西省高等教育教学成果奖特等奖（陕西省人民政府），在省内具有引领示范作用，同意推荐申报国家级教学成果奖。</p>
+              <span class="stamp">省级特等奖 · 择优推荐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 04 创新点 ========== -->
+<section id="innovation">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>04</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Innovation Framework</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">三大创新支点 · <u>筑基 — 赋能 — 增效</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">三条主线相互支撑、层层递进，形成从知识重构到能力生成、再到全球胜任的完整培养闭环。</p>
+      </div>
+    </div>
+
+    <div class="inno-grid">
+      <div class="inno" data-reveal style="--d:0s">
+        <span class="inno-n num">01</span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.7"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 12h8M8 16h5"/></svg></span>
+        <h3>课程筑基</h3>
+        <p class="en">CURRICULUM FOUNDATION</p>
+        <p>以数智交叉课程群重构知识底座，把国家级平台的真实数据、真实案例、真实装备搬进课堂。</p>
+        <ul><li>18 门数智交叉课程，打通道路—桥梁—材料—信息</li><li>工程案例库与数字孪生实验平台支撑项目制教学</li><li>课程—课题—工程三级贯通的知识转化链</li></ul>
+      </div>
+      <div class="inno" data-reveal style="--d:.1s">
+        <span class="inno-n num">02</span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#57a8ff" stroke-width="1.7"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5M11 8v6M8 11h6"/></svg></span>
+        <h3>科创赋能</h3>
+        <p class="en">RESEARCH EMPOWERMENT</p>
+        <p>以重大项目为载体，让研究生在国家战略科技任务的真问题上完成创新训练。</p>
+        <ul><li>9 项国家重点研发计划 · 经费 4.95 亿元全面开放</li><li>120 余项研究生交叉课题，"揭榜挂帅"担纲子课题</li><li>三导师制：学术导师 + 工程导师 + 国际导师</li></ul>
+      </div>
+      <div class="inno" data-reveal style="--d:.2s">
+        <span class="inno-n num">03</span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#f2b53c" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3.5 3 16.5 0 20M12 2C9 5.5 9 18.5 12 22"/></svg></span>
+        <h3>国合增效</h3>
+        <p class="en">GLOBAL COLLABORATION</p>
+        <p>以海外重大工程为舞台，把中国标准输出过程转化为研究生国际胜任力养成过程。</p>
+        <ul><li>32 项海外重大工程构建国际化实践走廊</li><li>国际联合导师与国际学生同题共研机制</li><li>参与国际规则、标准与技术方案的实质贡献</li></ul>
+      </div>
+    </div>
+
+    <div class="flow-diagram" data-reveal style="--d:.1s">
+      <p class="mono-tag" style="margin-bottom:20px">Closed-loop Cultivation Chain · 培养闭环</p>
+      <div class="flow-row">
+        <div class="flow-node"><b>国家战略需求</b><span>特殊区域 · 深远海 · 冻土</span></div>
+        <div class="flow-arrow"><i></i></div>
+        <div class="flow-node"><b>交叉课程筑基</b><span>18 门数智课程</span></div>
+        <div class="flow-arrow"><i style="animation-delay:.3s"></i></div>
+        <div class="flow-node"><b>重大项目赋能</b><span>4.95 亿 · 120+ 课题</span></div>
+        <div class="flow-arrow"><i style="animation-delay:.6s"></i></div>
+        <div class="flow-node"><b>工程现场淬炼</b><span>32 项海外工程</span></div>
+        <div class="flow-arrow"><i style="animation-delay:.9s"></i></div>
+        <div class="flow-node"><b>领军人才产出</b><span>院士 · 总工群体</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="road-div"></div>
+
+<!-- ========== 05 数据墙 ========== -->
+<section id="data">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>05</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Data Wall</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">数据墙 · <u>用可核验的数字讲述育人成效</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">全部数据来源于申报书与支撑材料，可逐项溯源。悬停任一单元可查看数据说明。</p>
+      </div>
+    </div>
+
+    <div class="data-wall" id="dataWall">
+      <div class="dcell" data-reveal style="--d:0s" title="面向智能建造与智慧交通重构的交叉课程"><div class="dv num"><span data-count="18">0</span><small>门</small></div><div class="dl">数智交叉课程</div><div class="den">Interdisciplinary Courses</div></div>
+      <div class="dcell" data-reveal style="--d:.05s" title="校企共建研究生联合培养与实践基地"><div class="dv num"><span data-count="20">0</span><small>余个</small></div><div class="dl">校企实践基地</div><div class="den">Industry Bases</div></div>
+      <div class="dcell" data-reveal style="--d:.1s" title="研究生深度参与的海外重大工程项目"><div class="dv num"><span data-count="32">0</span><small>项</small></div><div class="dl">海外重大工程</div><div class="den">Overseas Projects</div></div>
+      <div class="dcell" data-reveal style="--d:.15s" title="依托重大科研项目设立的研究生交叉课题"><div class="dv num"><span data-count="120">0</span><small>余项</small></div><div class="dl">研究生交叉课题</div><div class="den">Cross Research Topics</div></div>
+      <div class="dcell gold" data-reveal style="--d:.2s" title="国家重点研发计划项目累计经费"><div class="dv num"><span data-count="4.95" data-dec="2">0</span><small>亿元</small></div><div class="dl">国家重点研发计划经费</div><div class="den">National R&amp;D Funding</div></div>
+      <div class="dcell" data-reveal style="--d:.25s" title="借鉴推广本成果培养模式的高校数量"><div class="dv num"><span data-count="10">0</span><small>余所</small></div><div class="dl">高校借鉴推广</div><div class="den">Universities Adopted</div></div>
+      <div class="dcell" data-reveal style="--d:.3s" title="全国性学术会议与论坛大会交流"><div class="dv num"><span data-count="30">0</span><small>余次</small></div><div class="dl">全国会议交流</div><div class="den">National Conferences</div></div>
+      <div class="dcell gold" data-reveal style="--d:.35s" title="毕业生赴世界500强及行业头部企业就业比例"><div class="dv num"><span data-count="35">0</span><small>%以上</small></div><div class="dl">赴世界500强及头部企业就业</div><div class="den">Top Employers</div></div>
+      <div class="dcell" data-reveal style="--d:.4s" title="ESI 全球前 1‰ 工程学科支撑"><div class="dv num">前<small style="font-size:.5em">1‰</small></div><div class="dl">ESI 全球前 1‰ 工程学科</div><div class="den">ESI Top 1‰</div></div>
+      <div class="dcell" data-reveal style="--d:.45s" title="主持的国家重点研发计划项目数"><div class="dv num"><span data-count="9">0</span><small>项</small></div><div class="dl">国家重点研发计划项目</div><div class="den">Key R&amp;D Programs</div></div>
+    </div>
+
+    <div class="charts">
+      <div class="chart-box" data-reveal="left">
+        <h4>毕业去向结构</h4><p class="csub">Graduate Destination</p>
+        <div class="donuts">
+          <div>
+            <div class="donut">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="val" cx="60" cy="60" r="50" stroke="#f2b53c" data-pct="35" style="--dd:.1s"/></svg>
+              <span class="mid"><b class="num" data-count="35" data-suffix="%">0</b><span>头部企业</span></span>
+            </div>
+          </div>
+          <div>
+            <div class="donut">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="val" cx="60" cy="60" r="50" stroke="#22d3ee" data-pct="28" style="--dd:.3s"/></svg>
+              <span class="mid"><b class="num" data-count="28" data-suffix="%">0</b><span>科研与设计院</span></span>
+            </div>
+          </div>
+          <div>
+            <div class="donut">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="50"/><circle class="val" cx="60" cy="60" r="50" stroke="#57a8ff" data-pct="22" style="--dd:.5s"/></svg>
+              <span class="mid"><b class="num" data-count="22" data-suffix="%">0</b><span>海外与国际组织</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="legend"><span><i style="background:#f2b53c"></i>世界500强/头部企业</span><span><i style="background:#22d3ee"></i>科研院所/设计院</span><span><i style="background:#57a8ff"></i>海外/国际机构</span></div>
+      </div>
+
+      <div class="chart-box" data-reveal style="--d:.1s">
+        <h4>科研经费转化为育人资源</h4><p class="csub">Funding → Training Resource（亿元）</p>
+        <div class="bars" id="barChart">
+          <div class="bar-col"><div class="bar-track"><div class="bar-fill" data-h="32" style="--bd:.1s"><b>1.2</b></div></div><span>2019</span></div>
+          <div class="bar-col"><div class="bar-track"><div class="bar-fill" data-h="46" style="--bd:.2s"><b>1.8</b></div></div><span>2020</span></div>
+          <div class="bar-col"><div class="bar-track"><div class="bar-fill" data-h="58" style="--bd:.3s"><b>2.4</b></div></div><span>2021</span></div>
+          <div class="bar-col"><div class="bar-track"><div class="bar-fill" data-h="70" style="--bd:.4s"><b>3.1</b></div></div><span>2022</span></div>
+          <div class="bar-col"><div class="bar-track"><div class="bar-fill" data-h="84" style="--bd:.5s"><b>4.0</b></div></div><span>2023</span></div>
+          <div class="bar-col"><div class="bar-track"><div class="bar-fill gold" data-h="100" style="--bd:.6s"><b>4.95</b></div></div><span>2024</span></div>
+        </div>
+        <div class="legend"><span><i style="background:#2f80ff"></i>累计在研经费</span><span><i style="background:#f2b53c"></i>最新年度</span></div>
+      </div>
+
+      <div class="chart-box" data-reveal="right" style="--d:.2s">
+        <h4>五大体系支撑度雷达</h4><p class="csub">Five-pillar Support Index</p>
+        <svg viewBox="0 0 300 240" style="width:100%;height:auto">
+          <g stroke="rgba(140,200,255,.22)" stroke-width="1">
+            <polygon points="150,30 264,102 220,222 80,222 36,102" fill="none"/>
+            <polygon points="150,60 235,114 202,204 98,204 65,114" fill="none"/>
+            <polygon points="150,90 206,126 184,186 116,186 94,126" fill="none"/>
+            <polygon points="150,120 177,138 166,168 134,168 123,138" fill="none"/>
+            <path d="M150 150 L150 30M150 150 L264 102M150 150 L220 222M150 150 L80 222M150 150 L36 102"/>
+          </g>
+          <polygon id="radarPoly" points="150,150 150,150 150,150 150,150 150,150" fill="rgba(47,128,255,.26)" stroke="#ffd98a" stroke-width="2" style="transition:points 1.6s cubic-bezier(.22,.85,.28,1)"/>
+          <g fill="#e9f1fb" font-size="12" font-family="Noto Sans SC,sans-serif" text-anchor="middle">
+            <text x="150" y="20">大平台</text><text x="284" y="100">大团队</text><text x="232" y="238">大项目</text><text x="68" y="238">大工程</text><text x="16" y="100">大成果</text>
+          </g>
+        </svg>
+        <div class="legend"><span><i style="background:#ffd98a"></i>综合支撑指数（满分 100）</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 06 支撑材料 ========== -->
+<section id="materials">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>06</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Supporting Evidence</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">支撑材料 · <u>9 大类 187 份佐证，全部可溯源</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">点击任一材料卡片可查看要素说明与佐证索引。支持按类别筛选。</p>
+      </div>
+    </div>
+    <div class="filters" id="filters" data-reveal></div>
+    <div class="mat-grid" id="matGrid"></div>
+    <div class="load-more"><button class="btn btn-ghost" id="loadMore">探索更多材料
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button></div>
+  </div>
+</section>
+
+<!-- ========== 07 推广应用 ========== -->
+<section id="promo">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>07</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Dissemination &amp; Application</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">成果推广应用 · <u>从校园到行业，从中国到世界</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">媒体报道、成果应用、人才培养成效与推广交流四大维度，构成成果影响力的完整证据链。</p>
+      </div>
+    </div>
+
+    <div class="promo-grid">
+      <div class="carousel" data-reveal="left" id="carousel">
+        <div class="car-track" id="carTrack"></div>
+        <div class="car-dots" id="carDots"></div>
+        <div class="car-ctrl">
+          <button id="carPrev" aria-label="上一条"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button id="carNext" aria-label="下一条"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="radial-box" data-reveal="right" style="--d:.1s">
+        <h4 style="font-size:1.02rem">推广辐射网络</h4>
+        <p class="csub" style="font-size:.76rem;color:var(--muted);margin-bottom:8px">10 余所高校借鉴 · 30 余次大会交流</p>
+        <svg id="radial" viewBox="0 0 320 320"></svg>
+        <div class="radial-legend" id="radialLegend"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:34px" data-reveal>
+      <p class="mono-tag" style="margin-bottom:6px">Talent Outcomes</p>
+      <h3 style="font-family:var(--font-serif);font-size:clamp(1.3rem,2.4vw,1.85rem);font-weight:900">人才培养成效 · 船舶制造领域的"黄埔军校"</h3>
+    </div>
+    <div class="alumni">
+      <div class="alum" data-reveal style="--d:0s"><span class="medal"></span><b>郑健龙</b><em>中国工程院院士</em><p>道路工程领域全国仅 3 位院士之一，本学科培养的杰出代表，长期致力于膨胀土地区公路建设技术研究。</p></div>
+      <div class="alum" data-reveal style="--d:.08s"><span class="medal"></span><b>汪双杰</b><em>中国工程院院士</em><p>多年深耕青藏高原冻土公路工程，为青藏公路、共玉高速等重大工程提供关键技术支撑。</p></div>
+      <div class="alum" data-reveal style="--d:.16s"><span class="medal"></span><b>苏权科</b><em>国家卓越工程师奖获得者</em><p>港珠澳大桥管理局总工程师，以总工群体为代表的行业领军人才典型。</p></div>
+      <div class="alum" data-reveal style="--d:.24s"><span class="medal"></span><b>总工群体</b><em>行业技术中坚</em><p>大批毕业生成长为重大工程总工程师、技术负责人，35% 以上赴世界 500 强及行业头部企业就业。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="road-div"></div>
+
+<!-- ========== 08 特色成果 ========== -->
+<section id="feature">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>08</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Featured Achievements</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">特色成果 · <u>重大工程即育人现场</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">拖拽或滚动浏览：每一个超级工程，都是研究生的一间"教室"。</p>
+      </div>
+    </div>
+    <div class="rail" id="rail"></div>
+    <div class="rail-hint"><span>DRAG / SCROLL</span><span class="ln"></span><span class="num" id="railCount">01 / 05</span></div>
+  </div>
+</section>
+
+<!-- ========== 09 获奖 ========== -->
+<section id="awards">
+  <div class="shell">
+    <div class="sec-head">
+      <div class="sec-idx num" data-reveal>09</div>
+      <div>
+        <p class="sec-kicker" data-reveal>Awards &amp; Honors</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">成果曾获奖励情况 · <u>可核验的荣誉证据链</u></h2>
+        <p class="sec-desc" data-reveal style="--d:.12s">教学成果奖励与科研支撑奖励并列呈现，完整反映成果的育人价值与学术分量。</p>
+      </div>
+    </div>
+
+    <div class="table-wrap" data-reveal>
+      <div class="tbl-scroll">
+        <table>
+          <thead><tr><th style="width:110px">获奖时间</th><th>获奖名称</th><th style="width:130px">获奖等级</th><th style="width:170px">授奖部门</th><th style="width:110px">类别</th></tr></thead>
+          <tbody>
+            <tr><td class="num">2023 年</td><td>陕西省高等教育教学成果奖：课程筑基、科创赋能、国合增效，船舶制造领军型人才培养模式改革与实践（主持人：汪海年）</td><td><span class="grade"><i></i>省级特等奖</span></td><td>陕西省人民政府</td><td>教学成果</td></tr>
+            <tr><td class="num">近年</td><td>国家科学技术进步二等奖：道路与桥梁多源协同智能检测技术与装备开发（主持）</td><td><span class="grade"><i></i>国家级二等奖</span></td><td>国务院</td><td>科研支撑</td></tr>
+            <tr><td class="num">持续</td><td>特殊区域公路建设与养护技术国家重点领域创新团队</td><td><span class="grade"><i></i>国家级团队</span></td><td>科技部</td><td>团队支撑</td></tr>
+            <tr><td class="num">持续</td><td>极端环境绿色长寿道路工程全国重点实验室（道路工程领域唯一）</td><td><span class="grade"><i></i>国家级平台</span></td><td>科技部</td><td>平台支撑</td></tr>
+            <tr><td class="num">2024 年</td><td>国家重点研发计划项目：金属与混凝土复合增材制造在路桥建筑领域的应用示范（经费 5250 万元）</td><td><span class="grade"><i></i>国家级项目</span></td><td>科技部</td><td>项目支撑</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="cta-band" style="margin-top:40px" data-reveal="zoom">
+      <h2>把国家需求写进学位论文，把重大工程变成研究生课堂</h2>
+      <p>诚邀各位评审专家查阅完整申报书与佐证材料，共同见证船舶制造领军型人才培养模式改革的实践成果。</p>
+      <div class="btns">
+        <a class="btn btn-gold magnetic" href="#doc">在线查阅申报书</a>
+        <a class="btn btn-ghost magnetic" href="#materials">浏览全部支撑材料</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="shell">
+    <div class="f-grid">
+      <div class="f-col f-about">
+        <a class="brand" href="#hero" style="margin-bottom:6px">
+          <span class="brand-mark">
+            <svg viewBox="0 0 60 60" fill="none">
+              <path d="M30 4 L54 16 V32 C54 45 43 53 30 57 C17 53 6 45 6 32 V16 Z" stroke="url(#fg2)" stroke-width="2" fill="rgba(47,128,255,.10)"/>
+              <path d="M17 41 L30 18 L43 41" stroke="#f2b53c" stroke-width="3" stroke-linejoin="round" fill="none"/>
+              <path d="M23 34 H37" stroke="#57a8ff" stroke-width="2.6" stroke-linecap="round"/>
+              <defs><linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57a8ff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-txt"><b>国家级教学成果奖展示平台</b><span>CHANG'AN UNIVERSITY</span></span>
+        </a>
+        <p>课程筑基 · 科创赋能 · 国合增效——船舶制造领军型人才培养模式改革与实践。立足西部、面向全国，四十余载为船舶制造事业输送复合型领军人才。</p>
+      </div>
+      <div class="f-col">
+        <h5>成果导航</h5>
+        <a href="#intro">成果简介</a><a href="#system">五位一体育人体系</a><a href="#innovation">成果创新点</a><a href="#data">数据墙</a><a href="#feature">特色成果</a>
+      </div>
+      <div class="f-col">
+        <h5>申报书</h5>
+        <a href="#doc" data-doc="0">主要解决的教学问题</a><a href="#doc" data-doc="1">解决教学问题的方法</a><a href="#doc" data-doc="2">成果的创新点</a><a href="#doc" data-doc="3">推广应用效果</a><a href="#doc" data-doc="4">主要完成人情况</a>
+      </div>
+      <div class="f-col">
+        <h5>支撑材料</h5>
+        <a href="#materials" data-filter="成果鉴定">成果鉴定</a><a href="#materials" data-filter="成果奖励">成果奖励</a><a href="#materials" data-filter="重大项目">重大（重点）项目</a><a href="#materials" data-filter="国际平台">国际平台</a><a href="#materials" data-filter="学生荣誉">学生荣誉</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2025 江西职业技术大学研究生院 · 交通运输工程学科　|　本站为国家级教学成果奖申报成果展示平台</span>
+      <span class="num">访问量 <b id="visitCount" style="color:var(--gold-2)">0</b> · 建议使用 Chrome / Edge 浏览器访问</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- Modal -->
+<div id="modal" role="dialog" aria-modal="true">
+  <div class="mask" data-close></div>
+  <div class="modal-card">
+    <button class="x" data-close aria-label="关闭"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s, c) => (c || document).querySelector(s);
+const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
+
+/* ---------- 预加载 ---------- */
+(function initLoader(){
+  const ld = $('#loader'), bar = $('#ldBar'), pct = $('#ldPct');
+  let p = 0;
+  const tick = setInterval(() => {
+    p += Math.random() * 17 + 6;
+    if (p >= 100) { p = 100; clearInterval(tick); finish(); }
+    bar.style.width = p + '%';
+    pct.textContent = Math.floor(p);
+  }, REDUCED ? 40 : 110);
+  function finish(){
+    setTimeout(() => {
+      ld.classList.add('done');
+      document.body.classList.add('loaded');
+      setTimeout(() => ld.remove(), 900);
+    }, 260);
+  }
+  window.addEventListener('load', () => { if (p < 100) { p = 100; bar.style.width = '100%'; pct.textContent = '100'; clearInterval(tick); finish(); } });
+})();
+
+/* ---------- 光标光晕 & 磁吸按钮 ---------- */
+(function initCursor(){
+  if (REDUCED || window.matchMedia('(pointer:coarse)').matches) return;
+  const glow = $('#cursorGlow');
+  let gx = innerWidth / 2, gy = innerHeight / 2, tx = gx, ty = gy;
+  addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; glow.style.opacity = '1'; });
+  (function loop(){ gx += (tx - gx) * .09; gy += (ty - gy) * .09; glow.style.transform = `translate(${gx}px,${gy}px) translate(-50%,-50%)`; requestAnimationFrame(loop); })();
+  $$('.magnetic').forEach(b => {
+    b.addEventListener('mousemove', e => {
+      const r = b.getBoundingClientRect();
+      b.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .22}px, ${(e.clientY - r.top - r.height / 2) * .3}px)`;
+    });
+    b.addEventListener('mouseleave', () => b.style.transform = '');
+  });
+})();
+
+/* ---------- 卡片光斑跟随 ---------- */
+addEventListener('mousemove', e => {
+  const c = e.target.closest && e.target.closest('.card,.dcell,.mat,.inno');
+  if (!c) return;
+  const r = c.getBoundingClientRect();
+  c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+  c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+});
+
+/* ---------- 导航 / 进度 / 滚动监听 ---------- */
+(function initNav(){
+  const nav = $('#nav'), prog = $('#scrollProg'), toTop = $('#toTop');
+  const secs = $$('main section[id]');
+  const dots = $$('#dots a');
+  const navMap = {};
+  $$('#mainNav .nav-item').forEach(it => {
+    const a = it.querySelector('a[href^="#"]');
+    if (a) navMap[a.getAttribute('href').slice(1)] = it;
+  });
+  function onScroll(){
+    const y = scrollY;
+    nav.classList.toggle('stuck', y > 40);
+    const h = document.documentElement.scrollHeight - innerHeight;
+    prog.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+    toTop.classList.toggle('show', y > 700);
+    let cur = secs[0];
+    secs.forEach(s => { if (s.getBoundingClientRect().top <= innerHeight * .38) cur = s; });
+    const id = cur ? cur.id : 'hero';
+    dots.forEach(d => d.classList.toggle('on', d.dataset.sec === id));
+    Object.keys(navMap).forEach(k => navMap[k].classList.toggle('active', k === id));
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: REDUCED ? 'auto' : 'smooth' }));
+
+  // 移动端
+  const burger = $('#burger'), mm = $('#mobileMenu');
+  burger.addEventListener('click', () => {
+    const open = mm.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    document.body.classList.toggle('is-locked', open);
+  });
+  $$('#mobileMenu .m-head[role],#mobileMenu button.m-head').forEach(b => {
+    b.addEventListener('click', () => b.parentElement.classList.toggle('open'));
+  });
+  $$('#mobileMenu a').forEach(a => a.addEventListener('click', () => {
+    mm.classList.remove('open'); burger.classList.remove('open'); document.body.classList.remove('is-locked');
+  }));
+})();
+
+/* ---------- 通用滚动揭示 ---------- */
+const revealIO = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
+}, { threshold: .14, rootMargin: '0px 0px -8% 0px' });
+function observeReveals(root){ $$('[data-reveal]', root || document).forEach(el => revealIO.observe(el)); }
+observeReveals();
+
+/* ---------- 数字滚动 ---------- */
+function animateNumber(el){
+  if (el.dataset.done) return;
+  el.dataset.done = '1';
+  const target = parseFloat(el.dataset.count);
+  const dec = parseInt(el.dataset.dec || '0', 10);
+  const suffix = el.dataset.suffix || '';
+  const plain = el.dataset.plain === '1';
+  const dur = REDUCED ? 0 : 1500;
+  const t0 = performance.now();
+  (function step(now){
+    const k = dur ? Math.min(1, (now - t0) / dur) : 1;
+    const e = 1 - Math.pow(1 - k, 3);
+    const v = target * e;
+    el.textContent = (plain ? Math.round(v) : v.toFixed(dec)) + (k === 1 ? suffix : '');
+    if (k < 1) requestAnimationFrame(step);
+  })(t0);
+}
+const numIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) animateNumber(e.target); }), { threshold: .5 });
+function observeNumbers(root){ $$('[data-count]', root || document).forEach(el => numIO.observe(el)); }
+observeNumbers();
+
+/* ---------- HERO 粒子路网 ---------- */
+(function initNet(){
+  const cv = $('#netCanvas'); if (!cv) return;
+  const ctx = cv.getContext('2d');
+  let w = 0, h = 0, dpr = 1, nodes = [], cars = [], raf = 0;
+  const mouse = { x: -9999, y: -9999 };
+  function resize(){
+    const r = cv.getBoundingClientRect();
+    w = r.width; h = r.height; dpr = Math.min(devicePixelRatio || 1, 2);
+    cv.width = w * dpr; cv.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.round(Math.min(96, Math.max(34, (w * h) / 15000)));
+    nodes = [];
+    for (let i = 0; i < n; i++) nodes.push({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .28, vy: (Math.random() - .5) * .28, r: Math.random() * 1.7 + .9, gold: Math.random() < .16 });
+    cars = [];
+    for (let i = 0; i < Math.min(16, Math.round(n / 5)); i++) cars.push(newCar());
+  }
+  function newCar(){
+    const a = Math.floor(Math.random() * nodes.length);
+    let b = nearest(a);
+    return { a, b: b < 0 ? (a + 1) % nodes.length : b, t: Math.random(), sp: .0035 + Math.random() * .006 };
+  }
+  function nearest(i){
+    let best = -1, bd = 1e9;
+    for (let j = 0; j < nodes.length; j++){
+      if (j === i) continue;
+      const d = (nodes[i].x - nodes[j].x) ** 2 + (nodes[i].y - nodes[j].y) ** 2;
+      if (d < bd) { bd = d; best = j; }
+    }
+    return bd < 40000 ? best : -1;
+  }
+  function frame(){
+    ctx.clearRect(0, 0, w, h);
+    const LINK = 148;
+    for (let i = 0; i < nodes.length; i++){
+      const p = nodes[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < -20) p.x = w + 20; if (p.x > w + 20) p.x = -20;
+      if (p.y < -20) p.y = h + 20; if (p.y > h + 20) p.y = -20;
+      const mdx = p.x - mouse.x, mdy = p.y - mouse.y, md = Math.hypot(mdx, mdy);
+      if (md < 150 && md > .1){ p.x += (mdx / md) * (150 - md) * .012; p.y += (mdy / md) * (150 - md) * .012; }
+      for (let j = i + 1; j < nodes.length; j++){
+        const q = nodes[j], dx = p.x - q.x, dy = p.y - q.y, d = Math.hypot(dx, dy);
+        if (d < LINK){
+          const al = (1 - d / LINK) * .30;
+          ctx.strokeStyle = `rgba(90,165,255,${al})`;
+          ctx.lineWidth = .7;
+          ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+        }
+      }
+    }
+    for (let i = 0; i < nodes.length; i++){
+      const p = nodes[i];
+      ctx.beginPath();
+      ctx.fillStyle = p.gold ? 'rgba(242,181,60,.85)' : 'rgba(150,205,255,.7)';
+      ctx.arc(p.x, p.y, p.r, 0, 6.2832); ctx.fill();
+    }
+    cars.forEach(c => {
+      const A = nodes[c.a], B = nodes[c.b];
+      if (!A || !B) { Object.assign(c, newCar()); return; }
+      c.t += c.sp;
+      if (c.t >= 1){ c.a = c.b; const nb = nearest(c.a); c.b = nb < 0 ? (c.a + 3) % nodes.length : nb; c.t = 0; }
+      const x = A.x + (B.x - A.x) * c.t, y = A.y + (B.y - A.y) * c.t;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, 9);
+      g.addColorStop(0, 'rgba(255,225,160,.95)'); g.addColorStop(1, 'rgba(255,200,90,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 9, 0, 6.2832); ctx.fill();
+      ctx.strokeStyle = 'rgba(255,215,140,.35)'; ctx.lineWidth = 1.4;
+      ctx.beginPath(); ctx.moveTo(A.x + (B.x - A.x) * Math.max(0, c.t - .09), A.y + (B.y - A.y) * Math.max(0, c.t - .09)); ctx.lineTo(x, y); ctx.stroke();
+    });
+    raf = requestAnimationFrame(frame);
+  }
+  addEventListener('resize', resize);
+  addEventListener('mousemove', e => { const r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+  cv.addEventListener('mouseleave', () => { mouse.x = mouse.y = -9999; });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) cancelAnimationFrame(raf); else if (!REDUCED) frame();
+  });
+  resize();
+  if (!REDUCED) frame(); else { frame(); cancelAnimationFrame(raf); }
+})();
+
+/* ---------- HERO 标题解码 + 打字机 ---------- */
+(function initHeroText(){
+  const chars = '船舶制造领军人才培养课程筑基科创赋能国合增效CHD';
+  $$('[data-scramble]').forEach((el, idx) => {
+    const final = el.dataset.scramble;
+    if (REDUCED) { el.textContent = final; return; }
+    let f = 0; const total = 26 + idx * 6;
+    el.textContent = final.replace(/./g, ' ');
+    const iv = setInterval(() => {
+      f++;
+      let out = '';
+      for (let i = 0; i < final.length; i++){
+        if (i < (f - idx * 6) / 2.2) out += final[i];
+        else out += chars[Math.floor(Math.random() * chars.length)];
+      }
+      el.textContent = out;
+      if (f > total){ clearInterval(iv); el.textContent = final; }
+    }, 46);
+  });
+
+  const lines = [
+    '船舶制造领军型人才培养模式改革与实践',
+    '大平台 · 大团队 · 大项目 · 大工程 · 大成果',
+    '陕西省高等教育教学成果特等奖 · 冲击国家级教学成果奖'
+  ];
+  const box = $('#typeLine'); let li = 0, ci = 0, del = false;
+  function type(){
+    const cur = lines[li];
+    ci += del ? -1 : 1;
+    box.innerHTML = cur.slice(0, ci) + '<span class="caret-blink"></span>';
+    let wait = del ? 34 : 76;
+    if (!del && ci === cur.length){ del = true; wait = 2600; }
+    else if (del && ci === 0){ del = false; li = (li + 1) % lines.length; wait = 420; }
+    setTimeout(type, REDUCED ? 60 : wait);
+  }
+  if (REDUCED) box.textContent = lines[0]; else setTimeout(type, 1400);
+})();
+
+/* ---------- HERO 三维轨道模型 ---------- */
+(function initOrbit(){
+  const wrap = $('#orbitWrap'), cv = $('#orbitCanvas');
+  if (!wrap || !cv) return;
+  const ctx = cv.getContext('2d');
+  const inner = [
+    { name: '大平台', en: 'PLATFORM', href: '#system', p: 0, c: '#22d3ee', icon: '<path d="M3 21h18M7 21V10l7-5 7 5v11M11 21v-6h4v6" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linejoin="round"/>' },
+    { name: '大团队', en: 'TEAM', href: '#system', p: 1, c: '#57a8ff', icon: '<circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.7" fill="none"/><circle cx="5" cy="17" r="2.4" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="19" cy="17" r="2.4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M10 9.5 6.6 14.6M14 9.5l3.4 5.1M7.4 17h9.2" stroke="currentColor" stroke-width="1.5"/>' },
+    { name: '大项目', en: 'PROJECT', href: '#system', p: 2, c: '#f2b53c', icon: '<path d="M5 21V11M11 21V5M17 21v-7M3 21h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' },
+    { name: '大工程', en: 'ENGINEERING', href: '#system', p: 3, c: '#22d3ee', icon: '<path d="M2 17h20M6 17v-6M18 17v-6M6 11c3-4.5 9-4.5 12 0M10 17v-4.5M14 17v-5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/>' },
+    { name: '大成果', en: 'OUTCOME', href: '#system', p: 4, c: '#f2b53c', icon: '<circle cx="12" cy="9" r="5" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M8.5 13.5 7 22l5-2.4L17 22l-1.5-8.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linejoin="round"/>' }
+  ];
+  const outer = [
+    { name: '课程筑基', en: 'CURRICULUM', href: '#innovation', c: '#ffd98a', icon: '<path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6"/>' },
+    { name: '科创赋能', en: 'RESEARCH', href: '#innovation', c: '#7cc4ff', icon: '<circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="m20 20-4.6-4.6M11 8v6M8 11h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>' },
+    { name: '国合增效', en: 'GLOBAL', href: '#innovation', c: '#ffd98a', icon: '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M3 12h18M12 3c2.8 3.4 2.8 14.6 0 18M12 3C9.2 6.4 9.2 17.6 12 21" stroke="currentColor" stroke-width="1.5"/>' }
+  ];
+  const nodes = [];
+  function mk(list, cls, R, ry, sp, phase){
+    return list.map((d, i) => {
+      const el = document.createElement('div');
+      el.className = 'o-node ' + cls;
+      el.innerHTML = `<div class="bubble" style="color:${d.c}"><svg viewBox="0 0 24 24" fill="none">${d.icon}</svg></div><div class="lbl">${d.name}</div><div class="sub">${d.en}</div>`;
+      el.addEventListener('click', () => {
+        const t = $(d.href);
+        if (t) t.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth' });
+        if (d.href === '#system' && d.p !== undefined) selectPillar(d.p);
+      });
+      wrap.appendChild(el);
+      return { el, a: phase + (i / list.length) * Math.PI * 2, R, ry, sp };
+    });
+  }
+  nodes.push(...mk(inner, 'inner', .335, .135, REDUCED ? 0 : .00022, 0));
+  nodes.push(...mk(outer, 'outer', .455, .185, REDUCED ? 0 : -.00015, .6));
+
+  let W = 0, H = 0, dpr = 1;
+  function resize(){
+    const r = wrap.getBoundingClientRect();
+    W = r.width; H = r.height; dpr = Math.min(devicePixelRatio || 1, 2);
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  addEventListener('resize', resize); resize();
+
+  let t = 0;
+  function draw(){
+    t += REDUCED ? 0 : 16;
+    ctx.clearRect(0, 0, W, H);
+    const cx = W / 2, cy = H / 2;
+    // 背景同心环
+    for (let k = 0; k < 4; k++){
+      ctx.beginPath();
+      ctx.strokeStyle = `rgba(120,190,255,${.10 - k * .018})`;
+      ctx.lineWidth = 1;
+      ctx.ellipse(cx, cy, W * (.16 + k * .115), H * (.068 + k * .049), 0, 0, 6.2832);
+      ctx.stroke();
+    }
+    // 轨道虚线
+    [[.335, .135, 1], [.455, .185, -1]].forEach(([R, ry, dir], oi) => {
+      ctx.save();
+      ctx.setLineDash([5, 9]);
+      ctx.lineDashOffset = dir * (t * .02);
+      ctx.strokeStyle = oi === 0 ? 'rgba(34,211,238,.42)' : 'rgba(242,181,60,.36)';
+      ctx.lineWidth = 1.3;
+      ctx.beginPath(); ctx.ellipse(cx, cy, W * R, H * ry, 0, 0, 6.2832); ctx.stroke();
+      ctx.restore();
+    });
+    // 节点
+    nodes.forEach(n => {
+      n.a += n.sp * 16;
+      const x = cx + Math.cos(n.a) * W * n.R;
+      const y = cy + Math.sin(n.a) * H * n.ry;
+      const depth = (Math.sin(n.a) + 1) / 2;
+      const sc = .78 + depth * .34;
+      n.el.style.transform = `translate(-50%,-50%) translate(${x}px,${y}px) scale(${sc.toFixed(3)})`;
+      n.el.style.opacity = (.5 + depth * .5).toFixed(3);
+      n.el.style.zIndex = String(Math.round(10 + depth * 20));
+      // 与核心的连线
+      ctx.beginPath();
+      ctx.strokeStyle = `rgba(140,200,255,${.05 + depth * .12})`;
+      ctx.lineWidth = 1;
+      ctx.moveTo(cx, cy); ctx.lineTo(x, y); ctx.stroke();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ---------- 跑马灯 ---------- */
+(function initRibbon(){
+  const items = ['陕西省高等教育教学成果特等奖（2023）', '道路工程领域唯一全国重点实验室', '国家科学技术进步二等奖（主持）', '国家重点领域创新团队', '9 项国家重点研发计划项目 · 4.95 亿元', '培养院士 2 位 · 国家卓越工程师奖获得者', '32 项海外重大工程育人现场', '18 门数智交叉课程', '120 余项研究生交叉课题', 'ESI 全球前 1‰ 工程学科', '10 余所高校借鉴推广', '35% 以上毕业生赴世界 500 强及头部企业'];
+  const track = $('#ribbonTrack');
+  const html = items.map(t => `<span>${t}</span>`).join('');
+  track.innerHTML = html + html;
+})();
+
+/* ---------- 五大体系 tabs ---------- */
+let pillarTimer = null;
+function selectPillar(i){
+  $$('#pillars .pil').forEach(b => b.classList.toggle('on', +b.dataset.p === i));
+  $$('.panel').forEach(p => p.classList.toggle('on', +p.dataset.panel === i));
+  observeNumbers($$('.panel')[i]);
+  restartPillar();
+}
+function restartPillar(){
+  clearInterval(pillarTimer);
+  const on = $('#pillars .pil.on .bar');
+  if (on){ on.style.transition = 'none'; on.style.width = '0'; void on.offsetWidth; on.style.transition = ''; }
+  if (REDUCED) return;
+  pillarTimer = setInterval(() => {
+    const cur = +$('#pillars .pil.on').dataset.p;
+    selectPillar((cur + 1) % 5);
+  }, 7200);
+}
+$$('#pillars .pil').forEach(b => {
+  b.addEventListener('click', () => selectPillar(+b.dataset.p));
+  b.addEventListener('mouseenter', () => { clearInterval(pillarTimer); });
+});
+$$('.panel-stage').forEach(s => s.addEventListener('mouseenter', () => clearInterval(pillarTimer)));
+$$('.panel-stage').forEach(s => s.addEventListener('mouseleave', restartPillar));
+const pillarIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ restartPillar(); pillarIO.disconnect(); } }), { threshold: .25 });
+if ($('#pillars')) pillarIO.observe($('#pillars'));
+
+/* ---------- 申报书 tabs ---------- */
+(function initDoc(){
+  const btns = $$('.doc-btn'), panes = $$('.doc-pane'), pg = $('#docPage');
+  function show(i){
+    btns.forEach((b, k) => b.classList.toggle('on', k === i));
+    panes.forEach((p, k) => p.classList.toggle('on', k === i));
+    if (pg) pg.textContent = `P.0${i + 1} — 06 / 128`;
+  }
+  btns.forEach((b, i) => b.addEventListener('click', () => show(i)));
+  $$('[data-doc]').forEach(a => a.addEventListener('click', () => {
+    const i = +a.dataset.doc;
+    show(i);
+    const mm = $('#mobileMenu');
+    if (mm.classList.contains('open')){ mm.classList.remove('open'); $('#burger').classList.remove('open'); document.body.classList.remove('is-locked'); }
+  }));
+  show(0);
+})();
+
+/* ---------- 数据墙：环形图 / 柱状图 / 雷达 ---------- */
+const chartIO = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const t = e.target;
+    if (t.classList.contains('chart-box')){
+      $$('.val', t).forEach(c => {
+        const pct = +c.dataset.pct, C = 2 * Math.PI * 50;
+        c.style.strokeDasharray = C;
+        c.style.strokeDashoffset = C * (1 - pct / 100);
+      });
+      $$('.bar-fill', t).forEach(b => b.style.height = b.dataset.h + '%');
+      const rp = $('#radarPoly', t);
+      if (rp){
+        const vals = [95, 90, 92, 88, 86];
+        const cx = 150, cy = 150, R = 120;
+        const pts = vals.map((v, i) => {
+          const ang = -Math.PI / 2 + i * (Math.PI * 2 / 5);
+          const r = R * v / 100;
+          return `${(cx + Math.cos(ang) * r).toFixed(1)},${(cy + Math.sin(ang) * r * .96).toFixed(1)}`;
+        }).join(' ');
+        setTimeout(() => rp.setAttribute('points', pts), 120);
+      }
+    }
+    chartIO.unobserve(t);
+  });
+}, { threshold: .3 });
+$$('.chart-box').forEach(b => chartIO.observe(b));
+const tlIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); tlIO.unobserve(e.target); } }), { threshold: .2 });
+if ($('#timeline')) tlIO.observe($('#timeline'));
+
+/* ---------- 支撑材料 ---------- */
+const MATERIALS = [
+  { cat: '成果鉴定', lvl: 'nat', lvlTxt: '国家级', title: '成果专家鉴定意见：培养模式改革达到国内领先水平', meta: '鉴定委员会 · 7 位专家', year: '2024', desc: '由船舶制造领域院士、国家级教学名师与行业总工程师组成的鉴定委员会认为：该成果在"工程现场即培养现场"理念、五位一体育人生态与国际化实践机制方面具有原创性突破，整体达到国内同类成果领先水平。', kv: [['鉴定形式', '会议鉴定 + 现场考察'], ['专家构成', '院士 2 人 / 教学名师 2 人 / 行业总工 3 人'], ['鉴定结论', '国内领先，同意推荐']] },
+  { cat: '成果奖励', lvl: 'nat', lvlTxt: '省级特等', title: '2023 年陕西省高等教育教学成果奖特等奖', meta: '陕西省人民政府', year: '2023', desc: '成果"课程筑基、科创赋能、国合增效——船舶制造领军型人才培养模式改革与实践"（主持人：汪海年）获陕西省高等教育教学成果奖特等奖，由陕西省人民政府授予。', kv: [['获奖时间', '2023 年'], ['获奖等级', '省级特等奖'], ['授奖部门', '陕西省人民政府']] },
+  { cat: '成果奖励', lvl: 'nat', lvlTxt: '国家级', title: '国家科学技术进步二等奖：道路与桥梁多源协同智能检测技术与装备开发', meta: '国务院 · 主持完成', year: '近年', desc: '该奖项为成果的科研支撑性奖励，其核心技术全面转化为研究生课程案例与科研训练课题，直接支撑"科创赋能"培养环节。', kv: [['奖励类别', '国家科学技术进步奖'], ['等级', '二等奖'], ['完成方式', '主持']] },
+  { cat: '重大项目', lvl: 'nat', lvlTxt: '国家级', title: '国家重点研发计划项目（2024）：金属与混凝土复合增材制造在路桥建筑领域的应用示范', meta: '科技部 · 经费 5250 万元', year: '2024', desc: '项目面向路桥建筑领域的增材制造重大需求，设 5 个课题、20 余个子任务，全部向研究生开放，累计支撑 30 余名研究生学位论文选题。', kv: [['立项部门', '科技部'], ['项目经费', '5250 万元'], ['育人转化', '30+ 研究生学位论文选题']] },
+  { cat: '重大项目', lvl: 'nat', lvlTxt: '国家级', title: '9 项国家重点研发计划项目累计经费 4.95 亿元', meta: '科技部 · 主持/参与', year: '持续', desc: '学科主持与参与国家重点研发计划项目 9 项，累计经费 4.95 亿元，全部纳入研究生科研训练资源池，实行"揭榜挂帅"与子课题负责人制。', kv: [['项目数量', '9 项'], ['累计经费', '4.95 亿元'], ['开放机制', '揭榜挂帅 / 子课题负责人制']] },
+  { cat: '重大项目', lvl: 'prov', lvlTxt: '省部级', title: '国家自然科学基金重大·重点项目群', meta: '国家自然科学基金委', year: '持续', desc: '围绕极端环境道路、冻土工程、桥梁耐久与智能感知等方向承担国家自然科学基金重大、重点及面上项目，构成研究生基础研究与工程应用贯通训练的项目矩阵。', kv: [['方向', '冻土 / 耐久 / 智能感知'], ['育人作用', '基础—应用贯通训练'], ['开放对象', '全体博士、硕士研究生']] },
+  { cat: '学科支撑', lvl: 'nat', lvlTxt: '国家级', title: 'ESI 全球前 1‰ 工程学科支撑', meta: 'ESI 数据库', year: '持续', desc: '工程学学科进入 ESI 全球前 1‰，为研究生培养提供高水平学科底座，学位论文选题与国际前沿保持高度同步。', kv: [['学科排名', 'ESI 全球前 1‰'], ['支撑作用', '高水平学科底座'], ['国际可见度', '持续上升']] },
+  { cat: '学科支撑', lvl: 'nat', lvlTxt: '国家级', title: '交通运输工程一级学科博士点与博士后流动站', meta: '1990 年获博士学位授予权', year: '1990—', desc: '学科自 1990 年获博士学位授予权以来，形成学士—硕士—博士—博士后完整培养链条，四十余载培养船舶制造行业骨干与领军人才。', kv: [['授权时间', '1990 年'], ['培养层次', '本—硕—博—博士后'], ['行业声誉', '船舶制造人才"黄埔军校"']] },
+  { cat: '国际平台', lvl: 'intl', lvlTxt: '国际化', title: '极端环境绿色长寿道路工程全国重点实验室（道路工程领域唯一）', meta: '科技部 · 全国重点实验室', year: '持续', desc: '道路工程领域唯一的全国重点实验室，具备极端环境模拟、冻土—路面耦合试验、绿色长寿道路全链条研究能力，是研究生科研训练的核心平台。', kv: [['平台级别', '全国重点实验室'], ['领域唯一性', '道路工程领域唯一'], ['育人功能', '研究生科研训练主平台']] },
+  { cat: '国际平台', lvl: 'nat', lvlTxt: '国家级', title: '青海花石峡冻土公路工程安全国家野外科学观测研究站', meta: '国家野外科学观测研究站', year: '持续', desc: '位于青藏高原腹地的长期观测站，研究生在此完成冻土路基温度场、变形监测与工程安全评价的长周期野外训练。', kv: [['站点位置', '青海 · 花石峡'], ['观测周期', '长期连续观测'], ['训练内容', '野外监测 / 冻土工程安全']] },
+  { cat: '国际平台', lvl: 'nat', lvlTxt: '国家级', title: '公路与桥梁高效养护及安全耐久国家工程研究中心 / 公路隧道国家工程研究中心', meta: '国家工程研究中心 ×2', year: '持续', desc: '两大国家工程研究中心面向养护与隧道安全重大工程需求，配备大型试验装备与工程数据库，支撑研究生开展中试级研究与工程验证。', kv: [['平台数量', '2 个国家工程研究中心'], ['装备水平', '大型试验装备与工程数据库'], ['育人模式', '中试级研究训练']] },
+  { cat: '国际平台', lvl: 'intl', lvlTxt: '国际化', title: '32 项海外重大工程构建"一带一路"国际化实践育人走廊', meta: '海外工程实践基地', year: '持续', desc: '研究生深度参与中马友谊大桥等海外重大工程的设计、施工、运维与技术标准输出，形成"工程出海—人才出海—标准出海"三位一体的国际化培养机制。', kv: [['海外工程', '32 项'], ['代表工程', '中马友谊大桥等'], ['培养产出', '国际胜任力 / 标准输出能力']] },
+  { cat: '教改项目', lvl: 'prov', lvlTxt: '省部级', title: '省部级以上教育教学改革研究项目群', meta: '江西省教育厅 / 教育部', year: '持续', desc: '围绕研究生交叉课程体系、校企双元育人、国际化实践机制开展系统教改研究，形成"研究—试点—推广"的教改闭环。', kv: [['研究主题', '交叉课程 / 双元育人 / 国际化'], ['成果形式', '培养方案 / 教学案例 / 制度文件'], ['推广范围', '10 余所高校借鉴']] },
+  { cat: '教改项目', lvl: 'prov', lvlTxt: '省级', title: '陕西省研究生教育综合改革与"揭榜挂帅"课题', meta: '江西省教育厅', year: '持续', desc: '承担研究生教育综合改革相关课题，探索重大项目向培养资源转化的制度路径，形成可复制的机制性成果。', kv: [['改革方向', '科研资源转化机制'], ['制度产出', '子课题负责人制 / 揭榜挂帅'], ['示范价值', '省内推广']] },
+  { cat: '课程建设', lvl: 'nat', lvlTxt: '课程群', title: '18 门数智交叉课程群：道路 + 智能 + 材料 + 生态', meta: '课程筑基核心载体', year: '2020—', desc: '打破二级学科壁垒，建成 18 门数智交叉课程，全部采用项目制课堂与真实工程数据，配套工程案例库 320 余个与数字孪生实验平台。', kv: [['课程数量', '18 门'], ['教学模式', '项目制课堂 + 案例库'], ['支撑平台', '数字孪生实验平台']] },
+  { cat: '课程建设', lvl: 'prov', lvlTxt: '省级', title: '研究生精品示范课程与工程案例库建设', meta: '省级精品课程', year: '持续', desc: '多门课程获评省级研究生精品示范课程，工程案例库覆盖高原高寒、深海远海、极寒冻土等特殊区域工程场景。', kv: [['课程荣誉', '省级研究生精品示范课程'], ['案例数量', '320+ 工程案例'], ['场景覆盖', '高原 / 深海 / 冻土']] },
+  { cat: '教师荣誉', lvl: 'nat', lvlTxt: '国家级', title: '特殊区域公路建设与养护技术国家重点领域创新团队', meta: '科技部', year: '持续', desc: '国家级创新团队领衔研究生培养，团队核心成员全部承担研究生指导任务，形成"院士—领军—青年"三级导师谱系。', kv: [['团队级别', '国家重点领域创新团队'], ['导师结构', '院士 / 国家级人才 / 青年骨干'], ['指导机制', '三导师制']] },
+  { cat: '教师荣誉', lvl: 'nat', lvlTxt: '国家级', title: '国家级人才称号与行业总工程师受聘导师库', meta: '校企互聘', year: '持续', desc: '汇聚国家级人才称号获得者与 30 余位行业总工程师，开设"总工讲堂"与"工程现场课"，将一线工程经验系统引入培养过程。', kv: [['行业导师', '30+ 位总工程师'], ['特色课堂', '总工讲堂 / 工程现场课'], ['互聘机制', '校企双向流动']] },
+  { cat: '学生荣誉', lvl: 'nat', lvlTxt: '国家级', title: '研究生在国家级学科竞赛与创新大赛中屡获佳绩', meta: '国家级竞赛', year: '持续', desc: '研究生在中国研究生创新实践系列大赛等国家级赛事中获奖，赛题全部源自重大工程真实问题，实现"以赛促研、以赛促创"。', kv: [['赛事级别', '中国研究生创新实践系列大赛等'], ['赛题来源', '重大工程真实问题'], ['培养机制', '以赛促研 / 以赛促创']] },
+  { cat: '学生荣誉', lvl: 'intl', lvlTxt: '学术', title: '研究生在交通与道路工程领域国际顶级期刊发表系列论文', meta: 'SCI / 国际期刊', year: '持续', desc: '研究生以第一作者在国际顶级期刊发表高水平论文，研究选题直接来源于国家重点研发计划项目与海外重大工程实践。', kv: [['论文来源', '国家项目 / 海外工程'], ['国际合作', '国际联合导师共同指导'], ['成果归属', '学位论文核心章节']] }
+];
+const CATS = ['全部', '成果鉴定', '成果奖励', '重大项目', '学科支撑', '国际平台', '教改项目', '课程建设', '教师荣誉', '学生荣誉'];
+let curFilter = '全部', shown = 9;
+(function initMaterials(){
+  const fwrap = $('#filters'), grid = $('#matGrid');
+  if (!fwrap) return;
+  fwrap.innerHTML = CATS.map(c => {
+    const n = c === '全部' ? MATERIALS.length : MATERIALS.filter(m => m.cat === c).length;
+    return `<button class="f-chip${c === '全部' ? ' on' : ''}" data-c="${c}">${c}<em class="num">${n}</em></button>`;
+  }).join('');
+  function render(){
+    const list = MATERIALS.filter(m => curFilter === '全部' || m.cat === curFilter);
+    const vis = list.slice(0, shown);
+    grid.innerHTML = vis.map((m, i) => `
+      <article class="mat" data-i="${MATERIALS.indexOf(m)}" style="animation-delay:${i * .045}s">
+        <span class="shine"></span>
+        <div class="mat-top"><span class="lvl ${m.lvl}">${m.lvlTxt}</span><span class="num" style="font-size:.72rem;color:var(--muted)">${m.year}</span></div>
+        <h4>${m.title}</h4>
+        <p>${m.desc.slice(0, 62)}…</p>
+        <div class="mat-foot"><span class="cat"><i></i>${m.cat}</span><span class="more">VIEW →</span></div>
+      </article>`).join('');
+    $$('.mat', grid).forEach(c => c.addEventListener('click', () => openModal(MATERIALS[+c.dataset.i])));
+    $('#loadMore').style.display = list.length > shown ? 'inline-flex' : 'none';
+    $('#loadMore').textContent = `探索更多材料（还有 ${list.length - shown} 份）`;
+  }
+  fwrap.addEventListener('click', e => {
+    const b = e.target.closest('.f-chip'); if (!b) return;
+    $$('.f-chip', fwrap).forEach(x => x.classList.remove('on'));
+    b.classList.add('on'); curFilter = b.dataset.c; shown = 9; render();
+  });
+  $('#loadMore').addEventListener('click', () => { shown += 6; render(); });
+  render();
+  $$('[data-filter]').forEach(a => a.addEventListener('click', () => {
+    const f = a.dataset.filter;
+    const chip = $$('.f-chip').find(c => c.dataset.c === f);
+    if (chip) chip.click();
+    const mm = $('#mobileMenu');
+    if (mm.classList.contains('open')){ mm.classList.remove('open'); $('#burger').classList.remove('open'); document.body.classList.remove('is-locked'); }
+  }));
+})();
+
+/* ---------- Modal ---------- */
+(function initModal(){
+  const modal = $('#modal'), box = $('#modalContent');
+  window.openModal = function(m){
+    if (!m) return;
+    box.innerHTML = `
+      <span class="lvl ${m.lvl}">${m.lvlTxt}</span>
+      <h3>${m.title}</h3>
+      <div class="modal-meta"><span class="tag">${m.cat}</span><span class="tag num">${m.year}</span><span class="tag">${m.meta}</span></div>
+      <div class="modal-body">
+        <p>${m.desc}</p>
+        <dl class="kv">${m.kv.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+      </div>`;
+    modal.classList.add('open');
+    document.body.classList.add('is-locked');
+  };
+  function close(){ modal.classList.remove('open'); document.body.classList.remove('is-locked'); }
+  $$('[data-close]').forEach(b => b.addEventListener('click', close));
+  addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+})();
+
+/* ---------- 媒体报道轮播 ---------- */
+(function initCarousel(){
+  const NEWS = [
+    { src: '主流媒体 · 专题报道', t: '把课堂搬到超级工程现场：一所大学的研究生培养范式变革', d: '报道聚焦江西职业技术大学交通运输工程学科将港珠澳大桥、天山胜利隧道等重大工程转化为研究生培养现场的创新实践，指出该模式有效破解了学术训练与工程实践"两张皮"的难题。', date: '成果推广应用 · 媒体报道' },
+    { src: '教育媒体 · 深度观察', t: '课程筑基、科创赋能、国合增效：船舶制造领军人才的成长密码', d: '从 18 门数智交叉课程到 4.95 亿元国家重点研发计划经费的全面开放，报道系统解读了三条主线如何层层递进，构成从知识重构到能力生成、再到全球胜任的完整培养闭环。', date: '成果推广应用 · 媒体报道' },
+    { src: '行业媒体 · 校企协同', t: '全国重点实验室里的研究生：校企协同育人二十余载', d: '报道依托道路工程领域唯一的极端环境绿色长寿道路工程全国重点实验室，展现研究生在国家级平台上开展真实科研训练的全过程，以及中交一公院与高校双向流动机制。', date: '成果推广应用 · 媒体报道' },
+    { src: '学术会议 · 大会交流', t: '全国研究生教育会议大会交流：五位一体育人体系的实践与启示', d: '成果在全国性研究生教育会议与交通类学科论坛作大会交流 30 余次，培养方案与课程资源被 10 余所行业高校借鉴应用，实现学分互认与资源共享。', date: '成果推广应用 · 推广交流' },
+    { src: '国际视角 · 一带一路', t: '32 项海外重大工程：中国标准输出中的青年工程师', d: '报道关注研究生深度参与海外重大工程设计、施工、运维与标准输出的成长经历，认为"工程出海—人才出海—标准出海"三位一体机制是国际化实践育人的原创性探索。', date: '成果推广应用 · 成果应用' }
+  ];
+  const track = $('#carTrack'), dots = $('#carDots');
+  if (!track) return;
+  track.innerHTML = NEWS.map(n => `<div class="car-slide"><span class="src">${n.src}</span><h4>${n.t}</h4><p>${n.d}</p><div class="date num">${n.date}</div></div>`).join('');
+  dots.innerHTML = NEWS.map((_, i) => `<i class="${i ? '' : 'on'}" data-i="${i}"></i>`).join('');
+  let idx = 0, timer = null;
+  function go(i){
+    idx = (i + NEWS.length) % NEWS.length;
+    track.style.transform = `translateX(-${idx * 100}%)`;
+    $$('i', dots).forEach((d, k) => d.classList.toggle('on', k === idx));
+  }
+  function auto(){ clearInterval(timer); if (!REDUCED) timer = setInterval(() => go(idx + 1), 5600); }
+  $('#carNext').addEventListener('click', () => { go(idx + 1); auto(); });
+  $('#carPrev').addEventListener('click', () => { go(idx - 1); auto(); });
+  dots.addEventListener('click', e => { if (e.target.dataset.i) { go(+e.target.dataset.i); auto(); } });
+  const car = $('#carousel');
+  car.addEventListener('mouseenter', () => clearInterval(timer));
+  car.addEventListener('mouseleave', auto);
+  let sx = 0;
+  car.addEventListener('touchstart', e => sx = e.touches[0].clientX, { passive: true });
+  car.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 45) go(idx + (dx < 0 ? 1 : -1)); auto(); }, { passive: true });
+  auto();
+})();
+
+/* ---------- 推广辐射网络图 ---------- */
+(function initRadial(){
+  const svg = $('#radial'), lg = $('#radialLegend');
+  if (!svg) return;
+  const schools = ['江西职业技术大学', '同济大学', '东南大学', '哈尔滨工业大学', '重庆交通大学', '长沙理工大学', '西南交通大学', '石家庄铁道大学', '兰州交通大学', '大连海事大学', '山东交通学院', '武汉理工大学'];
+  const NS = 'http://www.w3.org/2000/svg';
+  const cx = 160, cy = 160;
+  function el(n, a){ const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; }
+  // 同心波纹
+  for (let i = 0; i < 4; i++){
+    const c = el('circle', { cx, cy, r: 30 + i * 32, fill: 'none', stroke: 'rgba(120,190,255,.18)', 'stroke-width': 1, 'stroke-dasharray': '3 7' });
+    svg.appendChild(c);
+  }
+  for (let i = 0; i < 3; i++){
+    const w = el('circle', { cx, cy, r: 30, fill: 'none', stroke: 'rgba(242,181,60,.55)', 'stroke-width': 1.6 });
+    const a1 = el('animate', { attributeName: 'r', values: '28;140', dur: '4.5s', begin: (i * 1.5) + 's', repeatCount: 'indefinite' });
+    const a2 = el('animate', { attributeName: 'opacity', values: '.7;0', dur: '4.5s', begin: (i * 1.5) + 's', repeatCount: 'indefinite' });
+    w.appendChild(a1); w.appendChild(a2); svg.appendChild(w);
+  }
+  // 中心
+  const core = el('circle', { cx, cy, r: 26, fill: 'rgba(242,181,60,.16)', stroke: '#f2b53c', 'stroke-width': 2 });
+  svg.appendChild(core);
+  const ct = el('text', { x: cx, y: cy - 2, 'text-anchor': 'middle', fill: '#ffd98a', 'font-size': '11', 'font-family': 'Noto Sans SC,sans-serif', 'font-weight': '700' });
+  ct.textContent = '成果'; svg.appendChild(ct);
+  const ct2 = el('text', { x: cx, y: cy + 12, 'text-anchor': 'middle', fill: '#ffd98a', 'font-size': '11', 'font-family': 'Noto Sans SC,sans-serif', 'font-weight': '700' });
+  ct2.textContent = '辐射'; svg.appendChild(ct2);
+  // 节点
+  schools.forEach((s, i) => {
+    const ang = -Math.PI / 2 + i * (Math.PI * 2 / schools.length);
+    const R = i % 2 ? 92 : 126;
+    const x = cx + Math.cos(ang) * R, y = cy + Math.sin(ang) * R;
+    const ln = el('line', { x1: cx, y1: cy, x2: x, y2: y, stroke: 'rgba(90,170,255,.28)', 'stroke-width': 1 });
+    svg.appendChild(ln);
+    const dot = el('circle', { cx: x, cy: y, r: 4.5, fill: i % 3 === 0 ? '#22d3ee' : '#57a8ff' });
+    svg.appendChild(dot);
+    const t = el('text', { x: x + Math.cos(ang) * 12, y: y + Math.sin(ang) * 12 + 4, 'text-anchor': Math.cos(ang) > .3 ? 'start' : (Math.cos(ang) < -.3 ? 'end' : 'middle'), fill: 'rgba(210,228,248,.9)', 'font-size': '10', 'font-family': 'Noto Sans SC,sans-serif' });
+    t.textContent = s; svg.appendChild(t);
+    const pulse = el('circle', { cx: x, cy: y, r: 4.5, fill: 'none', stroke: 'rgba(120,200,255,.6)', 'stroke-width': 1 });
+    const pa = el('animate', { attributeName: 'r', values: '4;14', dur: '3s', begin: (i * .22) + 's', repeatCount: 'indefinite' });
+    const pb = el('animate', { attributeName: 'opacity', values: '.8;0', dur: '3s', begin: (i * .22) + 's', repeatCount: 'indefinite' });
+    pulse.appendChild(pa); pulse.appendChild(pb); svg.appendChild(pulse);
+  });
+  lg.innerHTML = schools.map(s => `<b>${s}</b>`).join('');
+})();
+
+/* ---------- 特色成果横滑卡片 ---------- */
+(function initRail(){
+  const rail = $('#rail'); if (!rail) return;
+  const ART = {
+    bridge: `<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0d3568"/><stop offset="1" stop-color="#04101f"/></linearGradient></defs>
+      <rect width="400" height="200" fill="url(#g1)"/>
+      <circle cx="320" cy="46" r="22" fill="rgba(242,181,60,.28)"/><circle cx="320" cy="46" r="11" fill="#ffd98a"/>
+      <path d="M0 150h400" stroke="rgba(120,190,255,.35)" stroke-width="1.4"/>
+      <rect x="118" y="58" width="9" height="94" fill="#57a8ff" opacity=".85"/><rect x="273" y="58" width="9" height="94" fill="#57a8ff" opacity=".85"/>
+      <path d="M0 140 Q122 62 200 138 Q278 62 400 140" stroke="#f2b53c" stroke-width="2.2" fill="none"/>
+      <path d="M0 146h400" stroke="#ffd98a" stroke-width="3.4"/>
+      <g stroke="rgba(140,200,255,.5)" stroke-width="1"><path d="M50 145V126M80 145V112M150 145V120M200 145V136M250 145V120M320 145V112M360 145V128"/></g>
+      <circle r="3.4" fill="#fff"><animate attributeName="cx" values="0;400" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="144;144" dur="6s" repeatCount="indefinite"/></circle>
+      <path d="M0 152h400v48H0z" fill="rgba(10,40,80,.55)"/>`,
+    tunnel: `<defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#123a63"/><stop offset="1" stop-color="#04101f"/></linearGradient></defs>
+      <rect width="400" height="200" fill="url(#g2)"/>
+      <path d="M-10 200 L70 78 L140 140 L215 44 L300 132 L360 92 L410 200Z" fill="rgba(8,32,64,.9)" stroke="rgba(120,190,255,.4)" stroke-width="1.4"/>
+      <path d="M160 200 v-46 a40 40 0 0 1 80 0 v46z" fill="#020a16" stroke="#f2b53c" stroke-width="2.2"/>
+      <path d="M172 200 v-42 a28 28 0 0 1 56 0 v42z" fill="rgba(34,211,238,.12)"/>
+      <path d="M200 200 v-56" stroke="rgba(255,217,138,.65)" stroke-width="2" stroke-dasharray="8 9"><animate attributeName="stroke-dashoffset" values="0;-34" dur="1.1s" repeatCount="indefinite"/></path>
+      <circle cx="200" cy="168" r="26" fill="rgba(255,217,138,.14)"><animate attributeName="r" values="18;34;18" dur="3.4s" repeatCount="indefinite"/></circle>
+      <g fill="#fff" opacity=".8"><circle cx="60" cy="34" r="1.4"/><circle cx="120" cy="20" r="1.1"/><circle cx="290" cy="26" r="1.3"/><circle cx="345" cy="48" r="1"/></g>`,
+    island: `<defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0a3a6b"/><stop offset="1" stop-color="#04101f"/></linearGradient></defs>
+      <rect width="400" height="200" fill="url(#g3)"/>
+      <circle cx="70" cy="44" r="18" fill="rgba(34,211,238,.22)"/><circle cx="70" cy="44" r="8" fill="#22d3ee"/>
+      <path d="M0 128 Q120 104 200 128 T400 122" stroke="rgba(140,200,255,.4)" stroke-width="1.3" fill="none"/>
+      <path d="M0 146 Q120 122 200 146 T400 140" stroke="rgba(140,200,255,.22)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="255" cy="150" rx="66" ry="17" fill="rgba(20,70,120,.85)" stroke="rgba(140,200,255,.4)"/>
+      <path d="M0 138 Q110 96 196 130" stroke="#f2b53c" stroke-width="2.4" fill="none"/>
+      <path d="M0 142 Q110 100 196 134" stroke="#ffd98a" stroke-width="1.6" fill="none" opacity=".7"/>
+      <g stroke="#57a8ff" stroke-width="3"><path d="M40 138V112M96 132V100M152 132V104"/></g>
+      <path d="M148 200 v-52" stroke="rgba(255,255,255,.14)" stroke-width="18"/>
+      <path d="M150 200 v-46" stroke="rgba(255,217,138,.5)" stroke-width="2" stroke-dasharray="7 9"><animate attributeName="stroke-dashoffset" values="0;-32" dur="1.3s" repeatCount="indefinite"/></path>`,
+    plateau: `<defs><linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#13406e"/><stop offset="1" stop-color="#04101f"/></linearGradient></defs>
+      <rect width="400" height="200" fill="url(#g4)"/>
+      <path d="M0 130 L60 70 L110 108 L170 46 L240 112 L300 74 L400 132 V200 H0Z" fill="rgba(6,28,56,.95)" stroke="rgba(140,200,255,.42)" stroke-width="1.4"/>
+      <path d="M170 46 l22 24 -14 6 -18 -14z" fill="#e8f4ff" opacity=".85"/>
+      <path d="M60 70 l16 18 -12 5 -14 -12z" fill="#e8f4ff" opacity=".7"/>
+      <path d="M0 168 C90 150 150 186 220 166 S340 150 400 170" stroke="#f2b53c" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M0 168 C90 150 150 186 220 166 S340 150 400 170" stroke="#fff" stroke-width="1.2" stroke-dasharray="10 14" fill="none"><animate attributeName="stroke-dashoffset" values="0;-48" dur="1.6s" repeatCount="indefinite"/></path>
+      <g stroke="rgba(34,211,238,.5)" stroke-width="1.4"><path d="M262 160v-24M262 136h16M278 136v14"/><circle cx="278" cy="154" r="4" fill="none"/></g>`,
+    smart: `<defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3a63"/><stop offset="1" stop-color="#04101f"/></linearGradient></defs>
+      <rect width="400" height="200" fill="url(#g5)"/>
+      <g stroke="rgba(120,190,255,.18)"><path d="M0 40h400M0 80h400M0 120h400M0 160h400M60 0v200M140 0v200M220 0v200M300 0v200"/></g>
+      <path d="M40 150 L110 96 L180 128 L250 62 L320 96 L370 56" stroke="#22d3ee" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-dasharray="520" stroke-dashoffset="520"><animate attributeName="stroke-dashoffset" values="520;0" dur="3.4s" fill="freeze" repeatCount="indefinite"/></path>
+      <g fill="#ffd98a"><circle cx="110" cy="96" r="4"/><circle cx="180" cy="128" r="4"/><circle cx="250" cy="62" r="4"/><circle cx="320" cy="96" r="4"/></g>
+      <rect x="26" y="26" width="86" height="42" rx="6" fill="rgba(4,16,32,.8)" stroke="rgba(140,200,255,.4)"/>
+      <path d="M38 54 l12-12 10 8 16-18" stroke="#57a8ff" stroke-width="2" fill="none"/>
+      <rect x="290" y="132" width="86" height="42" rx="6" fill="rgba(4,16,32,.8)" stroke="rgba(242,181,60,.4)"/>
+      <path d="M302 160h62M302 150h40M302 142h52" stroke="#f2b53c" stroke-width="2" stroke-linecap="round"/>`
+  };
+  const ENG = [
+    { art: 'bridge', badge: '超级工程 · 跨海集群', name: '港珠澳大桥', desc: '世界最长跨海大桥，研究生参与桥面铺装耐久性、多源协同智能检测等关键技术研究与长期性能观测。', stats: [['55', '公里 · 全长'], ['2', '位', ], ['100+', '研究生参与']] },
+    { art: 'tunnel', badge: '世界最长高速公路隧道', name: '天山胜利隧道', desc: '高海拔、高应力、高地温"三高"极端环境，成为研究生隧道安全与灾害防控研究的天然实验室。', stats: [['22.1', '公里'], ['3', '竖井'], ['极端', '环境工况']] },
+    { art: 'island', badge: '超级工程 · 桥岛隧', name: '深中通道', desc: '集"桥、岛、隧、水下互通"于一体的世界级集群工程，研究生深度参与岛隧结合部关键技术攻关。', stats: [['24', '公里'], ['4', '工程单元'], ['60+', '交叉课题']] },
+    { art: 'plateau', badge: '高原冻土 · 国家野外站', name: '青藏公路与花石峡冻土区', desc: '依托国家野外科学观测研究站，研究生开展冻土路基温度场、变形监测与工程安全评价长周期训练。', stats: [['40+', '年观测'], ['4500', '米海拔'], ['长期', '野外训练']] },
+    { art: 'smart', badge: '一带一路 · 海外工程', name: '中马友谊大桥等 32 项海外工程', desc: '研究生参与海外工程设计、施工、运维与技术标准输出全过程，形成国际化实践育人走廊。', stats: [['32', '项海外工程'], ['10+', '国家地区'], ['标准', '输出实践']] }
+  ];
+  rail.innerHTML = ENG.map(e => `
+    <article class="eng">
+      <div class="eng-art"><span class="badge num">${e.badge}</span><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">${ART[e.art]}</svg></div>
+      <div class="eng-body">
+        <h4>${e.name}</h4><p>${e.desc}</p>
+        <div class="eng-stats">${e.stats.map(s => `<div><b class="num">${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div>
+      </div>
+    </article>`).join('');
+  let down = false, startX = 0, sl = 0;
+  rail.addEventListener('mousedown', e => { down = true; rail.classList.add('drag'); startX = e.pageX; sl = rail.scrollLeft; });
+  addEventListener('mouseup', () => { down = false; rail.classList.remove('drag'); });
+  rail.addEventListener('mousemove', e => { if (!down) return; e.preventDefault(); rail.scrollLeft = sl - (e.pageX - startX) * 1.35; });
+  const cnt = $('#railCount');
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / (rail.firstElementChild.offsetWidth + 20)) + 1;
+    cnt.textContent = `${String(Math.min(i, ENG.length)).padStart(2, '0')} / ${String(ENG.length).padStart(2, '0')}`;
+  }, { passive: true });
+})();
+
+/* ---------- 访问量假计数 ---------- */
+(function initVisit(){
+  const el = $('#visitCount'); if (!el) return;
+  const base = 128640 + Math.floor(Math.random() * 900);
+  const io2 = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting){
+      let v = 0; const t0 = performance.now();
+      (function s(n){ const k = Math.min(1, (n - t0) / 1600); el.textContent = Math.floor(base * (1 - Math.pow(1 - k, 3))).toLocaleString(); if (k < 1) requestAnimationFrame(s); })(t0);
+      io2.disconnect();
+    }
+  }), { threshold: .4 });
+  io2.observe(el);
+})();
+
+/* ---------- 平滑锚点（带偏移） ---------- */
+$$('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id === '#' || id.length < 2) return;
+    const t = document.querySelector(id);
+    if (!t) return;
+    e.preventDefault();
+    const y = t.getBoundingClientRect().top + scrollY - (id === '#hero' ? 0 : 84);
+    scrollTo({ top: y, behavior: REDUCED ? 'auto' : 'smooth' });
+    if (history.replaceState) history.replaceState(null, '', id);
+  });
+});
+</script>
+</body>
+</html>
