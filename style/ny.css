@@ -31,14 +31,14 @@
 
 .list-box .lt-lf .lt-erdh {
     padding: 0.15rem 0.23rem 2.57rem;
-    background: #ecf2f9 url(../images/ltlf-bg.png) no-repeat center bottom;
+    background: #E7F0EA url(../images/ltlf-bg.png) no-repeat center bottom;
     background-size: 100% auto;
     border-radius: 0 0 0.2rem 0.2rem;
 }
 
 .menu-item {
     position: relative;
-    border-bottom: 1px dashed #85B8F4;
+    border-bottom: 1px dashed #A8C4B6;
 }
 
 .menu-item>a {
@@ -65,12 +65,12 @@
 }
 
 .menu-item.active {
-    border-bottom: 1px solid #0057B9;
+    border-bottom: 1px solid #154734;
 }
 
 .menu-item.active>a,
 .menu-item>a:hover {
-    color: #0057B9;
+    color: #154734;
 }
 
 .menu-item.active>a.menu-link .arrow {
@@ -117,7 +117,7 @@
 
 .sub-menu a:hover,
 .sub-menu a.active {
-    color: #0057B9;
+    color: #154734;
 }
 
 
@@ -132,7 +132,7 @@
 
 .ltdqwz h1 {
     float: left;
-    color: #0057B9;
+    color: #154734;
     font-size: .48rem;
     padding-left: 0.18rem;
     height: 0.77rem;
@@ -160,7 +160,7 @@ margin-right:0.2rem;
 }
 
 .ltdqwz span a:hover {
-    color: #1A6BCF;
+    color: #2F6B52;
 }
 
 .sjmenu {
@@ -186,10 +186,10 @@ margin-right:0.2rem;
     padding: 0.19rem 0.8rem 0.19rem 0.25rem;
     position: relative;
     border-radius: 0.2rem;
-    background: linear-gradient(270deg, #f4f8fd 0%, #f4f8fd00 100%);
+    background: linear-gradient(270deg, #F4F7F5 0%, #F4F7F500 100%);
     box-sizing: border-box;
-    border: 1px solid #D1E8FF;
-    box-shadow: 0px 0px 20px 0px rgba(0, 87, 185, 0.08);
+    border: 1px solid #C9D7CF;
+    box-shadow: 0px 0px 20px 0px rgba(21, 71, 52, 0.08);
     margin-bottom: 0.14rem;
 }
 
@@ -200,7 +200,7 @@ margin-right:0.2rem;
     top: 0;
     width: 1px;
     height: 100%;
-    background: #1C6ED0;
+    background: #2F6B52;
 }
 
 .list_lb li::after {
@@ -217,7 +217,7 @@ margin-right:0.2rem;
 }
 
 .list_lb li:hover::after {
-    background: #ff7d13 url(../images/icon-jt3.png) no-repeat center;
+    background: #C17F3A url(../images/icon-jt3.png) no-repeat center;
     background-size: auto 0.21rem;
 }
 
@@ -237,7 +237,7 @@ margin-right:0.2rem;
     width: 0.7rem;
     height: 0.7rem;
     font-family: Arial;
-    color: #015BBC;
+    color: #154734;
     transition: all 0.3s ease-out 0s;
 }
 
@@ -263,7 +263,7 @@ margin-right:0.2rem;
 }
 
 .list_lb li:hover {
-    background: #0057B9;
+    background: #154734;
 }
 
 .list_lb li:hover .mar .time,
@@ -285,12 +285,12 @@ margin-right:0.2rem;
     text-align: center;
     padding: 0.5rem 0 0.2rem;
     overflow: hidden;
-    border-bottom: 1px solid #D3DDEA;
+    border-bottom: 1px solid #C9D7CF;
 }
 
 .contt_tit h1 {
     font-size: 0.28rem;
-    color: #0057B9;
+    color: #154734;
     margin-bottom: 0.15rem;
     font-weight: 600;
 }
@@ -304,7 +304,6 @@ margin-right:0.2rem;
 
 .contt_zhwen {
     overflow: hidden;
-    padding: 0.25rem 0.25rem 0.4rem;
 }
 
 .contt_zhwen p {
@@ -346,7 +345,7 @@ margin-right:0.2rem;
 
 .contt_sxp {
     box-sizing: border-box;
-    border-top: 1px solid #D3DDEA;
+    border-top: 1px solid #C9D7CF;
     padding-top: 0.4rem;
     overflow: hidden;
 }
@@ -365,12 +364,12 @@ margin-right:0.2rem;
 }
 
 .contt_sxp li a span {
-    color: #0057B9
+    color: #154734
 }
 
 .contt_sxp li a span,
 .contt_sxp li:hover a {
-    color: #0057B9
+    color: #154734
 }
 
 @media (max-width: 1024px) {
@@ -383,14 +382,14 @@ margin-right:0.2rem;
         overflow: hidden;
         background: #fff;
         width: 100%;
-        box-shadow: 0px 4px 20px 0px rgba(69, 117, 182, 0.1);
+        box-shadow: 0px 4px 20px 0px rgba(47, 107, 82, 0.1);
         height: 0.6rem;
     }
     .sp_logo {
         float: left;
         font-size: 0.24rem;
         line-height: 0.6rem;
-        color: #1A6BCF;
+        color: #2F6B52;
         text-indent: 10px;
         font-weight: bold;
     }
@@ -403,7 +402,7 @@ margin-right:0.2rem;
     }
     .sp_nav span {
         display: block;
-        background: #1A6BCF;
+        background: #2F6B52;
         width: .25rem;
         height: .25rem;
         background: url(../images/close1.png) center center / .15rem no-repeat;
@@ -487,7 +486,7 @@ margin-right:0.2rem;
         margin-top: 0.01rem;
     }
     .sjj_nav ul li .sjj_nav_i_se svg {
-        fill: #1A6BCF;
+        fill: #2F6B52;
     }
     /* 列表 */
     .list-ban::before,
@@ -553,7 +552,7 @@ margin-right:0.2rem;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #0057B9;
+    background: #154734;
 }
 
 .list_rsou ul li a {
@@ -586,7 +585,7 @@ margin-right:0.2rem;
 }
 
 .list_rsou ul li:hover a {
-    color: #0057B9;
+    color: #154734;
     text-indent: 16px;
     transition: all 0.4s;
 }
@@ -601,7 +600,7 @@ margin-right:0.2rem;
 }
 
 .sspage a {
-    color: #01548a;
+    color: #154734;
 }
 
 .qzssjg_no {
@@ -628,6 +627,6 @@ margin-right:0.2rem;
 
 
 .pb_sys_style1 .p_no_d{
-   border: 1px solid #0057B9!important;
-    background-color: #0057B9!important;
+   border: 1px solid #154734!important;
+    background-color: #154734!important;
 }

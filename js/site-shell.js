@@ -210,9 +210,10 @@
       '<div class="swiper-slide"><div class="ban_pic"><img src="' +
       p +
       'images/banner.jpg" border="0"></div></div>' +
-      '</div></div><div class="text"><img src="' +
-      p +
-      'images/ban-wz.png" border="0"></div></div>'
+      '</div></div><div class="text">' +
+      '<div class="brand-hero-title"><span class="eyebrow">TEACHING ACHIEVEMENT</span>' +
+      "<h2>公路交通复合型人才培养</h2>" +
+      "<p>工程引领 · 数智融通 · 中外协同</p></div></div></div>"
     );
   }
 
@@ -240,7 +241,16 @@
 
   function contentBody(page, depth) {
     var html = (page.html || "").replace(/\{P\}/g, prefix(depth));
-    return '<div class="contt_box' + (page.key === "zccl" ? " s32" : "") + '"><div class="contt_zhwen"><div id="vsb_content">' + html + "</div></div></div>";
+    var isZccl = page.key === "zccl" || (page.key && page.key.indexOf("zccl/") === 0);
+    var cls = "contt_box";
+    if (isZccl) cls += " contt_box--material";
+    return (
+      '<div class="' +
+      cls +
+      '"><div class="contt_zhwen"><div id="vsb_content">' +
+      html +
+      "</div></div></div>"
+    );
   }
 
   function renderInnerPage() {

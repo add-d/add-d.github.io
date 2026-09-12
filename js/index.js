@@ -116,10 +116,24 @@ $(function() {
 
     });
 
-    // 大成果
+    // 大成果：3D Coverflow 舞台轮播
     var mySwiper = new Swiper('.keyan .swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        speed: 780,
+        slidesPerView: 'auto',
+        spaceBetween: 18,
+        coverflowEffect: {
+            rotate: 32,
+            stretch: -36,
+            depth: 260,
+            modifier: 1.15,
+            slideShadows: false
+        },
         autoplay: {
-            delay: 5500,
+            delay: 4200,
             disableOnInteraction: false,
         },
         navigation: {
@@ -130,39 +144,45 @@ $(function() {
             el: '.keyan-dot',
             clickable: true,
         },
-        centeredSlides: true,
-        loop: true,
-        slidesPerView: 3.64,
-        scrollbarHide: false,
-        scrollbarDraggable: true,
-        scrollbarSnapOnRelease: true,
-
         breakpoints: {
             320: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            },
-            450: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                centeredSlides: false,
+                spaceBetween: 10,
+                coverflowEffect: {
+                    rotate: 16,
+                    stretch: 0,
+                    depth: 120,
+                    modifier: 1,
+                    slideShadows: false
+                }
             },
             768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 16,
+                coverflowEffect: {
+                    rotate: 24,
+                    stretch: -20,
+                    depth: 180,
+                    modifier: 1.05,
+                    slideShadows: false
+                }
             },
-            1221: {
-                slidesPerView: 3.64,
-            },
-
+            1100: {
+                spaceBetween: 18,
+                coverflowEffect: {
+                    rotate: 32,
+                    stretch: -36,
+                    depth: 260,
+                    modifier: 1.15,
+                    slideShadows: false
+                }
+            }
         }
     });
 
 
 
-    // 获奖情况自动滚动
+    // 获奖印鉴横向滚动由 CSS animation 承担；此处仅兜底旧 .text2
     const text2 = document.querySelector('.text2');
-    if (text2) {
+    if (text2 && text2.querySelector('.scroll-inner')) {
         const inner = text2.querySelector('.scroll-inner');
         let timer = null;
         const speed = 1;
