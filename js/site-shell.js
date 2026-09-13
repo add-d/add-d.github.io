@@ -16,7 +16,7 @@
   function navHtml(active, depth) {
     var p = prefix(depth);
     var items = [
-      { id: "home", name: "首页", href: "index.htm" },
+      { id: "home", name: "首页", href: "index.html" },
       { id: "cgjj", name: "成果简介", href: "cgjj.htm" },
       {
         id: "sbs",
@@ -71,7 +71,7 @@
   function mobileNavHtml(depth) {
     var p = prefix(depth);
     var blocks = [
-      { name: "首页", href: "index.htm" },
+      { name: "首页", href: "index.html" },
       { name: "成果简介", href: "cgjj.htm" },
       { name: "申报书", href: "sbs/zyjjdjxwt.htm", children: SITE_DATA.sideMenus.sbs },
       { name: "支撑材料", href: "zccl.htm", children: SITE_DATA.sideMenus.zccl },
@@ -160,7 +160,7 @@
   }
 
   function crumbsHtml(page, depth, extra) {
-    var html = '<a href="' + abs("index.htm", depth) + '">首页</a>';
+    var html = '<a href="' + abs("index.html", depth) + '">首页</a>';
     (page.crumbs || []).forEach(function (c) {
       html += " &gt; <a href='" + abs(c.href, depth) + "'>" + c.name + "</a>";
     });
@@ -188,41 +188,35 @@
   function headerHtml(active, depth) {
     var p = prefix(depth);
     return (
-      '<div class="head pc"><div class="h-bot"><div class="w16">' +
-      '<div class="logo"><a href="' +
-      abs("index.htm", depth) +
-      '" title="国家级教学成果奖(研究生)申报展示网站"><img src="' +
-      p +
-      'images/logo-placeholder.svg" alt="Logo占位"></a></div>' +
-      '<div class="h-rgt"><div class="nav">' +
-      navHtml(active, depth) +
-      "</div></div></div></div></div>" +
-      '<div class="m-index"><section class="m_header_box"><header id="m_header">' +
-      '<div id="logo"><a href="' +
-      abs("index.htm", depth) +
-      '"><img src="' +
-      p +
-      'images/logo-placeholder.svg" alt="Logo占位"></a></div>' +
-      '<div id="nav_btn_box" class="on"><aside id="nav_btn"><div class="point" name="1" id="mbtn"> <span class="navbtn"></span> </div></aside></div>' +
-      '</header></section><nav id="m_nav">' +
-      mobileNavHtml(depth) +
-      '<div class="close">×</div></nav></div>'
+        '<div class="head pc"><div class="h-bot"><div class="w16">' +
+        '<div class="logo"><a href="' + abs("index.html", depth) + '" title="国家级教学成果奖(研究生)申报展示网站"><img src="https://www.jxpu.edu.cn/2026xbzy/images/logo.png" alt="Logo占位"></a></div>' +
+        '<div class="h-rgt"><div class="nav">' +
+        navHtml(active, depth) +
+        "</div></div></div></div></div>" +
+        '<div class="m-index"><section class="m_header_box"><header id="m_header">' +
+        '<div id="logo"><a href="' + abs("index.html", depth) + '"><img src="' + p + 'images/logo-placeholder.svg" alt="Logo占位"></a></div>' +
+        '<div id="nav_btn_box" class="on"><aside id="nav_btn"><div class="point" name="1" id="mbtn"> <span class="navbtn"></span> </div></aside></div>' +
+        '</header></section><nav id="m_nav">' +
+        mobileNavHtml(depth) +
+        '<div class="close">×</div></nav></div>'
     );
   }
+
 
   function bannerHtml(depth) {
     var p = prefix(depth);
     return (
-      '<div class="ban_box"><div class="swiper-container"><div class="swiper-wrapper">' +
-      '<div class="swiper-slide"><div class="ban_pic"><img src="' +
-      p +
-      'images/banner.jpg" border="0"></div></div>' +
-      '</div></div><div class="text">' +
-      '<div class="brand-hero-title"><span class="eyebrow">TEACHING ACHIEVEMENT</span>' +
-      "<h2>公路交通复合型人才培养</h2>" +
-      "<p>工程引领 · 数智融通 · 中外协同</p></div></div></div>"
+        '<div class="ban_box"><div class="swiper-container"><div class="swiper-wrapper">' +
+        '<div class="swiper-slide"><div class="ban_pic"><img src="' +
+        p +
+        'images/banner.jpg" border="0"></div></div>' +
+        '</div></div><div class="text">' +
+        '<div class="brand-hero-title"><span class="eyebrow">TEACHING ACHIEVEMENT</span>' +
+        "<h2>船舶类高职院校学生军工素养培养的十六年探索与实践</h2>" +
+        "<p>旗舰先锋 · 厚植军工底色 · 涵养报国素养</p></div></div></div>"
     );
   }
+
 
   function listBody(page, depth) {
     var html = '<div class="list_lb"><ul>';
