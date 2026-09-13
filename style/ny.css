@@ -31,7 +31,7 @@
 
 .list-box .lt-lf .lt-erdh {
     padding: 0.15rem 0.23rem 2.57rem;
-    background: #E8F1FB url(../images/ltlf-bg.png) no-repeat center bottom;
+    background: #E8F1FB url('https://www.jxpu.edu.cn/images/hexiangxiaoyuan.jpg') no-repeat center bottom;
     background-size: 100% auto;
     border-radius: 0 0 0.2rem 0.2rem;
 }

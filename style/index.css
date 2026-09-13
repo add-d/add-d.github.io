@@ -65,6 +65,7 @@
     width: 100%;
     background: url(../images/ban-bg.png) no-repeat top;
     background-size: cover;
+    opacity: 0.7;
 }
 
 .ban_pic {

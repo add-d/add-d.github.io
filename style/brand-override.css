@@ -1090,18 +1090,25 @@
 }
 
 .ban_box .text .ban-title {
-  margin: 0 auto;
-  max-width: 12.5rem;
+  display: block;
+  margin: -100px auto;
   padding: 0 0.3rem;
-  color: #fff;
-  font-size: 0.42rem;
-  line-height: 1.45;
-  font-weight: bold;
-  font-family: "sys-b", "Source Han Serif SC", "Songti SC", serif;
-  letter-spacing: 0.04em;
-  text-shadow:
-          0 0.08rem 0.16rem rgba(0,0,0,0.35);
+  background-image: url(../images/ban-title3.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  height: 3.5rem;
+  mask-image:
+          linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%),
+          linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+  /* 整体淡化：叠加透明度，比单纯brightness更柔和，全局变淡 */
+  filter: brightness(0.78) saturate(0.8);
+  opacity:1;
 }
+
+
 
 
 @media screen and (max-width: 900px) {
