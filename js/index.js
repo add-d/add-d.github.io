@@ -210,4 +210,105 @@ $(function() {
 
 
 
+
+    // 成果推广：滚动里程轨 + 指针光域（整图展示，无条带裁剪）
+    (function initS4EditorialMotion() {
+        var root = document.querySelector('[data-s4-motion]');
+        if (!root) return;
+
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var head = root.querySelector('.s4-ed__head');
+        var chapters = Array.prototype.slice.call(root.querySelectorAll('.s4-ed__chapter'));
+        var railKm = root.querySelector('.s4-ed__rail-km');
+        var railFill = root.querySelector('.s4-ed__rail-track i');
+        var ticking = false;
+
+        chapters.forEach(function (chapter) {
+            if (!reduce) {
+                chapter.addEventListener('pointermove', function (e) {
+                    var rect = chapter.getBoundingClientRect();
+                    var x = ((e.clientX - rect.left) / rect.width) * 100;
+                    var y = ((e.clientY - rect.top) / rect.height) * 100;
+                    chapter.style.setProperty('--mx', x.toFixed(2) + '%');
+                    chapter.style.setProperty('--my', y.toFixed(2) + '%');
+                    chapter.style.setProperty('--tilt-x', ((y - 50) / 50 * -3).toFixed(2) + 'deg');
+                    chapter.style.setProperty('--tilt-y', ((x - 50) / 50 * 4).toFixed(2) + 'deg');
+                });
+                chapter.addEventListener('pointerleave', function () {
+                    chapter.style.setProperty('--tilt-x', '0deg');
+                    chapter.style.setProperty('--tilt-y', '0deg');
+                });
+            }
+        });
+
+        function chapterProgress(el) {
+            var rect = el.getBoundingClientRect();
+            var vh = window.innerHeight || document.documentElement.clientHeight;
+            var start = vh * 0.92;
+            var end = vh * 0.18;
+            var p = (start - rect.top) / (start - end);
+            return Math.max(0, Math.min(1, p));
+        }
+
+        function updateScrollMotion() {
+            ticking = false;
+            var bestIdx = 0;
+            var bestScore = -1;
+            chapters.forEach(function (chapter, idx) {
+                var p = chapterProgress(chapter);
+                chapter.style.setProperty('--p', p.toFixed(3));
+                var rect = chapter.getBoundingClientRect();
+                var mid = rect.top + rect.height * 0.5;
+                var score = 1 - Math.abs(mid - window.innerHeight * 0.45) / window.innerHeight;
+                if (score > bestScore) { bestScore = score; bestIdx = idx; }
+            });
+            chapters.forEach(function (chapter, idx) {
+                chapter.classList.toggle('is-focus', idx === bestIdx);
+            });
+            if (railKm) {
+                var km = chapters[bestIdx].getAttribute('data-km') || ('0' + (bestIdx + 1)).slice(-2);
+                if (railKm.textContent !== km) {
+                    railKm.classList.remove('is-tick');
+                    void railKm.offsetWidth;
+                    railKm.textContent = km;
+                    railKm.classList.add('is-tick');
+                }
+            }
+            if (railFill) {
+                railFill.style.transform = 'scaleY(' + ((bestIdx + 1) / chapters.length).toFixed(3) + ')';
+            }
+        }
+
+        function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(updateScrollMotion);
+        }
+
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) entry.target.classList.add('is-in');
+                });
+            }, { threshold: 0.22, rootMargin: '0px 0px -8% 0px' });
+            if (head) io.observe(head);
+            chapters.forEach(function (chapter) { io.observe(chapter); });
+        } else {
+            if (head) head.classList.add('is-in');
+            chapters.forEach(function (chapter) { chapter.classList.add('is-in'); });
+        }
+
+        if (reduce) {
+            if (head) head.classList.add('is-in');
+            chapters.forEach(function (chapter) { chapter.classList.add('is-in'); });
+            if (railFill) railFill.style.transform = 'scaleY(1)';
+            return;
+        }
+
+        updateScrollMotion();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll);
+    })();
+
+
 })

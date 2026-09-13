@@ -44,14 +44,21 @@
       html += '<li class="' + (it.id === active ? "active" : "") + '">';
       html += '<a href="' + abs(it.href, depth) + '">' + it.name + "</a>";
       if (it.children && it.children.length) {
-        html += "<div><ul>";
-        it.children.forEach(function (c) {
+        html += '<div class="nav-mega"><ul class="nav-mega__grid">';
+        it.children.forEach(function (c, idx) {
+          var code = "A" + (idx + 1);
           html +=
-            '<li><a href="' +
+            "<li><a href=\"" +
             abs(c.href, depth) +
-            '">' +
+            "\">" +
+            '<span class="nav-mega__code">' +
+            code +
+            "</span>" +
+            '<span class="nav-mega__text"><strong>' +
             c.name +
-            "</a></li>";
+            "</strong><em>" +
+            (c.desc || "") +
+            "</em></span></a></li>";
         });
         html += "</ul></div>";
       }

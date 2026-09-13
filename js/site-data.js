@@ -10,16 +10,16 @@ window.SITE_DATA = (function () {
       parentNav: "cgtgyy",
       sideKey: "cgtgyy",
       crumbParent: { name: "成果推广应用", href: "cgtgyy/mtbd.htm" },
-      crumbCurrent: "媒体报道",
+      crumbCurrent: "育人成效",
       listHref: "cgtgyy/mtbd.htm",
-      title: "【Mock】示例媒体报道：教学成果推广应用纪实",
+      title: "【Mock】育人成效：军工素养人才培养纪实",
       date: "2026-07-08",
       author: "编辑组",
-      source: "示例媒体",
+      source: "校园融媒体",
       cover: "images/content/c19.jpg",
       body: [
-        "本文为媒体报道类详情页的统一 Mock 占位内容。列表中同类型条目均复用本页模板。",
-        "成果面向公路交通复合型人才培养，围绕工程引领、数智融通、中外协同持续推进教学改革与实践。",
+        "本文为成果推广应用类详情页的统一 Mock 占位内容。列表中同类型条目均复用本页模板。",
+        "围绕“旗舰先锋”育人模式，展示军工素养养成、品牌建设、综合实力与交流推广等方面的实践成效。",
         "后续可将正式稿件标题、日期与正文替换为真实内容，无需再为每条列表单独新建详情页。"
       ]
     },
@@ -111,7 +111,7 @@ window.SITE_DATA = (function () {
       date: "2026-07-07",
       author: "",
       source: "成果介绍",
-      cover: "images/content/c17.jpeg",
+      cover: "images/奖状/1.png",
       body: [
         "本页为“大成果”类详情统一模板。首页成果轮播与列表条目均复用本页。",
         "成果体现公路交通复合型人才培养与科技攻关的综合成效。",
@@ -126,15 +126,15 @@ window.SITE_DATA = (function () {
       crumbParent: { name: "成果简介", href: "cgjj.htm" },
       crumbCurrent: "正文",
       listHref: "cgjj.htm",
-      title: "【Mock】成果简介（详情）",
+      title: "成果简介",
       date: "2026-07-07",
       author: "",
       source: "",
       cover: "images/cgjj-bg.jpg",
       body: [
-        "本页为成果简介详情统一模板。首页“探索详细”跳转复用本页。",
-        "【Mock】本成果面向公路交通高层次人才培养，构建“课程筑基—科创赋能—工程淬炼—国际拓展”一体化培养体系。",
-        "通过校企协同与重大工程实践，持续提升研究生解决复杂工程问题的能力。"
+        "面向海洋强国、制造强国、军民融合战略对船舶军工人才的迫切需求，针对船舶类高职军工素养培养内涵界定不清晰、培养路径不系统、评价激励不精准等难题，2011年起学校依托60余年船舶军工办学底蕴，传承中船系统“旗舰先锋”军工文化，探索形成“目标引领、分层拓展、长效支撑”的“旗舰先锋”育人模式。",
+        "构建“忠诚、卓越、坚韧”三维九要素培养目标模型，创设“点上淬炼—面上融合—体上浸润”分层培养路径，建立“新兵—尖兵—标兵”进阶激励与五方协同保障体系，将军工素养转化为可培养、可评价、可激励标准，形成育人闭环管理。",
+        "成果历经16年迭代实践，获央视新闻联播、光明日报等权威媒体报道，助力学校成为全国首所船舶类职业本科大学，两轮入选国家“双高计划”，获评全国文明校园、国防特色学校，累计输送军工素养人才十万余人，近8年入伍2900余人，成果在全国200余家单位推广应用，为高职军工素养培养提供标准化范式。"
       ]
     }
   };
@@ -160,29 +160,27 @@ window.SITE_DATA = (function () {
       title: "成果简介",
       crumbs: [{ name: "成果简介", href: "cgjj.htm" }],
       html: [
-        "<p>【Mock】长安大学交通运输工程学科立足西部、面向全国，长期服务公路交通重大工程人才培养。</p>",
-        "<p>本成果历经二十余年探索与实践，形成“工程引领、数智融通、中外协同”的复合型人才培养体系。</p>",
-        "<p>以重大工程锤炼攻关能力，以数智课程强化交叉创新，以中外协同提升跨文化工程胜任力。</p>",
-        "<p style='text-align:center'><img src='{P}images/cgjj-bg.jpg' alt='示意图占位' style='max-width:100%'></p>",
-        "<p style='text-align:center'><strong>图1 人才培养体系示意（占位图）</strong></p>"
+        "<p>面向海洋强国、制造强国、军民融合战略对船舶军工人才的迫切需求，针对船舶类高职军工素养培养内涵界定不清晰、培养路径不系统、评价激励不精准等难题，2011年起学校依托60余年船舶军工办学底蕴，传承中船系统“旗舰先锋”军工文化，探索形成“目标引领、分层拓展、长效支撑”的“旗舰先锋”育人模式。</p>",
+        "<p>构建“忠诚、卓越、坚韧”三维九要素培养目标模型，创设“点上淬炼—面上融合—体上浸润”分层培养路径，建立“新兵—尖兵—标兵”进阶激励与五方协同保障体系，将军工素养转化为可培养、可评价、可激励标准，形成育人闭环管理。</p>",
+        "<p>成果历经16年迭代实践，获央视新闻联播、光明日报等权威媒体报道，助力学校成为全国首所船舶类职业本科大学，两轮入选国家“双高计划”，获评全国文明校园、国防特色学校，累计输送军工素养人才十万余人，近8年入伍2900余人，成果在全国200余家单位推广应用，为高职军工素养培养提供标准化范式。</p>"
       ].join("")
     },
 
-    "sbs/zyjjdjxwt": sbsPage("zyjjdjxwt", "主要解决的教学问题",
+    "sbs/zyjjdjxwt": sbsPage("zyjjdjxwt", "申报书",
       "<p>【Mock】面向交通强国建设，研究生培养需回应极端环境、复杂场景、数智融合与国际协同等新要求。</p>" +
       "<p><strong>（一）科研训练与重大工程衔接不畅</strong></p><p>现有科研训练深入工程一线不够，复杂工程集成创新能力不足。</p>" +
       "<p><strong>（二）课程体系与行业转型契合不深</strong></p><p>数智模块与专业内容融合不够，技术融合创新能力有待提升。</p>" +
       "<p><strong>（三）国际化培养与海外工程融通不足</strong></p><p>海外真实工程场景培养路径不健全，跨文化工程胜任力培育滞后。</p>"),
-    "sbs/cgjjjxwtdff": sbsPage("cgjjjxwtdff", "成果解决教学问题的方法",
+    "sbs/cgjjjxwtdff": sbsPage("cgjjjxwtdff", "曾获奖励",
       "<p>【Mock】围绕三大问题，构建“工程出题—科研解题—教学入题”科产教融合路径。</p>" +
       "<p>一是以重大工程为载体组建跨学科团队；二是建设数智交叉课程；三是依托国际平台开展双向研训。</p>"),
-    "sbs/cgdcxd": sbsPage("cgdcxd", "成果的创新点",
+    "sbs/cgdcxd": sbsPage("cgdcxd", "成果简介",
       "<p>【Mock】创新点一：工程现场育人机制；创新点二：数智融通课程体系；创新点三：中外协同标准互认培养。</p>"),
-    "sbs/cgdtgyyxg": sbsPage("cgdtgyyxg", "成果的推广应用效果",
+    "sbs/cgdtgyyxg": sbsPage("cgdtgyyxg", "问题与方案",
       "<p>【Mock】成果已在多所高校与行业单位推广，支撑学科建设与拔尖人才培养，形成可复制的经验模式。</p>"),
-    "sbs/zywcrqk": sbsPage("zywcrqk", "主要完成人情况",
+    "sbs/zywcrqk": sbsPage("zywcrqk", "成果创新点",
       "<p>【Mock】主要完成人由教学名师、科研骨干与行业导师组成，长期深耕公路交通研究生培养一线。</p>"),
-    "sbs/zywcdwytjdwyj": sbsPage("zywcdwytjdwyj", "主要完成单位与推荐单位意见",
+    "sbs/zywcdwytjdwyj": sbsPage("zywcdwytjdwyj", "推广应用效果",
       "<p>【Mock】完成单位与推荐单位对本成果的创新性、应用性与示范性给予肯定，建议继续深化推广。</p>"),
 
     zccl: {
@@ -328,27 +326,27 @@ window.SITE_DATA = (function () {
       ]
     ),
 
-    "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "媒体报道", "mtbd", "article", [
-      "【Mock】示例媒体报道一：教学成果推广应用纪实",
-      "【Mock】示例媒体报道二：校企协同育人实践扫描",
-      "【Mock】示例媒体报道三：国际合作培养新探索",
-      "【Mock】示例媒体报道四：重大工程现场育人故事",
-      "【Mock】示例媒体报道五：数智课程建设进展"
+    "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "育人成效", "mtbd", "article", [
+      "【Mock】育人成效一：军工素养人才成长路径",
+      "【Mock】育人成效二：入伍服役与典型学生故事",
+      "【Mock】育人成效三：竞赛获奖与岗位胜任表现",
+      "【Mock】育人成效四：校企协同育人实践扫描",
+      "【Mock】育人成效五：分层培养进阶案例"
     ]),
-    "cgtgyy/cgyy": listPage("cgtgyy", "成果推广应用", "成果应用", "cgyy", "article", [
-      "【Mock】成果应用案例一：行业单位采纳培养模式",
-      "【Mock】成果应用案例二：课程资源跨校共享",
-      "【Mock】成果应用案例三：工程现场实践基地共建"
+    "cgtgyy/cgyy": listPage("cgtgyy", "成果推广应用", "军工品牌", "cgyy", "article", [
+      "【Mock】军工品牌一：旗舰先锋文化传播纪实",
+      "【Mock】军工品牌二：中船系统文化进校园",
+      "【Mock】军工品牌三：国防特色学校品牌建设"
     ]),
-    "cgtgyy/rcpycx": listPage("cgtgyy", "成果推广应用", "人才培养成效", "rcpycx", "article", [
-      "【Mock】人才培养成效一：领军人才成长路径",
-      "【Mock】人才培养成效二：研究生高水平论文与竞赛",
-      "【Mock】人才培养成效三：就业质量与行业贡献"
+    "cgtgyy/rcpycx": listPage("cgtgyy", "成果推广应用", "综合实力", "rcpycx", "article", [
+      "【Mock】综合实力一：双高计划建设进展",
+      "【Mock】综合实力二：职业本科办学跃升",
+      "【Mock】综合实力三：文明校园与国防特色建设"
     ]),
-    "cgtgyy/tgjl": listPage("cgtgyy", "成果推广应用", "推广交流", "tgjl", "article", [
-      "【Mock】推广交流一：全国会议专题分享",
-      "【Mock】推广交流二：高校互访与经验借鉴",
-      "【Mock】推广交流三：行业论坛成果发布"
+    "cgtgyy/tgjl": listPage("cgtgyy", "成果推广应用", "交流推广", "tgjl", "article", [
+      "【Mock】交流推广一：全国会议专题分享",
+      "【Mock】交流推广二：高校互访与经验借鉴",
+      "【Mock】交流推广三：行业论坛成果发布"
     ]),
 
     "tsbk/dpt/gjjpt": listPage("tsbk", "特色版块", "国家级平台", "gjjpt", "platform", [
@@ -425,58 +423,36 @@ window.SITE_DATA = (function () {
   }
 
   function zcclGalleryHtml(intro, headers, rows) {
-    var items = rows
-      .map(function (r, i) {
-        var year = String(r[0] || "").replace(/年/g, "");
-        var idx = i + 1 < 10 ? "0" + (i + 1) : String(i + 1);
+    var head = headers
+      .map(function (h) {
+        return "<th>" + (h || "") + "</th>";
+      })
+      .join("");
+    var body = rows
+      .map(function (r) {
         return (
-          '<li class="zccl-honor__item">' +
-          '<div class="zccl-honor__year"><b>' +
-          year +
-          "</b><i>年</i></div>" +
-          '<div class="zccl-honor__main">' +
-          "<h4>" +
-          (r[1] || "") +
-          "</h4>" +
-          '<div class="zccl-honor__tags"><em>' +
-          (r[2] || "") +
-          "</em><span>" +
-          (r[3] || "") +
-          "</span></div>" +
-          "</div>" +
-          '<span class="zccl-honor__idx" aria-hidden="true">' +
-          idx +
-          "</span>" +
-          "</li>"
+          "<tr>" +
+          r
+            .map(function (c) {
+              return "<td>" + (c || "") + "</td>";
+            })
+            .join("") +
+          "</tr>"
         );
       })
       .join("");
     return (
-      '<div class="zccl-gallery">' +
-      '<header class="zccl-gallery__head">' +
-      '<p class="zccl-intro">' +
+      "<p>" +
       intro +
       "</p>" +
-      '<div class="zccl-gallery__count"><b>' +
-      rows.length +
-      "</b><span>条摘录</span></div>" +
-      "</header>" +
-      '<div class="zccl-gallery__cols" aria-hidden="true">' +
-      "<span>" +
-      (headers[0] || "时间") +
-      "</span><span>" +
-      (headers[1] || "名称") +
-      "</span><span>" +
-      (headers[2] || "等级") +
-      " / " +
-      (headers[3] || "单位") +
-      "</span>" +
-      "</div>" +
-      '<ol class="zccl-honor">' +
-      items +
-      "</ol>" +
-      '<p class="zccl-note">以上为示例支撑材料条目，可替换为正式清单、证书扫描件或 PDF 附件。</p>' +
-      "</div>"
+      '<div class="contt_zhwen">' +
+      "<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\" style=\"width:100%;border-collapse:collapse;\">" +
+      "<thead><tr>" +
+      head +
+      "</tr></thead><tbody>" +
+      body +
+      "</tbody></table></div>" +
+      "<p>【Mock】以上为示例支撑材料条目，可替换为正式清单或附件。</p>"
     );
   }
 
@@ -517,29 +493,29 @@ window.SITE_DATA = (function () {
   var sideMenus = {
     cgjj: [],
     sbs: [
-      { file: "zyjjdjxwt", name: "主要解决的教学问题", href: "sbs/zyjjdjxwt.htm" },
-      { file: "cgjjjxwtdff", name: "成果解决教学问题的方法", href: "sbs/cgjjjxwtdff.htm" },
-      { file: "cgdcxd", name: "成果的创新点", href: "sbs/cgdcxd.htm" },
-      { file: "cgdtgyyxg", name: "成果的推广应用效果", href: "sbs/cgdtgyyxg.htm" },
-      { file: "zywcrqk", name: "主要完成人情况", href: "sbs/zywcrqk.htm" },
-      { file: "zywcdwytjdwyj", name: "主要完成单位与推荐单位意见", href: "sbs/zywcdwytjdwyj.htm" }
+      { file: "zyjjdjxwt", name: "申报书", desc: "申报材料总览", href: "sbs/zyjjdjxwt.htm" },
+      { file: "cgjjjxwtdff", name: "曾获奖励", desc: "获奖情况摘录", href: "sbs/cgjjjxwtdff.htm" },
+      { file: "cgdcxd", name: "成果简介", desc: "成果概述说明", href: "sbs/cgdcxd.htm" },
+      { file: "cgdtgyyxg", name: "问题与方案", desc: "问题研判与对策", href: "sbs/cgdtgyyxg.htm" },
+      { file: "zywcrqk", name: "成果创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm" },
+      { file: "zywcdwytjdwyj", name: "推广应用效果", desc: "应用成效与影响", href: "sbs/zywcdwytjdwyj.htm" }
     ],
     zccl: [
-      { file: "cgjd", name: "成果鉴定", href: "zccl/cgjd.htm" },
-      { file: "cgjl", name: "成果奖励", href: "zccl/cgjl.htm" },
-      { file: "zd_zd_xm", name: "重大（重点）项目", href: "zccl/zd_zd_xm.htm" },
-      { file: "xkzc", name: "学科支撑", href: "zccl/xkzc.htm" },
-      { file: "gjpt", name: "国际平台", href: "zccl/gjpt.htm" },
-      { file: "jgxm", name: "教改项目", href: "zccl/jgxm.htm" },
-      { file: "kcjs", name: "课程建设", href: "zccl/kcjs.htm" },
-      { file: "jsry", name: "教师荣誉", href: "zccl/jsry.htm" },
-      { file: "xsry", name: "学生荣誉", href: "zccl/xsry.htm" }
+      { file: "cgjd", name: "成果鉴定", desc: "专家鉴定意见", href: "zccl/cgjd.htm" },
+      { file: "cgjl", name: "成果奖励", desc: "教学成果获奖", href: "zccl/cgjl.htm" },
+      { file: "zd_zd_xm", name: "重大（重点）项目", desc: "重点研发与基金", href: "zccl/zd_zd_xm.htm" },
+      { file: "xkzc", name: "学科支撑", desc: "学科建设与支撑", href: "zccl/xkzc.htm" },
+      { file: "gjpt", name: "国际平台", desc: "国际合作联合实验室", href: "zccl/gjpt.htm" },
+      { file: "jgxm", name: "教改项目", desc: "教育教学改革", href: "zccl/jgxm.htm" },
+      { file: "kcjs", name: "课程建设", desc: "一流与示范课程", href: "zccl/kcjs.htm" },
+      { file: "jsry", name: "教师荣誉", desc: "团队与个人荣誉", href: "zccl/jsry.htm" },
+      { file: "xsry", name: "学生荣誉", desc: "研创竞赛获奖", href: "zccl/xsry.htm" }
     ],
     cgtgyy: [
-      { file: "mtbd", name: "媒体报道", href: "cgtgyy/mtbd.htm" },
-      { file: "cgyy", name: "成果应用", href: "cgtgyy/cgyy.htm" },
-      { file: "rcpycx", name: "人才培养成效", href: "cgtgyy/rcpycx.htm" },
-      { file: "tgjl", name: "推广交流", href: "cgtgyy/tgjl.htm" }
+      { file: "mtbd", name: "育人成效", desc: "素养养成与典型案例", href: "cgtgyy/mtbd.htm" },
+      { file: "cgyy", name: "军工品牌", desc: "旗舰先锋文化传播", href: "cgtgyy/cgyy.htm" },
+      { file: "rcpycx", name: "综合实力", desc: "双高建设与办学成效", href: "cgtgyy/rcpycx.htm" },
+      { file: "tgjl", name: "交流推广", desc: "研讨交流与推广纪要", href: "cgtgyy/tgjl.htm" }
     ],
     tsbk: [
       {
