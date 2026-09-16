@@ -752,16 +752,41 @@
         </div>
         <div class="training-scroll" id="jiangxunScroll">
             <div class="scroll-track">
-                <div class="scroll-item"><img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.blYz_X5w_01-1_gEHbkvFwHaE_?w=277&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></div>
-                <div class="scroll-item"><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.kLs3tJ8EFQKVT5Z1VdC5EgHaE7?w=281&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></div>
-                <div class="scroll-item"><img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.blYz_X5w_01-1_gEHbkvFwHaE_?w=277&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></div>
-                <div class="scroll-item"><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.kLs3tJ8EFQKVT5Z1VdC5EgHaE7?w=281&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></div>
-                <div class="scroll-item"><img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.blYz_X5w_01-1_gEHbkvFwHaE_?w=277&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></div>
-                <div class="scroll-item"><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.kLs3tJ8EFQKVT5Z1VdC5EgHaE7?w=281&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></div>
+                <div class="scroll-item"><img src="images/1.png" alt=""></div>
+                <div class="scroll-item"><img src="images/2.png" alt=""></div>
+                <div class="scroll-item"><img src="images/3.png" alt=""></div>
+                <div class="scroll-item"><img src="images/4.png" alt=""></div>
+                <div class="scroll-item"><img src="images/5.png" alt=""></div>
+                <div class="scroll-item"><img src="images/6.png" alt=""></div>
+                <div class="scroll-item"><img src="images/7.png" alt=""></div>
+                <div class="scroll-item"><img src="images/8.png" alt=""></div>
             </div>
         </div>
     </section>
-</div>
+
+    <section class="training-block" id="wuxun">
+        <div class="w16">
+            <div class="tit">
+                <h3>
+                    武训立身<b>铁血担当，砺志成才，立身报国强军</b>
+                </h3>
+                <div class="more">
+                    <a href="tsbk/dcg.htm">探索更多<img src="images/icon-jt5.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="training-scroll" id="wuxunScroll">
+            <div class="scroll-track">
+                <div class="scroll-item"><img src="images/w1.png" alt=""></div>
+                <div class="scroll-item"><img src="images/w2.png" alt=""></div>
+                <div class="scroll-item"><img src="images/w3.png" alt=""></div>
+                <div class="scroll-item"><img src="images/w4.png" alt=""></div>
+                <div class="scroll-item"><img src="images/w5.png" alt=""></div>
+                <div class="scroll-item"><img src="images/w6.png" alt=""></div>
+                <div class="scroll-item"><img src="images/w7.png" alt=""></div>
+            </div>
+        </div>
+    </section>
 
 <div class="s9">
     <div class="w16">
@@ -1017,7 +1042,13 @@
      * @param {string} wrapId 外层容器ID
      * @param {number} speed 滚动像素/帧，0.25~0.6，越小越慢
      */
-    function createLoopScroll(wrapId, speed = 0.3) {
+    /**
+     * 环形滚动
+     * @param {string} wrapId 外层容器ID
+     * @param {number} speed 滚动速度，推荐0.2~0.5
+     * @param {string} direction 方向：'left' 从右向左（默认） / 'right' 从左向右
+     */
+    function createLoopScroll(wrapId, speed = 0.3, direction = 'left') {
         const wrapDom = document.getElementById(wrapId);
         if (!wrapDom) {
             console.warn(`找不到元素id：${wrapId}`);
@@ -1041,9 +1072,10 @@
 
         function animate() {
             if (!pauseFlag) {
-                // 整体向左移动，所有卡片逻辑坐标同步减少
+                // 根据方向增减坐标
+                const delta = direction === 'left' ? -speed : speed;
                 for (let i = 0; i < logicXArr.length; i++) {
-                    logicXArr[i] -= speed;
+                    logicXArr[i] += delta;
                 }
             }
 
@@ -1052,14 +1084,26 @@
                 const item = itemList[i];
                 let x = logicXArr[i];
 
-                if (x < -itemWidth) {
-                    x = x + groupTotalWidth;
-                    logicXArr[i] = x;
-                }
-                // 反向：卡片跑出右边视口，挪到左边
-                if (x > wrapDom.clientWidth) {
-                    x = x - groupTotalWidth;
-                    logicXArr[i] = x;
+                if (direction === 'left') {
+                    // 从右往左（卡片向左跑）：跑出左边界，放到右侧
+                    if (x < -itemWidth) {
+                        x = x + groupTotalWidth;
+                        logicXArr[i] = x;
+                    }
+                    if (x > wrapDom.clientWidth) {
+                        x = x - groupTotalWidth;
+                        logicXArr[i] = x;
+                    }
+                } else {
+                    // 从左往右（卡片向右跑）：跑出右边界，放到左侧
+                    if (x > wrapDom.clientWidth) {
+                        x = x - groupTotalWidth;
+                        logicXArr[i] = x;
+                    }
+                    if (x < -itemWidth) {
+                        x = x + groupTotalWidth;
+                        logicXArr[i] = x;
+                    }
                 }
 
                 // 单张卡片独立位移；父容器track不再做整体translate
@@ -1089,6 +1133,13 @@
 
     //调用示例
     createLoopScroll('jiangxunScroll',0.4);
+
+
+    // 从右向左（默认，老效果）
+    createLoopScroll('jiangxunScroll', 0.3, 'left');
+
+    // 从左向右（新方向，图片往右走）
+    createLoopScroll('wuxunScroll', 0.35, 'right');
 
 </script>
 
