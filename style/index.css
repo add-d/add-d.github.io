@@ -156,26 +156,24 @@
 }
 
 .s1-c .s1c-lf .text p {
-    font-size: 0.18rem;
+    font-size: 0.14rem;
     color: #333;
     line-height: 0.36rem;
     height: 1.8rem;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     display: -webkit-box !important;
-    -webkit-line-clamp: 5 !important;
     -webkit-box-orient: vertical !important;
     text-indent: 2em;
 }
 
 .s1-c .s1c-lf .text span {
-    margin-top: 0.6rem;
     display: inline-block;
 }
 
 .s1-c .s1c-lf .text span a {
     display: block;
-    width: 1.5rem;
+    width: 1.6rem;
     height: 0.46rem;
     line-height: 0.46rem;
     border-radius: 0.4rem;
@@ -185,6 +183,39 @@
     font-size: 0.16rem;
     color: #fff;
     transition: all 0.3s ease-out 0s;
+}
+.training-block{
+    margin-bottom: 80px;
+}
+
+.training-scroll {
+    width: 85vw;
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto 0 auto;
+}
+.scroll-track {
+    position: relative;
+    height: 300px;
+    will-change: transform;
+}
+.scroll-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex: none;
+    width: 480px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backface-visibility: hidden;
+}
+.scroll-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .s1-c .s1c-lf .text span a img {
