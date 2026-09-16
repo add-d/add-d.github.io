@@ -91,6 +91,11 @@ body .clear {
     font-family: 'sys-b';
     src: url(../fonts/SourceHanSerifCN-Bold.otf)
 }
+@font-face {
+    font-family: 'LiuJiangMaoCao';
+    src: url(../fonts/字魂白鸽天行体.ttf)
+}
+
 
 .pic::before {
     position: absolute;
