@@ -1610,7 +1610,7 @@
 }
 
 .keyan .lb:hover .mar .text h2 {
-    color: #0057B9;
+    /*color: #0057B9;*/
 }
 
 .keyan .keyan-dot {
@@ -1625,7 +1625,6 @@
     z-index: 5;
     bottom: 0.55rem;
     outline: none;
-    background: url(../images/s9-btn.png) no-repeat center;
     background-size: auto 0.22rem;
     cursor: pointer;
 }

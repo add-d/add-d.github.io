@@ -6,7 +6,7 @@
  */
 :root {
   --brand: #0057B9;
-  --brand-deep: #003A8C;
+  --brand-deep: rgba(0, 58, 140, 0.5);
   --brand-soft: #E8F1FB;
   --brand-mid: #1A6BCF;
   --accent: #FF7D13;
@@ -752,7 +752,7 @@
 }
 
 .s9 .tit h3 {
-  color: var(--brand-deep) !important;
+  /*color: var(--brand-deep) ;*/
 }
 
 .keyan--stage {
@@ -794,7 +794,7 @@
 .keyan--stage .lb {
   perspective: none !important;
   margin-top: 0 !important;
-  width: 100%;
+  width: 1000px;
 }
 
 .keyan--stage .swiper-slide .lb .mar,
@@ -910,16 +910,16 @@
 
 .keyan--stage .keyan-prev,
 .keyan--stage .keyan-next {
-  width: 0.52rem !important;
-  height: 0.52rem !important;
+  width: 0.35rem !important;
+  height: 0.35rem !important;
   top: 42% !important;
   bottom: auto !important;
   margin: 0 !important;
   border-radius: 50%;
-  background:
-    var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF7D13' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'/%3E%3C/svg%3E")
-    no-repeat center / 0.24rem !important;
-  box-shadow: 0 0.08rem 0.2rem rgba(0, 58, 140, 0.28);
+  /*background: var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF7D13' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'/%3E%3C/svg%3E")*/
+  background: url(../images/lb-btn2.png)
+    no-repeat center  !important;
+  /*box-shadow: 0 0.08rem 0.2rem rgba(0, 58, 140, 0.28);*/
   transform: translateY(-50%) !important;
   transition: background-color 0.25s ease, transform 0.25s ease;
 }
@@ -931,9 +931,12 @@
 .keyan--stage .keyan-next {
   right: 0.15rem !important;
   left: auto !important;
-  background:
-    var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF7D13' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'/%3E%3C/svg%3E")
-    no-repeat center / 0.24rem !important;
+  background: url(../images/lb-btn3.png)
+  no-repeat center  !important;
+  transform: rotate(180deg)!important;
+  transform-origin: center center !important;
+
+  pointer-events: none !important;
 }
 
 .keyan--stage .keyan-prev:hover,
