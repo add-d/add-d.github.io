@@ -409,7 +409,7 @@ window.SITE_DATA = (function () {
             title: title,
             activeSide: file,
             crumbs: [
-                {name: "申报书", href: "sbs/zyjjdjxwt.htm"},
+                {name: "申报书", href: "sbs/cgdcxd.htm"},
                 {name: title, href: "sbs/" + file + ".htm"}
             ],
             html: html

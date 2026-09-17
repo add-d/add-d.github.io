@@ -21,7 +21,7 @@
       {
         id: "sbs",
         name: "申报书",
-        href: "sbs/zyjjdjxwt.htm",
+        href: "sbs/cgdcxd.htm",
         children: SITE_DATA.sideMenus.sbs
       },
       { id: "cgzj", name: "成果总结", href: "cgzj.htm" },
