@@ -935,3 +935,17 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%
         max-height: 0.32rem;
     }
 }
+.pdf-select-wrap{padding:20px 0;}
+.pdf-list{margin-bottom:16px;gap:12px;display:flex;flex-wrap:wrap;}
+.pdf-btn{
+    padding:8px 16px;
+    background:#19549c;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    margin:4px;
+}
+.pdf-btn:hover{background:#2770c4;}
+.pdf-btn.active{background:#ff7800;}
+.pdf-view{border:1px solid #eee;margin-top:10px;}

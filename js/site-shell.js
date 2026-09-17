@@ -103,43 +103,51 @@
   function sideHtml(page, depth) {
     var menus = SITE_DATA.sideMenus[page.sideKey] || [];
     var html = "";
+    // 把所有需要展开的file放到数组里，统一管理，清晰维护
+    var expandFileList = [
+      "gjjpt",
+      "gjlhyjzx",
+      "sbjpt",
+      "jl_tgjl",
+      "jl_cgyy",
+      "jl_bxsl",
+      "jl_yrex",
+      "dpt"
+    ];
     menus.forEach(function (m) {
       if (m.expandable) {
-        var open =
-          page.activeSide === "gjjpt" ||
-          page.activeSide === "gjlhyjzx" ||
-          page.activeSide === "sbjpt" ||
-          page.activeSide === "dpt";
+        var open = expandFileList.includes(page.activeSide);
         html +=
-          '<div class="menu-item ' +
-          (open ? "active open" : "") +
-          '"><a href="javascript:;" class="menu-link">' +
-          m.name +
-          '<span class="arrow"></span></a><div class="sub-menu">';
+            '<div class="menu-item ' +
+            (open ? "active open" : "") +
+            '"><a href="javascript:;" class="menu-link">' +
+            m.name +
+            '<span class="arrow"></span></a><div class="sub-menu">';
         (m.children || []).forEach(function (c) {
           html +=
-            '<a href="' +
-            abs(c.href, depth) +
-            '"' +
-            (page.activeSide === c.file ? ' class="active"' : "") +
-            ">" +
-            c.name +
-            "</a>";
+              '<a href="' +
+              abs(c.href, depth) +
+              '"' +
+              (page.activeSide === c.file ? ' class="active"' : "") +
+              ">" +
+              c.name +
+              "</a>";
         });
         html += "</div></div>";
       } else {
         html +=
-          '<div class="menu-item ' +
-          (page.activeSide === m.file ? "active" : "") +
-          '"><a href="' +
-          abs(m.href, depth) +
-          '">' +
-          m.name +
-          "</a></div>";
+            '<div class="menu-item ' +
+            (page.activeSide === m.file ? "active" : "") +
+            '"><a href="' +
+            abs(m.href, depth) +
+            '">' +
+            m.name +
+            "</a></div>";
       }
     });
     return html;
   }
+
 
   function mobileSideHtml(page, depth) {
     var menus = SITE_DATA.sideMenus[page.sideKey] || [];
@@ -209,8 +217,9 @@
         '<div class="ban_box"><div class="swiper-container"><div class="swiper-wrapper">' +
         '<div class="swiper-slide"><div class="ban_pic"><img src="' +
         p +
-        'images/banner.jpg" border="0"></div></div>' +
-        '</div></div><div class="text">' +
+        '/images/banner2.png" border="0"></div></div>' +
+        '</div></div><div class="text" style="font-family: \'sys-b\';">'
+        +
         '<div class="brand-hero-title"><span class="eyebrow">TEACHING ACHIEVEMENT</span>' +
         "<h2>船舶类高职院校学生军工素养培养的十六年探索与实践</h2>" +
         "<p>旗舰先锋 · 厚植军工底色 · 涵养报国素养</p></div></div></div>"
@@ -281,10 +290,10 @@
       '</div><div class="lt-erdh">' +
       sideHtml(page, depth) +
       "</div></div>" +
-      '<div class="lt-rg"><div class="ltdqwz"><span>' +
+      '<div class="lt-rg "><div class="ltdqwz"><span>' +
       crumbsHtml(page, depth) +
       "</span><h1>" +
-      page.title +
+      page.title+
       "</h1></div>" +
       (page.kind === "list" ? listBody(page, depth) : contentBody(page, depth)) +
       "</div></div></div>" +

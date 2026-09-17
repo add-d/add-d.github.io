@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>国家级教学成果奖(研究生)申报展示网站</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/animate.css">
+    <link rel="stylesheet" href="../style/swiper2.css">
+    <link rel="stylesheet" href="../style/public.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/ny.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE_PAGE = { key: "sbs/jl_bxsl", depth: 1 };</script>
+<script src="../js/site-data.js"></script>
+<script src="../js/site-shell.js"></script>
+<script src="../js/swiper2.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/ny.js"></script>
+<script>
+    SiteShell.renderInnerPage();
+    if (window.SITE_PAGE.key === 'zccl' && typeof jQuery !== 'undefined') {
+        jQuery(function(){
+            var text2 = document.querySelector('.text2');
+            if (!text2) return;
+            var inner = text2.querySelector('.scroll-inner');
+            if (!inner) return;
+            var timer = null;
+            function scrollUp(){
+                text2.scrollTop += 1;
+                if (text2.scrollTop >= inner.offsetHeight - text2.clientHeight) text2.scrollTop = 0;
+            }
+            function start(){ clearInterval(timer); timer = setInterval(scrollUp, 30); }
+            function stop(){ clearInterval(timer); }
+            start();
+            text2.addEventListener('mouseenter', stop);
+            text2.addEventListener('mouseleave', start);
+        });
+    }
+</script>
+</body>
+</html>

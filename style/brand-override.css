@@ -517,19 +517,8 @@
 /* =========================================================
    成果曾获奖励：荣誉印鉴星轨（横向滚动印鉴卡，取代白卡片列表）
    ========================================================= */
-.s32,
-.s32--orbit {
-  background:
-    radial-gradient(700px 280px at 50% 0%, rgba(255, 125, 19, 0.2), transparent 55%),
-    linear-gradient(165deg, #003A8C 0%, #0057B9 55%, #0D4FA3 100%) !important;
-  box-shadow: 0 0.16rem 0.4rem rgba(0, 58, 140, 0.25) !important;
-  border-radius: 0.16rem !important;
-  overflow: hidden !important;
-  padding: 0.1rem 0.2rem 0.24rem !important;
-  margin: 0.45rem 0 0.2rem !important;
-  border: 1px solid rgba(255, 125, 19, 0.28);
-}
-
+/* 标题区 */
+/* 标题区 */
 .s32--orbit .cgtit {
   display: flex !important;
   align-items: center;
@@ -538,14 +527,35 @@
   line-height: 1.2 !important;
   padding: 0.28rem 1.6rem 0.12rem !important;
 }
-
 .s32--orbit .cgtit h3 {
-  color: #fff !important;
+  color: #003572 !important;
   font-family: var(--display) !important;
   font-size: 0.28rem !important;
   letter-spacing: 0.12em;
+
+  /* 去掉黑色阴影，只用深蓝同色系轻微投影 */
+  text-shadow:
+          0 1px 0 rgba(0, 53, 114, 0.35),
+          0 2px 6px rgba(0, 70, 140, 0.25);
 }
 
+.s32, .s32--orbit {
+  background: url(images/banner3.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+
+  box-shadow:
+          0 0.2rem 0.45rem rgba(0, 48, 110, 0.35),
+          0 0 0.9rem rgba(0, 180, 255, 0.18) inset !important;
+
+  border-radius: 0.16rem !important;
+  overflow: hidden !important;
+  padding: 0.1rem 0.2rem 0.24rem !important;
+  margin: 0.45rem 0 0.2rem !important;
+
+  border: 1px solid rgba(0, 120, 210, 0.55) !important;
+}
 .s32--orbit .cgtit span {
   position: absolute !important;
   right: 0.2rem;
@@ -553,16 +563,116 @@
   transform: translateY(-50%);
   margin: 0 !important;
 }
-
 .s32--orbit .cgtit span a {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: #ffffff !important;
   font-size: 0.14rem !important;
 }
+.s32--orbit .cgtit span a:hover {
+  color: #b8d8ff !important;
+}
+.s32--orbit .cgtit span a {
+  color: #387ecd !important;
+  font-size: 0.14rem !important;
+}
+.s32--orbit .cgtit span a:hover {
+  color: #003b80 !important;
+}
 
-.s32--orbit .cgtit::before,
-.s32--orbit .cgtit::after {
-  opacity: 0.55;
-  filter: sepia(0.4) saturate(1.2);
+/* 年份轨道 */
+.award-orbit__years {
+  color: #c9e6ff !important;
+}
+
+.award-orbit__years span {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid rgba(110, 180, 255, 0.75) !important;
+  color: #004b8d !important;
+}
+
+.award-orbit__years span:hover {
+  background: #fff3c4 !important;
+  border-color: #f5c542 !important;
+  color: #7a5a00 !important;
+}
+
+.award-orbit__years i {
+  background: linear-gradient(90deg,
+  rgba(110, 180, 255, 0),
+  rgba(110, 180, 255, 0.55),
+  rgba(110, 180, 255, 0)) !important;
+}
+
+/* 卡片通用 */
+.award-seal {
+  background: linear-gradient(160deg,
+  rgba(255, 255, 255, 0.96),
+  rgba(235, 248, 255, 0.92)) !important;
+
+  border: 1px solid rgba(80, 160, 255, 0.65) !important;
+
+  box-shadow:
+          0 0.1rem 0.25rem rgba(0, 40, 90, 0.22),
+          0 0 0.4rem rgba(120, 200, 255, 0.25) inset !important;
+
+  color: #163f73 !important;
+}
+
+.award-seal:hover {
+  background: linear-gradient(160deg,
+  rgba(255, 255, 255, 1),
+  rgba(220, 242, 255, 0.96)) !important;
+
+  border-color: #f5c542 !important;
+
+  box-shadow:
+          0 0.14rem 0.32rem rgba(0, 40, 90, 0.28),
+          0 0 0.55rem rgba(255, 220, 130, 0.35) inset !important;
+}
+
+/* 强调卡片 */
+.award-seal--accent {
+  background: linear-gradient(160deg,
+  rgba(255, 251, 230, 0.98),
+  rgba(255, 240, 180, 0.92)) !important;
+
+  border: 1px solid rgba(245, 197, 66, 0.85) !important;
+
+  box-shadow:
+          0 0.12rem 0.28rem rgba(120, 80, 0, 0.18),
+          0 0 0.5rem rgba(255, 210, 110, 0.4) inset !important;
+}
+
+/* 年份角标 */
+.award-seal__year {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #1e6fc1, #004b8d) !important;
+}
+
+/* 等级标签 */
+.award-seal__grade {
+  color: #7a5a00 !important;
+  background: linear-gradient(135deg, #ffe59a, #f5c542) !important;
+  border: 1px solid rgba(216, 164, 0, 0.6) !important;
+}
+
+.award-seal--accent .award-seal__grade {
+  color: #7a5a00 !important;
+  background: linear-gradient(135deg, #fff4cf, #ffd447) !important;
+  border-color: rgba(216, 164, 0, 0.75) !important;
+}
+
+/* 标题和说明文字 */
+.award-seal h4 {
+  color: #003572 !important;
+}
+
+.award-seal p {
+  color: #2f6aa5 !important;
+}
+
+/* 底部说明 */
+.award-orbit__note {
+  color: #c9e6ff !important;
 }
 
 .award-orbit {
@@ -1015,7 +1125,7 @@
 .nav > ul > li > div.nav-mega > ul.nav-mega__grid,
 .nav-mega__grid {
   display: grid !important;
-  grid-template-columns: repeat(3, minmax(2.2rem, 1fr));
+  grid-template-columns: repeat(2, minmax(2.2rem, 1fr));
   gap: 0.28rem 0.42rem;
   overflow: visible;
   margin: 0;
@@ -1076,7 +1186,7 @@
 
 /* 条目较少时仍保持三列节奏；成果推广 4 项也走三列 */
 .nav > ul > li > div.nav-mega > ul.nav-mega__grid:has(> li:nth-child(-n+4):last-child) {
-  grid-template-columns: repeat(3, minmax(2.2rem, 1fr));
+  grid-template-columns: repeat(2, minmax(2.2rem, 1fr));
 }
 
 @media screen and (max-width: 1100px) {

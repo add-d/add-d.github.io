@@ -1,8 +1,21 @@
 .list-box {
-    overflow: hidden;
     padding-top: 0.55rem;
-    padding-bottom: 1.1rem;
-    background: url(../images/list-bg.png) no-repeat center top;
+    /*padding-bottom: 1.1rem;*/
+    background: url("https://www.jxpu.edu.cn/2026xbzy/images/bg8.jpg") no-repeat center top;
+    object-fit: fill;
+}
+.list-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: radial-gradient(ellipse 30% 80% at 0% 50%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 255, 255, 0) 100%);
+
+    z-index: 0;
 }
 
 .list-box .lt-lf {
@@ -19,6 +32,7 @@
 
 .list-box .lt-lf .lt-yjdh {
     padding: 0.25rem 0.15rem;
+
     line-height: 0.65rem;
     background: url(../images/ltyj-bg.png) no-repeat;
     background-size: cover;
@@ -34,6 +48,51 @@
     background: #E8F1FB url('https://www.jxpu.edu.cn/images/hexiangxiaoyuan.jpg') no-repeat center bottom;
     background-size: 100% auto;
     border-radius: 0 0 0.2rem 0.2rem;
+
+    position: relative;
+}
+
+.list-box .lt-lf .lt-erdh {
+    padding: 0.15rem 0.23rem 2.57rem;
+    background: #E8F1FB url('https://www.jxpu.edu.cn/images/hexiangxiaoyuan.jpg') no-repeat center bottom;
+    background-size: 100% auto;
+    border-radius: 0 0 0.2rem 0.2rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.list-box .lt-lf .lt-erdh::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+            linear-gradient(180deg,
+            #E8F1FB 0%,
+            #E8F1FB 18%,
+            rgba(232, 241, 251, 0.88) 32%,
+            rgba(232, 241, 251, 0.55) 48%,
+            rgba(232, 241, 251, 0.18) 68%,
+            rgba(232, 241, 251, 0) 100%);
+
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.list-box .lt-lf .lt-erdh::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+            radial-gradient(ellipse 80% 25% at 50% 0%,
+            rgba(255, 255, 255, 0.45) 0%,
+            rgba(255, 255, 255, 0.18) 40%,
+            rgba(255, 255, 255, 0) 100%);
+
+    pointer-events: none;
+    border-radius: inherit;
 }
 
 .menu-item {
@@ -42,7 +101,7 @@
 }
 
 .menu-item>a {
-    font-size: 0.24rem;
+    font-size: 0.16rem;
     line-height: 0.3rem;
     color: #333333;
     padding: 0.2rem 0.15rem;
