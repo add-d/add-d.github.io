@@ -197,7 +197,6 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%
 .h-bot .w16 .h-rgt {
     flex: 1;
     min-width: 0;
-    padding-right: 1rem;
     position: relative;
 }
 

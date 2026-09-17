@@ -1125,7 +1125,7 @@
 .nav > ul > li > div.nav-mega > ul.nav-mega__grid,
 .nav-mega__grid {
   display: grid !important;
-  grid-template-columns: repeat(2, minmax(2.2rem, 1fr));
+  grid-template-columns: repeat(3, minmax(2.2rem, 1fr));
   gap: 0.28rem 0.42rem;
   overflow: visible;
   margin: 0;
@@ -1184,9 +1184,8 @@
   opacity: 0.62;
 }
 
-/* 条目较少时仍保持三列节奏；成果推广 4 项也走三列 */
 .nav > ul > li > div.nav-mega > ul.nav-mega__grid:has(> li:nth-child(-n+4):last-child) {
-  grid-template-columns: repeat(2, minmax(2.2rem, 1fr));
+  grid-template-columns: repeat(3, minmax(2.2rem, 1fr));
 }
 
 @media screen and (max-width: 1100px) {
@@ -1216,12 +1215,13 @@
           linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
   mask-composite: intersect;
   -webkit-mask-composite: source-in;
-  /* 整体淡化：叠加透明度，比单纯brightness更柔和，全局变淡 */
   filter: brightness(0.78) saturate(0.8);
   opacity:1;
 }
 
-
+.nav ul > li:last-child > .nav-mega {
+  transform: translateX(-800px) !important;
+}
 
 
 @media screen and (max-width: 900px) {

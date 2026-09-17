@@ -147,7 +147,7 @@
 .s1-c {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 0.45rem;
+    padding-top: 0.2rem;
 }
 
 .s1-c .s1c-lf {
@@ -169,7 +169,7 @@
 }
 
 .s1-c .s1c-lf .text p {
-    font-size: 0.14rem;
+    font-size: 0.16rem;
     color: #333;
     line-height: 0.36rem;
     height: 1.8rem;

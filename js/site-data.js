@@ -9,9 +9,9 @@ window.SITE_DATA = (function () {
             typeName: "资讯详情",
             parentNav: "cgtgyy",
             sideKey: "cgtgyy",
-            crumbParent: {name: "成果推广应用", href: "cgtgyy/mtbd.htm"},
+            crumbParent: {name: "成果推广应用", href: "cgtgyy/jl_tgjl.htm"},
             crumbCurrent: "育人成效",
-            listHref: "cgtgyy/mtbd.htm",
+            listHref: "cgtgyy/jl_tgjl.htm",
             title: "【Mock】育人成效：军工素养人才培养纪实",
             date: "2026-07-08",
             author: "编辑组",
@@ -151,11 +151,6 @@ window.SITE_DATA = (function () {
         });
     }
 
-    const pageContent_cgdtgyyxg = `
-<script>
-// 判断当前路径，只有在父页面才跳转
-</script>
-`;
     var pages = {
         cgjj: {
             kind: "content",
@@ -179,6 +174,17 @@ window.SITE_DATA = (function () {
       </div>`
             ].join("")
         },
+        cgzj: {
+            kind: "content",
+            nav: "cgzj",
+            sideKey: "cgzj",
+            sideTitle: "成果总结",
+            title: "成果总结",
+            crumbs: [{name: "成果总结", href: "cgzj.htm"}],
+            html: "<div style=\"padding:30px 0;\">\n" +
+                "    <iframe src='../cnpdf/成果推广应用/成果总结报告总览.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
+                "</div>"
+        },
         "sbs/zyjjdjxwt": sbsPage("zyjjdjxwt", "申报书",
             "<p>【Mock】面向交通强国建设，研究生培养需回应极端环境、复杂场景、数智融合与国际协同等新要求。</p>" +
             "<p><strong>（一）科研训练与重大工程衔接不畅</strong></p><p>现有科研训练深入工程一线不够，复杂工程集成创新能力不足。</p>" +
@@ -188,7 +194,9 @@ window.SITE_DATA = (function () {
             "<p>【Mock】围绕三大问题，构建“工程出题—科研解题—教学入题”科产教融合路径。</p>" +
             "<p>一是以重大工程为载体组建跨学科团队；二是建设数智交叉课程；三是依托国际平台开展双向研训。</p>"),
         "sbs/cgdcxd": sbsPage("cgdcxd", "成果简介",
-            "<p>面向海洋强国、制造强国、军民融合战略对船舶军工人才的迫切需求，针对船舶类高职军工素养培养内涵界定不清晰、培养路径不系统、评价激励不精准等难题，2011年起学校依托60余年船舶军工办学底蕴，传承中船系统“旗舰先锋”军工文化，探索形成“目标引领、分层拓展、长效支撑”的“旗舰先锋”育人模式。构建“忠诚、卓越、坚韧”三维九要素培养目标模型，创设“点上淬炼—面上融合—体上浸润”分层培养路径，建立“新兵—尖兵—标兵”进阶激励与五方协同保障体系，将军工素养转化为可培养、可评价、可激励标准，形成育人闭环管理。成果历经16年迭代实践，获央视新闻联播、光明日报等权威媒体报道，助力学校成为全国首所船舶类职业本科大学，两轮入选国家“双高计划”，获评全国文明校园、国防特色学校，累计输送军工素养人才十万余人，近8年入伍2900余人，成果在全国200余家单位推广应用，为高职军工素养培养提供标准化范式。</p>\n</p>"),
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/成果申报书.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
+            "</div>"),
         "sbs/cgdtgyyxg": sbsPage("cgdtgyyxg", "问题与方案",
             "[Mock]"),
         "sbs/zywcrqk": sbsPage("zywcrqk", "成果创新点",
@@ -213,13 +221,39 @@ window.SITE_DATA = (function () {
             "<div style=\"padding:30px 0;\">\n" +
             "    <iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"育人效果PDF预览\"></iframe>\n" +
             "</div>"),
+
+        "sbs/pyjz": sbsPage("pyjz", "培养矩阵",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/培养矩阵.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
+            "</div>"),
+
+        "sbs/zhtx": sbsPage("zhtx", "支撑体系",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/支撑体系.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"支撑体系PDF预览\"></iframe>\n" +
+            "</div>"),
+
+        "sbs/ddtsj": sbsPage("ddtsj", "教导团实践",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/教导团实践.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"教导团实践PDF预览\"></iframe>\n" +
+            "</div>"),
+
+        "sbs/ltyj": sbsPage("ltyj", "理论研究",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/理论研究.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"理论研究PDF预览\"></iframe>\n" +
+            "</div>"),
+
+        "sbs/yrst": sbsPage("yrst", "育人生态",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/育人生态.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"育人生态PDF预览\"></iframe>\n" +
+            "</div>"),
+
         zccl: {
             kind: "content",
             nav: "zccl",
             sideKey: "zccl",
             sideTitle: "支撑材料",
             title: "支撑材料",
-            crumbs: [{name: "支撑材料", href: "zccl.htm"}],
+            crumbs: [{name: "支撑材料", href: "zccl/cgjl.htm"}],
             html: zcclGalleryHtml(
                 "成果曾获奖励情况摘录，可点击左侧栏目查看鉴定、项目、课程等分类支撑材料。",
                 ["获奖时间", "获奖名称", "获奖等级", "授奖部门"],
@@ -237,96 +271,40 @@ window.SITE_DATA = (function () {
             "cgjd",
             "成果鉴定",
             "以下为成果鉴定意见与验收材料摘录，可替换为正式鉴定书扫描件与附件目录。",
-            ["鉴定时间", "鉴定名称", "鉴定结论", "组织单位"],
-            [
-                ["2024年", "公路交通复合型人才培养模式成果鉴定", "国际先进", "教育部高等学校教学指导委员会（示例）"],
-                ["2023年", "工程现场育人机制与实践体系鉴定", "国内领先", "中国公路学会教育工作委员会（示例）"],
-                ["2022年", "数智融通课程体系改革成果鉴定", "国内先进", "陕西省教育厅（示例）"],
-                ["2021年", "中外协同培养标准互认方案鉴定", "国内领先", "长安大学组织同行专家组（示例）"],
-                ["2020年", "研究生交叉课题与重大工程联动机制鉴定", "国内先进", "交通运输部科技司相关专家组（示例）"]
-            ]
+            [],
+            []
         ),
         "zccl/cgjl": zcclMaterial(
             "cgjl",
             "成果奖励",
-            "【Mock】教学成果及相关获奖清单（与首页荣誉印鉴对应的代表性条目）。",
-            ["获奖时间", "获奖名称", "获奖等级", "授奖部门"],
-            [
-                ["2023年", "课程筑基、科创赋能、国合增效：公路交通领军型人才培养", "省级特等奖", "陕西省人民政府"],
-                ["2025年", "前沿交叉引领、重大需求驱动的交通人才培养新模式", "省级一等奖", "陕西省人民政府"],
-                ["2019年", "工程现场育人与课程思政融合实践", "省级一等奖", "陕西省人民政府"],
-                ["2021年", "国家级课程思政示范课程：交通强国", "国家级", "教育部"],
-                ["2018年", "研究生培养模式创新与实践探索", "省级二等奖", "陕西省人民政府"]
-            ]
+            "",
+            "../cnpdf/支撑材料/成果获奖.pdf"
         ),
         "zccl/zd_zd_xm": zcclMaterial(
             "zd_zd_xm",
-            "重大（重点）项目",
-            "【Mock】支撑本成果的国家重点研发计划、基金重点及其他重大（重点）项目摘要。",
-            ["立项时间", "项目名称", "项目类别", "主持/参与"],
-            [
-                ["2022年", "交通基础设施耐久性提升关键技术", "国家重点研发计划", "主持"],
-                ["2021年", "绿色能源自洽供给与低碳维养", "国家重点研发计划", "主持"],
-                ["2020年", "道路与桥梁智能检测与装备", "国家重点研发计划", "参与"],
-                ["2019年", "高寒高海拔公路建养关键科学问题", "国家自然科学基金重点项目", "主持"],
-                ["2018年", "车路协同可信测试关键技术", "国家重点研发计划", "参与"],
-                ["2017年", "多年冻土区公路服役安全与韧性提升", "省部级重大科技专项", "主持"]
-            ]
+            "单项奖励",
+            "",
+            "../cnpdf/支撑材料/单项奖励.pdf"
         ),
         "zccl/xkzc": zcclMaterial(
             "xkzc",
-            "学科支撑",
-            "【Mock】本成果依托的学科平台、评估结果与支撑条件清单。",
-            ["时间", "支撑内容", "层级/类别", "主管部门/机构"],
-            [
-                ["2025年", "ESI 工程学进入全球前1‰", "学科评估", "科睿唯安"],
-                ["2023年", "极端环境绿色长寿道路工程全国重点实验室", "国家级平台", "科技部"],
-                ["2021年", "“交通强国”试点任务（智能感知 / 风险防控等）", "国家级任务", "交通运输部"],
-                ["2020年", "交通运输工程一流学科建设点", "一流学科", "教育部"],
-                ["2019年", "公路与桥梁高效养护及安全耐久国家工程研究中心", "国家级平台", "国家发改委"]
-            ]
-        ),
-        "zccl/gjpt": zcclMaterial(
-            "gjpt",
-            "国际平台",
-            "【Mock】国际联合实验室、引智基地与中外协同培养平台清单。",
-            ["获批时间", "平台名称", "平台类型", "依托单位/合作方"],
-            [
-                ["2017年", "“111”学科创新引智基地（特殊区域公路工程）", "引智基地", "教育部 / 外专局"],
-                ["2022年", "中爱铺面工程绿色建养与智慧运维联合实验室", "国际联合实验室", "中爱合作高校（示例）"],
-                ["2021年", "中南绿色智慧公路联合实验室", "国际联合实验室", "中南合作高校（示例）"],
-                ["2020年", "特殊地区公路交通基础设施可持续发展国际合作联合实验室", "国际联合实验室", "多国合作网络（示例）"],
-                ["2019年", "西部地区公路桥梁与隧道绿色建造及韧性提升“111”基地", "引智基地", "教育部"]
-            ]
+            "综合荣誉",
+            "",
+            "../cnpdf/支撑材料/综合荣誉.pdf"
         ),
         "zccl/jgxm": zcclMaterial(
             "jgxm",
-            "教改项目",
-            "【Mock】支撑本成果的国家级、省部级与校级教育教学改革项目。",
-            ["立项时间", "项目名称", "项目级别", "状态"],
-            [
-                ["2023年", "公路交通领军型人才培养模式改革与实践", "省级教改重点", "在研"],
-                ["2022年", "研究生课程思政示范体系建设", "国家级教改专项（示例）", "结题"],
-                ["2021年", "工程现场育人与案例库建设", "省级教改一般", "结题"],
-                ["2020年", "中外协同培养课程标准互认探索", "校级重大教改", "结题"],
-                ["2019年", "数智交叉课程群建设与评价改革", "省级教改重点", "结题"],
-                ["2018年", "产教融合实践基地共建机制研究", "省级教改一般", "结题"]
-            ]
+            "教师成果",
+            "",
+            "../cnpdf/支撑材料/教师成果.pdf"
         ),
         "zccl/kcjs": zcclMaterial(
-            "kcjs",
-            "课程建设",
-            "【Mock】一流课程、课程思政示范课、教材与数智交叉课程建设清单。",
-            ["获批时间", "课程/教材名称", "建设类型", "认定部门"],
-            [
-                ["2021年", "交通强国", "国家级课程思政示范课程", "教育部"],
-                ["2023年", "道路工程（研究生）", "国家级一流课程（示例）", "教育部"],
-                ["2022年", "桥隧工程安全与智慧运维", "省级一流课程", "陕西省教育厅"],
-                ["2022年", "数智交叉：交通大数据分析", "数智交叉课程", "学校认定"],
-                ["2020年", "特殊地区公路工程（全英文）", "国际平台 MOOC", "学校 / 合作平台"],
-                ["2019年", "公路工程研究生核心课群", "省级一流课程群", "陕西省教育厅"]
-            ]
+            "xsry",
+            "学生成果",
+            "",
+            "../cnpdf/支撑材料/学生成果.pdf"
         ),
+
         "zccl/jsry": zcclMaterial(
             "jsry",
             "教师荣誉",
@@ -341,20 +319,7 @@ window.SITE_DATA = (function () {
                 ["2018年", "师德建设示范团队（示例）", "省级", "陕西省教育厅"]
             ]
         ),
-        "zccl/xsry": zcclMaterial(
-            "xsry",
-            "学生荣誉",
-            "【Mock】研究生在竞赛、科创与国际交流中的代表性获奖与荣誉。",
-            ["获奖时间", "荣誉/赛事名称", "奖项等级", "主办单位"],
-            [
-                ["2026年", "道路交通基础设施大数据智能分析大赛指导成果", "国家级特等奖", "中国公路学会"],
-                ["2024年", "全国研究生智慧交通创新大赛", "一等奖", "教育部相关学会（示例）"],
-                ["2023年", "“挑战杯”课外学术科技作品竞赛", "省级特等奖", "共青团陕西省委（示例）"],
-                ["2022年", "国际道路工程案例挑战赛", "银奖", "国际合作联盟（示例）"],
-                ["2021年", "全国大学生交通科技大赛（研究生组）", "一等奖", "中国公路学会"],
-                ["2020年", "研究生数学建模竞赛", "国家级二等奖", "教育部相关组委会（示例）"]
-            ]
-        ),
+
 
         "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "育人成效", "mtbd", "article", [
             "【Mock】育人成效一：军工素养人才成长路径",
@@ -460,7 +425,7 @@ window.SITE_DATA = (function () {
             title: title,
             activeSide: file,
             crumbs: [
-                {name: "支撑材料", href: "zccl.htm"},
+                {name: "支撑材料", href: "zccl/cgjl.htm"},
                 {name: title, href: "zccl/" + file + ".htm"}
             ],
             html: html
@@ -501,15 +466,38 @@ window.SITE_DATA = (function () {
         );
     }
 
-    function zcclMaterial(file, title, intro, headers, rows) {
-        return zcclPage(file, title, zcclGalleryHtml(intro, headers, rows));
+    /**
+     * zcclMaterial 兼容双模式
+     * 模式1（默认表格，老用法）：zcclMaterial(file, title, intro, headers[], rows[][])
+     * 模式2（PDF预览新模式）：zcclMaterial(file, title, "", pdfPathString)
+     * @param {string} file
+     * @param {string} title
+     * @param {string} intro
+     * @param {string|Array} arg4  如果是字符串=pdf路径；数组=表头headers
+     * @param {Array} rows 表格行数据（仅表格模式生效）
+     */
+    function zcclMaterial(file, title, intro, arg4, rows) {
+        // 判断：第四个参数是字符串 → PDF模式
+        if (typeof arg4 === "string" && !Array.isArray(arg4)) {
+            const pdfPath = arg4;
+            const pdfHtml = `
+<div style="padding:30px 0;">
+    <iframe src='${pdfPath}' style="width:100%;height:90vh;border:none;" title="${title}PDF预览"></iframe>
+</div>`;
+            return zcclPage(file, title, pdfHtml);
+        }
+
+        // 否则走原有表格渲染逻辑（默认，兼容全部旧代码）
+        const headers = arg4;
+        const innerHtml = zcclGalleryHtml(intro, headers, rows);
+        return zcclPage(file, title, innerHtml);
     }
 
     function listPage(nav, sideTitle, title, activeSide, detailType, titles, isTsbk) {
         var crumbs;
         if (nav === "cgtgyy") {
             crumbs = [
-                {name: "成果推广应用", href: "cgtgyy/mtbd.htm"},
+                {name: "成果推广应用", href: "cgtgyy/jl_tgjl.htm"},
                 {name: title, href: "cgtgyy/" + activeSide + ".htm"}
             ];
         } else if (activeSide === "gjjpt" || activeSide === "gjlhyjzx" || activeSide === "sbjpt") {
@@ -541,19 +529,33 @@ window.SITE_DATA = (function () {
             {file: "cgdcxd", name: "A1 成果简介", desc: "成果概述说明", href: "sbs/cgdcxd.htm"},
             {
                 file: "cgdtgyyxg",
-                name: "A2 主要解决的教学问题及解决方案",
-                desc: "问题研判与对策",
+                name: "A2 推广应用效果 ",
+                desc: "应用成效与影响",
                 expandable: true,
                 children: [
                     {file: "jl_tgjl", name: "交流推广", href: "sbs/jl_tgjl.htm"},
                     {file: "jl_cgyy", name: "军工品牌", href: "sbs/jl_cgyy.htm"},
                     {file: "jl_bxsl", name: "办学实力", href: "sbs/jl_bxsl.htm"},
                     {file: "jl_yrex", name: "育人效果", href: "sbs/jl_yrex.htm"}
-                ]
+                ],
+                href: "sbs/jl_tgjl.htm"
             },
             {file: "zywcrqk", name: "A3 创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
-            {file: "zywcdwytjdwyj", name: "A4 推广应用效果", desc: "应用成效与影响", href: "sbs/zywcdwytjdwyj.htm"}
-        ],
+            {
+                file: "zywcdwytjdwyj",
+                name: "A4 主要解决的教学问题及解决方案",
+                desc: "问题研判与对策",
+                expandable: true,
+                href: "sbs/pyjz.htm",
+                children: [
+                    {file: "pyjz", name: "培养矩阵", href: "sbs/pyjz.htm"},
+                    {file: "zhtx", name: "支撑体系", href: "sbs/zhtx.htm"},
+                    {file: "ddtsj", name: "教导团实践", href: "sbs/ddtsj.htm"},
+                    {file: "ltyj", name: "理论研究", href: "sbs/ltyj.htm"},
+                    {file: "yrst", name: "育人生态", href: "sbs/yrst.htm"}
+                ]
+            }],
+
         zccl: [
             {file: "cgjd", name: "A1 成果鉴定书", desc: "专家鉴定意见", href: "zccl/cgjd.htm"},
             {file: "cgjl", name: "A2 成果获奖", desc: "教学成果获奖", href: "zccl/cgjl.htm"},
@@ -563,10 +565,10 @@ window.SITE_DATA = (function () {
             {file: "kcjs", name: "A6 学生成果", desc: "研创竞赛获奖成果", href: "zccl/kcjs.htm"}
         ],
         cgtgyy: [
-            {file: "mtbd", name: "A1 育人成效", desc: "素养养成与典型案例", href: "cgtgyy/mtbd.htm"},
-            {file: "cgyy", name: "A2 军工品牌", desc: "旗舰先锋文化传播", href: "cgtgyy/cgyy.htm"},
-            {file: "rcpycx", name: "A3 综合实力", desc: "双高建设与办学成效", href: "cgtgyy/rcpycx.htm"},
-            {file: "tgjl", name: "A4 交流推广", desc: "研讨交流与推广纪要", href: "cgtgyy/tgjl.htm"}
+            {file: "mtbd", name: "A1 育人成效", desc: "素养养成与典型案例", href: "sbs/jl_tgjl.htm"},
+            {file: "cgyy", name: "A2 军工品牌", desc: "旗舰先锋文化传播", href: "sbs/jl_cgyy.htm"},
+            {file: "rcpycx", name: "A3 综合实力", desc: "双高建设与办学成效", href: "sbs/jl_bxsl.htm"},
+            {file: "tgjl", name: "A4 交流推广", desc: "研讨交流与推广纪要", href: "sbs/jl_yrex.htm"}
         ],
         tsbk: [
             {

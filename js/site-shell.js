@@ -24,19 +24,20 @@
         href: "sbs/zyjjdjxwt.htm",
         children: SITE_DATA.sideMenus.sbs
       },
+      { id: "cgzj", name: "成果总结", href: "cgzj.htm" },
       {
         id: "zccl",
         name: "支撑材料",
-        href: "zccl.htm",
+        href: "zccl/cgjl.htm",
         children: SITE_DATA.sideMenus.zccl
       },
       {
         id: "cgtgyy",
         name: "成果推广应用",
-        href: "cgtgyy/mtbd.htm",
+        href: "sbs/jl_yrex.htm",
         children: SITE_DATA.sideMenus.cgtgyy
       },
-      { id: "tsbk", name: "特色成果", href: "tsbk/dpt/gjjpt.htm" }
+      // { id: "tsbk", name: "特色成果", href: "tsbk/dpt/gjjpt.htm" }
     ];
 
     var html = "<ul>";
@@ -74,10 +75,10 @@
       { name: "首页", href: "index.html" },
       { name: "成果简介", href: "cgjj.htm" },
       { name: "申报书", href: "sbs/zyjjdjxwt.htm", children: SITE_DATA.sideMenus.sbs },
-      { name: "支撑材料", href: "zccl.htm", children: SITE_DATA.sideMenus.zccl },
+      { name: "支撑材料", href: "zccl/cghj.htm", children: SITE_DATA.sideMenus.zccl },
       {
         name: "成果推广应用",
-        href: "cgtgyy/mtbd.htm",
+        href: "sbs/jl_yrex.htm",
         children: SITE_DATA.sideMenus.cgtgyy
       },
       { name: "特色成果", href: "tsbk/dpt/gjjpt.htm" }
@@ -103,7 +104,6 @@
   function sideHtml(page, depth) {
     var menus = SITE_DATA.sideMenus[page.sideKey] || [];
     var html = "";
-    // 把所有需要展开的file放到数组里，统一管理，清晰维护
     var expandFileList = [
       "gjjpt",
       "gjlhyjzx",
@@ -112,6 +112,11 @@
       "jl_cgyy",
       "jl_bxsl",
       "jl_yrex",
+      "pyjz",
+      "zhtx",
+      "ddtsj",
+      "ltyj",
+      "yrst",
       "dpt"
     ];
     menus.forEach(function (m) {
@@ -197,7 +202,7 @@
     var p = prefix(depth);
     return (
         '<div class="head pc"><div class="h-bot"><div class="w16">' +
-        '<div class="logo"><a href="' + abs("index.html", depth) + '" title="国家级教学成果奖(研究生)申报展示网站"><img src="https://www.jxpu.edu.cn/2026xbzy/images/logo.png" alt="Logo占位"></a></div>' +
+        '<div class="logo"><a href="' + abs("index.html", depth) + '" title="“旗舰先锋”模式：船舶类高职院校学生军工素养培养的十六年探索与实践"><img src="https://www.jxpu.edu.cn/2026xbzy/images/logo.png" alt="Logo占位"></a></div>' +
         '<div class="h-rgt"><div class="nav">' +
         navHtml(active, depth) +
         "</div></div></div></div></div>" +
@@ -274,7 +279,7 @@
     var depth = cfg.depth || 0;
     var p = prefix(depth);
 
-    document.title = page.title + "-国家级教学成果奖(研究生)申报展示网站";
+    document.title = page.title + "-“旗舰先锋”模式：船舶类高职院校学生军工素养培养的十六年探索与实践";
 
     var main =
       headerHtml(page.nav, depth) +
@@ -343,7 +348,7 @@
       ]
     };
 
-    document.title = detail.title + "-国家级教学成果奖(研究生)申报展示网站";
+    document.title = detail.title + "-“旗舰先锋”模式：船舶类高职院校学生军工素养培养的十六年探索与实践";
 
     var body =
       '<div class="contt_box"><div class="contt_tit"><h1>' +
