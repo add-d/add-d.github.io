@@ -17,7 +17,7 @@
     var p = prefix(depth);
     var items = [
       { id: "home", name: "首页", href: "index.html" },
-      { id: "cgjj", name: "成果简介", href: "cgjj.htm" },
+      // { id: "cgjj", name: "成果简介", href: "cgjj.htm" },
       {
         id: "sbs",
         name: "申报书",
@@ -217,12 +217,12 @@
         '<div class="ban_box"><div class="swiper-container"><div class="swiper-wrapper">' +
         '<div class="swiper-slide"><div class="ban_pic"><img src="' +
         p +
-        '/images/banner2.png" border="0"></div></div>' +
+        '/images/img_5.png" border="0"></div></div>' +
         '</div></div><div class="text" style="font-family: \'sys-b\';">'
         +
-        '<div class="brand-hero-title"><span class="eyebrow">TEACHING ACHIEVEMENT</span>' +
+        '<div class="brand-hero-title"><span class="eyebrow"></span>' +
         "<h2>船舶类高职院校学生军工素养培养的十六年探索与实践</h2>" +
-        "<p>旗舰先锋 · 厚植军工底色 · 涵养报国素养</p></div></div></div>"
+        "<p></p></div></div></div>"
     );
   }
 

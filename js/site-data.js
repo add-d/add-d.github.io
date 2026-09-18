@@ -304,21 +304,33 @@ window.SITE_DATA = (function () {
             "",
             "../cnpdf/支撑材料/学生成果.pdf"
         ),
-
-        "zccl/jsry": zcclMaterial(
-            "jsry",
-            "教师荣誉",
-            "【Mock】支撑本成果的教师个人与团队荣誉称号摘录。",
-            ["获奖时间", "荣誉名称", "荣誉层级", "授予单位"],
-            [
-                ["2022年", "公路工程全国高校黄大年式教师团队", "国家级", "教育部"],
-                ["2023年", "全国模范教师（示例）", "国家级", "教育部 / 人社部"],
-                ["2021年", "万人计划教学名师（示例）", "国家级", "中组部"],
-                ["2020年", "交通运输行业青年科技英才（示例）", "省部级", "交通运输部"],
-                ["2019年", "省级教学名师（示例）", "省级", "陕西省教育厅"],
-                ["2018年", "师德建设示范团队（示例）", "省级", "陕西省教育厅"]
-            ]
+        "zccl/cgjd_jxzyjy": zcclMaterial(
+            "cgjd_jxzyjy",
+            "江西省职业教育与继续教育学",
+            "",
+            "../cnpdf/支撑材料/成果鉴定书-江西省职业教育与继续教育学会.pdf"
         ),
+        "zccl/cgjd_jxgjxh": zcclMaterial(
+            "cgjd_jxgjxh",
+            "江西省高等教育学会",
+            "",
+            "../cnpdf/支撑材料/成果鉴定书-江西省高等教育学会.pdf"
+        ),
+
+        // "zccl/jsry": zcclMaterial(
+        //     "jsry",
+        //     "教师荣誉",
+        //     "【Mock】支撑本成果的教师个人与团队荣誉称号摘录。",
+        //     ["获奖时间", "荣誉名称", "荣誉层级", "授予单位"],
+        //     [
+        //         ["2022年", "公路工程全国高校黄大年式教师团队", "国家级", "教育部"],
+        //         ["2023年", "全国模范教师（示例）", "国家级", "教育部 / 人社部"],
+        //         ["2021年", "万人计划教学名师（示例）", "国家级", "中组部"],
+        //         ["2020年", "交通运输行业青年科技英才（示例）", "省部级", "交通运输部"],
+        //         ["2019年", "省级教学名师（示例）", "省级", "陕西省教育厅"],
+        //         ["2018年", "师德建设示范团队（示例）", "省级", "陕西省教育厅"]
+        //     ]
+        // ),
 
 
         "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "育人成效", "mtbd", "article", [], false,
@@ -577,18 +589,28 @@ window.SITE_DATA = (function () {
         ],
 
         zccl: [
-            {file: "cgjd", name: "A1 成果鉴定书", desc: "专家鉴定意见", href: "zccl/cgjd.htm"},
-            {file: "cgjl", name: "A2 成果获奖", desc: "教学成果获奖", href: "zccl/cgjl.htm"},
-            {file: "zd_zd_xm", name: "A3 单项奖励", desc: "各类单项荣誉", href: "zccl/zd_zd_xm.htm"},
-            {file: "xkzc", name: "A4 综合荣誉", desc: "项目平台综合荣誉", href: "zccl/xkzc.htm"},
-            {file: "jgxm", name: "A5 教师成果", desc: "团队与个人荣誉成果", href: "zccl/jgxm.htm"},
-            {file: "kcjs", name: "A6 学生成果", desc: "研创竞赛获奖成果", href: "zccl/kcjs.htm"}
+            {
+                file: "cgjd",
+                name: "成果鉴定书",
+                desc: "专家鉴定意见",
+                href: "zccl/cgjd.htm",
+                expandable: true,
+                children: [
+                    {file: "cgjd_jxzyjy", name: "江西省职业教育与继续教育学", href: "zccl/cgjd_jxzyjy.htm"},
+                    {file: "cgjd_jxgjxh", name: "江西省高等教育学会", href: "zccl/cgjd_jxgjxh.htm"}
+                ]
+            },
+            {file: "cgjl", name: "成果获奖", desc: "教学成果获奖", href: "zccl/cgjl.htm"},
+            {file: "zd_zd_xm", name: "单项奖励", desc: "各类单项荣誉", href: "zccl/zd_zd_xm.htm"},
+            {file: "xkzc", name: "综合荣誉", desc: "项目平台综合荣誉", href: "zccl/xkzc.htm"},
+            {file: "jgxm", name: "教师成果", desc: "团队与个人荣誉成果", href: "zccl/jgxm.htm"},
+            {file: "kcjs", name: "学生成果", desc: "研创竞赛获奖成果", href: "zccl/kcjs.htm"}
         ],
         cgtgyy: [
-            {file: "mtbd", name: "A1 育人成效", desc: "素养养成与典型案例", href: "cgtgyy/mtbd.htm"},
-            {file: "cgyy", name: "A2 军工品牌", desc: "旗舰先锋文化传播", href: "cgtgyy/cgyy.htm"},
-            {file: "rcpycx", name: "A3 综合实力", desc: "双高建设与办学成效", href: "cgtgyy/rcpycx.htm"},
-            {file: "tgjl", name: "A4 交流推广", desc: "研讨交流与推广纪要", href: "cgtgyy/tgjl.htm"}
+            {file: "mtbd", name: "育人成效", desc: "素养养成与典型案例", href: "cgtgyy/mtbd.htm"},
+            {file: "cgyy", name: "军工品牌", desc: "旗舰先锋文化传播", href: "cgtgyy/cgyy.htm"},
+            {file: "rcpycx", name: "综合实力", desc: "双高建设与办学成效", href: "cgtgyy/rcpycx.htm"},
+            {file: "tgjl", name: "交流推广", desc: "研讨交流与推广纪要", href: "cgtgyy/tgjl.htm"}
         ],
         tsbk: [
             {
