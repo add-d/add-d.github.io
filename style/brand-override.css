@@ -1185,7 +1185,7 @@
 }
 
 .nav > ul > li > div.nav-mega > ul.nav-mega__grid:has(> li:nth-child(-n+4):last-child) {
-  grid-template-columns: repeat(3, minmax(2.2rem, 1fr));
+  grid-template-columns: repeat(2, minmax(2.2rem, 1fr));
 }
 
 @media screen and (max-width: 1100px) {

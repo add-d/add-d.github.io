@@ -34,7 +34,7 @@
       {
         id: "cgtgyy",
         name: "成果推广应用",
-        href: "sbs/jl_yrex.htm",
+        href: "cgtgyy/mtbd.htm",
         children: SITE_DATA.sideMenus.cgtgyy
       },
       // { id: "tsbk", name: "特色成果", href: "tsbk/dpt/gjjpt.htm" }
