@@ -179,19 +179,20 @@
   function footerHtml(depth) {
     var p = prefix(depth);
     return (
-      '<div class="foot"><div class="w16"><div class="ftmin1"><div class="link">' +
-      '<h2><img src="' +
-      p +
-      'images/icon-link.png">友情链接：</h2><p>' +
-      '<a href="#" target="_blank">示例链接A</a>' +
-      '<a href="#" target="_blank">示例链接B</a>' +
-      '<a href="#" target="_blank">示例链接C</a>' +
-      "</p></div>" +
-      '<div class="dbadr"><p>示例地址：某某市某某区示例路 100 号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" target="_blank">备案号占位</a></p>' +
-      '<p>南校区地址：示例地址占位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" target="_blank">公安备案占位</a></p></div>' +
-      '</div></div><div id="backTop"></div></div>'
+        '<div class="foot"><div class="w16"><div class="ftmin1"><div class="link">' +
+        '<h2><img src="' + p + 'images/icon-link.png">友情链接：</h2><p>' +
+        '<a href="#" target="_blank">示例链接A</a>' +
+        '<a href="#" target="_blank">示例链接B</a>' +
+        '<a href="#" target="_blank">示例链接C</a>' +
+        "</p></div>" +
+        '<div class="dbadr">' +
+        '<p>十里校区：中国 · 江西· 九江市十里大道1188号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;濂溪校区：中国 · 江西· 九江市濂溪区前进东路881号</p>' +
+        '<p>Copyright © 2017 江西职业技术大学, All rights reserved.</p>' +
+        '</div>' +
+        '</div></div><div id="backTop"></div></div>'
     );
   }
+
 
   function headerHtml(active, depth) {
     var p = prefix(depth);
