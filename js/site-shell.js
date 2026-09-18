@@ -222,7 +222,7 @@
         '</div></div><div class="text" style="font-family: \'sys-b\';">'
         +
         '<div class="brand-hero-title"><span class="eyebrow"></span>' +
-        "<h2>船舶类高职院校学生军工素养培养的十六年探索与实践</h2>" +
+        "<h2></h2>" +
         "<p></p></div></div></div>"
     );
   }

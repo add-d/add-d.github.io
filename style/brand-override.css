@@ -6,7 +6,7 @@
  */
 :root {
   --brand: #0057B9;
-  --brand-deep: rgba(0, 58, 140, 0.5);
+  --brand-deep: rgba(181, 184, 189, 0.5);
   --brand-soft: #E8F1FB;
   --brand-mid: #1A6BCF;
   --accent: #FF7D13;
@@ -1457,4 +1457,73 @@
   .s5-stage-caption {
     font-size: 0.2rem;
   }
+}
+
+
+/* 1. 修正轮播卡片宽度（可根据实际需求微调，建议 5.6rem - 6.4rem） */
+.keyan--stage .swiper-slide {
+  width: 5.6rem !important;
+}
+
+/* 2. 修复溢出与宽度继承 */
+.keyan--stage .lb {
+  width: 100% !important;
+}
+
+/* 3. 将图片容器从 118% 竖版比例改回 16:9 (56.25%) */
+.keyan--stage .lb .mar .pic,
+.keyan--stage .swiper-slide-prev .lb .mar .pic,
+.keyan--stage .swiper-slide-next .lb .mar .pic,
+.keyan--stage .swiper-slide-active .lb .mar .pic {
+  padding-bottom: 70% !important; /* 16:9 的标准高宽比 (9/16 = 56.25%) */
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 4. 确保图片完美适应 16:9 容器，不拉伸变形 */
+.keyan--stage .lb .mar .pic img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* 保证图片等比例填满 */
+  object-position: center !important;
+}
+
+/* 5. 调整移动端/小屏响应式下的比例 */
+@media screen and (max-width: 900px) {
+  .keyan--stage .swiper-slide {
+    width: 82% !important;
+  }
+  .keyan--stage .lb .mar .pic,
+  .keyan--stage .swiper-slide-prev .lb .mar .pic,
+  .keyan--stage .swiper-slide-next .lb .mar .pic,
+  .keyan--stage .swiper-slide-active .lb .mar .pic {
+    padding-bottom: 56.25% !important;
+  }
+}
+
+/* 修复右侧下一页按钮点击失效问题 */
+.keyan--stage .keyan-next {
+  right: 0.15rem !important;
+  left: auto !important;
+  background: url(../images/lb-btn3.png) no-repeat center !important;
+
+  /* 允许鼠标点击交互 */
+  pointer-events: auto !important;
+
+  /* 调整层级，确保按钮盖在 Swiper Slide 上层 */
+  z-index: 10 !important;
+  cursor: pointer !important;
+
+  /* 旋转图标方向 */
+  transform: translateY(-50%) rotate(180deg) !important;
+  transform-origin: center center !important;
+}
+
+/* 修复 Hover 悬停效果 */
+.keyan--stage .keyan-next:hover {
+  background-color: var(--brand-deep) !important;
+  transform: translateY(-50%) rotate(180deg) scale(1.08) !important;
 }
