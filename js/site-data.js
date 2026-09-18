@@ -557,10 +557,10 @@ window.SITE_DATA = (function () {
     var sideMenus = {
         cgjj: [],
         sbs: [
-            {file: "cgdcxd", name: "A1 成果简介", desc: "成果概述说明", href: "sbs/cgdcxd.htm"},
+            {file: "cgdcxd", name: "成果简介", desc: "成果概述说明", href: "sbs/cgdcxd.htm"},
             {
                 file: "zywcdwytjdwyj",
-                name: "A2 主要解决的教学问题及解决方案",
+                name: "主要解决的教学问题及解决方案",
                 desc: "问题研判与对策",
                 expandable: true,
                 href: "sbs/pyjz.htm",
@@ -572,10 +572,10 @@ window.SITE_DATA = (function () {
                     {file: "yrst", name: "育人生态", href: "sbs/yrst.htm"}
                 ]
             },
-            {file: "zywcrqk", name: "A3 创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
+            {file: "zywcrqk", name: "创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
             {
                 file: "cgdtgyyxg",
-                name: "A4 推广应用效果 ",
+                name: "推广应用效果 ",
                 desc: "应用成效与影响",
                 expandable: true,
                 children: [
