@@ -276,7 +276,7 @@ window.SITE_DATA = (function () {
         ),
         "zccl/cgjl": zcclMaterial(
             "cgjl",
-            "成果奖励",
+            "成果获奖",
             "",
             "../cnpdf/支撑材料/成果获奖.pdf"
         ),
@@ -321,28 +321,19 @@ window.SITE_DATA = (function () {
         ),
 
 
-        "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "育人成效", "mtbd", "article", [
-            "【Mock】育人成效一：军工素养人才成长路径",
-            "【Mock】育人成效二：入伍服役与典型学生故事",
-            "【Mock】育人成效三：竞赛获奖与岗位胜任表现",
-            "【Mock】育人成效四：校企协同育人实践扫描",
-            "【Mock】育人成效五：分层培养进阶案例"
-        ]),
-        "cgtgyy/cgyy": listPage("cgtgyy", "成果推广应用", "军工品牌", "cgyy", "article", [
-            "【Mock】军工品牌一：旗舰先锋文化传播纪实",
-            "【Mock】军工品牌二：中船系统文化进校园",
-            "【Mock】军工品牌三：国防特色学校品牌建设"
-        ]),
-        "cgtgyy/rcpycx": listPage("cgtgyy", "成果推广应用", "综合实力", "rcpycx", "article", [
-            "【Mock】综合实力一：双高计划建设进展",
-            "【Mock】综合实力二：职业本科办学跃升",
-            "【Mock】综合实力三：文明校园与国防特色建设"
-        ]),
-        "cgtgyy/tgjl": listPage("cgtgyy", "成果推广应用", "交流推广", "tgjl", "article", [
-            "【Mock】交流推广一：全国会议专题分享",
-            "【Mock】交流推广二：高校互访与经验借鉴",
-            "【Mock】交流推广三：行业论坛成果发布"
-        ]),
+        "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "育人成效", "mtbd", "article", [], false,
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"育人成效PDF预览\"></iframe></div>"
+        ),
+        "cgtgyy/cgyy": listPage("cgtgyy", "成果推广应用", "军工品牌", "cgyy", "article", [], false,
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/军工品牌.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"军工品牌PDF预览\"></iframe></div>"
+        ),
+        "cgtgyy/rcpycx": listPage("cgtgyy", "成果推广应用", "综合实力", "rcpycx", "article", [], false,
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/办学实力.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"综合实力PDF预览\"></iframe></div>"
+        ),
+        "cgtgyy/tgjl": listPage("cgtgyy", "成果推广应用", "交流推广", "tgjl", "article", [], false,
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/交流推广.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"交流推广PDF预览\"></iframe></div>"
+        ),
+
 
         "tsbk/dpt/gjjpt": listPage("tsbk", "特色版块", "国家级平台", "gjjpt", "platform", [
             "【Mock】极端环境绿色长寿道路工程全国重点实验室",
@@ -493,7 +484,17 @@ window.SITE_DATA = (function () {
         return zcclPage(file, title, innerHtml);
     }
 
-    function listPage(nav, sideTitle, title, activeSide, detailType, titles, isTsbk) {
+    /**
+     * @param {string} nav
+     * @param {string} sideTitle
+     * @param {string} title
+     * @param {string} activeSide
+     * @param {string} detailType
+     * @param {Array} titles
+     * @param {boolean} isTsbk
+     * @param {string|null} [htmlContent=null] 直接传入html片段，有值则渲染自定义html，替代列表
+     */
+    function listPage(nav, sideTitle, title, activeSide, detailType, titles, isTsbk, htmlContent = null) {
         var crumbs;
         if (nav === "cgtgyy") {
             crumbs = [
@@ -511,6 +512,23 @@ window.SITE_DATA = (function () {
                 {name: title, href: "tsbk/" + activeSide + ".htm"}
             ];
         }
+
+        // 自定义HTML渲染分支（PDF iframe就把html字符串传进来）
+        if (htmlContent !== null) {
+            return {
+                kind: "html",
+                nav: nav,
+                sideKey: isTsbk ? "tsbk" : nav,
+                sideTitle: sideTitle,
+                title: title,
+                activeSide: activeSide,
+                crumbs: crumbs,
+                htmlContent: htmlContent,
+                list: []
+            };
+        }
+
+        // 原有列表逻辑，旧路由完全不动
         return {
             kind: "list",
             nav: nav,
@@ -523,27 +541,14 @@ window.SITE_DATA = (function () {
         };
     }
 
+
     var sideMenus = {
         cgjj: [],
         sbs: [
             {file: "cgdcxd", name: "A1 成果简介", desc: "成果概述说明", href: "sbs/cgdcxd.htm"},
             {
-                file: "cgdtgyyxg",
-                name: "A2 推广应用效果 ",
-                desc: "应用成效与影响",
-                expandable: true,
-                children: [
-                    {file: "jl_tgjl", name: "交流推广", href: "sbs/jl_tgjl.htm"},
-                    {file: "jl_cgyy", name: "军工品牌", href: "sbs/jl_cgyy.htm"},
-                    {file: "jl_bxsl", name: "办学实力", href: "sbs/jl_bxsl.htm"},
-                    {file: "jl_yrex", name: "育人效果", href: "sbs/jl_yrex.htm"}
-                ],
-                href: "sbs/jl_tgjl.htm"
-            },
-            {file: "zywcrqk", name: "A3 创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
-            {
                 file: "zywcdwytjdwyj",
-                name: "A4 主要解决的教学问题及解决方案",
+                name: "A2 主要解决的教学问题及解决方案",
                 desc: "问题研判与对策",
                 expandable: true,
                 href: "sbs/pyjz.htm",
@@ -554,7 +559,22 @@ window.SITE_DATA = (function () {
                     {file: "ltyj", name: "理论研究", href: "sbs/ltyj.htm"},
                     {file: "yrst", name: "育人生态", href: "sbs/yrst.htm"}
                 ]
-            }],
+            },
+            {file: "zywcrqk", name: "A3 创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
+            {
+                file: "cgdtgyyxg",
+                name: "A4 推广应用效果 ",
+                desc: "应用成效与影响",
+                expandable: true,
+                children: [
+                    {file: "jl_tgjl", name: "交流推广", href: "sbs/jl_tgjl.htm"},
+                    {file: "jl_cgyy", name: "军工品牌", href: "sbs/jl_cgyy.htm"},
+                    {file: "jl_bxsl", name: "办学实力", href: "sbs/jl_bxsl.htm"},
+                    {file: "jl_yrex", name: "育人效果", href: "sbs/jl_yrex.htm"}
+                ],
+                href: "sbs/jl_tgjl.htm"
+            },
+        ],
 
         zccl: [
             {file: "cgjd", name: "A1 成果鉴定书", desc: "专家鉴定意见", href: "zccl/cgjd.htm"},
@@ -565,10 +585,10 @@ window.SITE_DATA = (function () {
             {file: "kcjs", name: "A6 学生成果", desc: "研创竞赛获奖成果", href: "zccl/kcjs.htm"}
         ],
         cgtgyy: [
-            {file: "mtbd", name: "A1 育人成效", desc: "素养养成与典型案例", href: "sbs/jl_tgjl.htm"},
-            {file: "cgyy", name: "A2 军工品牌", desc: "旗舰先锋文化传播", href: "sbs/jl_cgyy.htm"},
-            {file: "rcpycx", name: "A3 综合实力", desc: "双高建设与办学成效", href: "sbs/jl_bxsl.htm"},
-            {file: "tgjl", name: "A4 交流推广", desc: "研讨交流与推广纪要", href: "sbs/jl_yrex.htm"}
+            {file: "mtbd", name: "A1 育人成效", desc: "素养养成与典型案例", href: "cgtgyy/mtbd.htm"},
+            {file: "cgyy", name: "A2 军工品牌", desc: "旗舰先锋文化传播", href: "cgtgyy/cgyy.htm"},
+            {file: "rcpycx", name: "A3 综合实力", desc: "双高建设与办学成效", href: "cgtgyy/rcpycx.htm"},
+            {file: "tgjl", name: "A4 交流推广", desc: "研讨交流与推广纪要", href: "cgtgyy/tgjl.htm"}
         ],
         tsbk: [
             {

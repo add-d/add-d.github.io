@@ -104,24 +104,18 @@
   function sideHtml(page, depth) {
     var menus = SITE_DATA.sideMenus[page.sideKey] || [];
     var html = "";
-    var expandFileList = [
-      "gjjpt",
-      "gjlhyjzx",
-      "sbjpt",
-      "jl_tgjl",
-      "jl_cgyy",
-      "jl_bxsl",
-      "jl_yrex",
-      "pyjz",
-      "zhtx",
-      "ddtsj",
-      "ltyj",
-      "yrst",
-      "dpt"
-    ];
     menus.forEach(function (m) {
       if (m.expandable) {
-        var open = expandFileList.includes(page.activeSide);
+        // 修复：判断当前activeSide是否是本父菜单m的子项，只有属于自己的子项才展开
+        var open = false;
+        if (Array.isArray(m.children)) {
+          for(let c of m.children) {
+            if(c.file === page.activeSide) {
+              open = true;
+              break;
+            }
+          }
+        }
         html +=
             '<div class="menu-item ' +
             (open ? "active open" : "") +
@@ -152,6 +146,7 @@
     });
     return html;
   }
+
 
 
   function mobileSideHtml(page, depth) {
@@ -282,28 +277,33 @@
     document.title = page.title + "-“旗舰先锋”模式：船舶类高职院校学生军工素养培养的十六年探索与实践";
 
     var main =
-      headerHtml(page.nav, depth) +
-      bannerHtml(depth) +
-      '<div class="list-box"><div class="w16">' +
-      '<div class="sjmenu"><div class="sp_header"><div class="sp_logo">' +
-      page.sideTitle +
-      '</div><div class="sp_nav"><span></span></div></div><div class="sjj_nav">' +
-      mobileSideHtml(page, depth) +
-      "</div></div>" +
-      '<div class="lt-lf"><div class="lt-yjdh">' +
-      page.sideTitle +
-      '</div><div class="lt-erdh">' +
-      sideHtml(page, depth) +
-      "</div></div>" +
-      '<div class="lt-rg "><div class="ltdqwz"><span>' +
-      crumbsHtml(page, depth) +
-      "</span><h1>" +
-      page.title+
-      "</h1></div>" +
-      (page.kind === "list" ? listBody(page, depth) : contentBody(page, depth)) +
-      "</div></div></div>" +
-      footerHtml(depth);
-
+        headerHtml(page.nav, depth) +
+        bannerHtml(depth) +
+        '<div class="list-box"><div class="w16">' +
+        '<div class="sjmenu"><div class="sp_header"><div class="sp_logo">' +
+        page.sideTitle +
+        '</div><div class="sp_nav"><span></span></div></div><div class="sjj_nav">' +
+        mobileSideHtml(page, depth) +
+        "</div></div>" +
+        '<div class="lt-lf"><div class="lt-yjdh">' +
+        page.sideTitle +
+        '</div><div class="lt-erdh">' +
+        sideHtml(page, depth) +
+        "</div></div>" +
+        '<div class="lt-rg "><div class="ltdqwz"><span>' +
+        crumbsHtml(page, depth) +
+        "</span><h1>" +
+        page.title+
+        "</h1></div>" +
+        (page.kind === "list"
+                ? listBody(page, depth)
+                : (page.kind === "html"
+                        ? page.htmlContent
+                        : contentBody(page, depth)
+                )
+        ) +
+        "</div></div></div>" +
+        footerHtml(depth);
     document.getElementById("app").innerHTML = main;
   }
 
