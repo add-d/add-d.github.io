@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="151157a8-9e69-4ffb-96ba-413cf9860faf" name="更改" comment="更新视频">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/site-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/site-data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +100,7 @@
       <workItem from="1789563562209" duration="15359000" />
       <workItem from="1789633526102" duration="35350000" />
       <workItem from="1789722220853" duration="18689000" />
-      <workItem from="1789803779577" duration="774000" />
+      <workItem from="1789803779577" duration="1408000" />
     </task>
     <task id="LOCAL-00001" summary="修改标题">
       <option name="closed" value="true" />
