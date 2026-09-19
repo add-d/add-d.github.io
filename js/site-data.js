@@ -182,7 +182,7 @@ window.SITE_DATA = (function () {
             title: "成果总结",
             crumbs: [{name: "成果总结", href: "cgzj.htm"}],
             html: "<div style=\"padding:30px 0;\">\n" +
-                "    <iframe src='../cnpdf/成果推广应用/成果总结报告总览.pdf/#view=FitH&toolbar=1&navpanes=0&pagemode=none' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
+                "    <iframe src='cnpdf/成果推广应用/成果总结报告总览.pdf/#view=FitH&toolbar=1&navpanes=0&pagemode=none' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
                 "</div>"
         },
         "sbs/zyjjdjxwt": sbsPage("zyjjdjxwt", "申报书",
