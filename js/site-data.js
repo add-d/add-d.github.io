@@ -182,7 +182,7 @@ window.SITE_DATA = (function () {
             title: "成果总结",
             crumbs: [{name: "成果总结", href: "cgzj.htm"}],
             html: "<div style=\"padding:30px 0;\">\n" +
-                "    <iframe src='../cnpdf/成果推广应用/成果总结报告总览.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
+                "    <iframe src='../cnpdf/成果推广应用/成果总结报告总览.pdf/#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
                 "</div>"
         },
         "sbs/zyjjdjxwt": sbsPage("zyjjdjxwt", "申报书",
@@ -195,14 +195,27 @@ window.SITE_DATA = (function () {
             "<p>一是以重大工程为载体组建跨学科团队；二是建设数智交叉课程；三是依托国际平台开展双向研训。</p>"),
         "sbs/cgdcxd": sbsPage("cgdcxd", "成果简介",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/申报材料-成果推广/成果申报书.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/成果简介.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"成果申报书PDF预览\"></iframe>\n" +
             "</div>"),
-        "sbs/cgdtgyyxg": sbsPage("cgdtgyyxg", "问题与方案",
-            "[Mock]"),
+
+        "sbs/cgdtgyyxg": sbsPage("cgdtgyyxg", "主要解决的教学问题以及解决方案",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/推广应用效果.pdf/#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
+            "</div>"),
+
         "sbs/zywcrqk": sbsPage("zywcrqk", "成果创新点",
-            "<p>【Mock】主要完成人由教学名师、科研骨干与行业导师组成，长期深耕公路交通研究生培养一线。</p>"),
-        "sbs/zywcdwytjdwyj": sbsPage("zywcdwytjdwyj", "推广应用效果",
-            "<p>【Mock】完成单位与推荐单位对本成果的创新性、应用性与示范性给予肯定，建议继续深化推广。</p>"),
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/创新点.pdf/#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
+            "</div>"),
+
+
+        "sbs/zywcdwytjdwyj": sbsPage("zywcdwytjdwyj", "主要解决的教学问题以及解决方案",
+            "<div style=\"padding:30px 0;\">\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/问题与方案.pdf/#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
+            "</div>"),
+
+
+
         "sbs/jl_tgjl": sbsPage("jl_tgjl", "推广材料", "\n" +
             "            <div style=\"padding:30px 0;\">\n" +
             "                <iframe src='../cnpdf/申报材料-成果推广/交流推广.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"推广材料PDF预览\"></iframe>\n" +
@@ -219,9 +232,9 @@ window.SITE_DATA = (function () {
             "<div style=\"padding:30px 0;\">\n" +
             "    <iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"育人效果PDF预览\"></iframe>\n" +
             "</div>"),
-        "sbs/pyjz": sbsPage("pyjz", "培养矩阵",
+        "sbs/pyjz": sbsPage("pyjz", "主要解决的教学问题以及解决方案",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/主要解决的问题/培养矩阵.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/问题与方案.pdf/#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
             "</div>"),
         "sbs/zhtx": sbsPage("zhtx", "支撑体系",
             "<div style=\"padding:30px 0;\">\n" +
@@ -296,6 +309,12 @@ window.SITE_DATA = (function () {
             "学生成果",
             "",
             "../cnpdf/支撑材料/学生成果.pdf#view=FitH&toolbar=1&navpanes=1"
+        ),
+        "zccl/cgjd-zjz": zcclMaterial(
+            "cgjd-zjz",
+            "专家组成果鉴定书",
+            "",
+            "../cnpdf/支撑材料/专家组成果鉴定书.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/cgjd_jxzyjy": zcclMaterial(
             "cgjd_jxzyjy",
@@ -552,28 +571,13 @@ window.SITE_DATA = (function () {
                 file: "zywcdwytjdwyj",
                 name: "主要解决的教学问题及解决方案",
                 desc: "问题研判与对策",
-                expandable: true,
-                href: "sbs/pyjz.htm",
-                children: [
-                    {file: "pyjz", name: "培养矩阵", href: "sbs/pyjz.htm"},
-                    {file: "zhtx", name: "支撑体系", href: "sbs/zhtx.htm"},
-                    {file: "ddtsj", name: "教导团实践", href: "sbs/ddtsj.htm"},
-                    {file: "ltyj", name: "理论研究", href: "sbs/ltyj.htm"},
-                    {file: "yrst", name: "育人生态", href: "sbs/yrst.htm"}
-                ]
+                href: "sbs/zywcdwytjdwyj.htm",
             },
             {file: "zywcrqk", name: "创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
             {
                 file: "cgdtgyyxg",
                 name: "推广应用效果 ",
                 desc: "应用成效与影响",
-                expandable: true,
-                children: [
-                    {file: "jl_tgjl", name: "交流推广", href: "sbs/jl_tgjl.htm"},
-                    {file: "jl_cgyy", name: "军工品牌", href: "sbs/jl_cgyy.htm"},
-                    {file: "jl_bxsl", name: "办学实力", href: "sbs/jl_bxsl.htm"},
-                    {file: "jl_yrex", name: "育人效果", href: "sbs/jl_yrex.htm"}
-                ],
                 href: "sbs/jl_tgjl.htm"
             },
         ],
@@ -583,11 +587,12 @@ window.SITE_DATA = (function () {
                 file: "cgjd",
                 name: "成果鉴定书",
                 desc: "专家鉴定意见",
-                href: "zccl/cgjd.htm",
+                href: "zccl/cgjd-zjz.htm",
                 expandable: true,
                 children: [
-                    {file: "cgjd_jxzyjy", name: "江西省职业教育与继续教育学", href: "zccl/cgjd_jxzyjy.htm"},
-                    {file: "cgjd_jxgjxh", name: "江西省高等教育学会", href: "zccl/cgjd_jxgjxh.htm"}
+                    {file: "cgjd-zjz", name: "专家组成果鉴定书", href: "zccl/cgjd-zjz.htm"},
+                    {file: "cgjd_jxgjxh", name: "江西省高等教育学会", href: "zccl/cgjd_jxgjxh.htm"},
+                    {file: "cgjd_jxzyjy", name: "江西省职业教育与继续教育学会", href: "zccl/cgjd_jxzyjy.htm"}
                 ]
             },
             {file: "cgjl", name: "成果获奖", desc: "教学成果获奖", href: "zccl/cgjl.htm"},
@@ -619,6 +624,81 @@ window.SITE_DATA = (function () {
             {file: "dcg", name: "特色成果", href: "tsbk/dcg.htm"}
         ]
     };
+   // var sideMenus = {
+   //      cgjj: [],
+   //      sbs: [
+   //          {file: "cgdcxd", name: "成果简介", desc: "成果概述说明", href: "sbs/cgdcxd.htm"},
+   //          {
+   //              file: "zywcdwytjdwyj",
+   //              name: "主要解决的教学问题及解决方案",
+   //              desc: "问题研判与对策",
+   //              expandable: true,
+   //              href: "sbs/pyjz.htm",
+   //              children: [
+   //                  {file: "pyjz", name: "培养矩阵", href: "sbs/pyjz.htm"},
+   //                  {file: "zhtx", name: "支撑体系", href: "sbs/zhtx.htm"},
+   //                  {file: "ddtsj", name: "教导团实践", href: "sbs/ddtsj.htm"},
+   //                  {file: "ltyj", name: "理论研究", href: "sbs/ltyj.htm"},
+   //                  {file: "yrst", name: "育人生态", href: "sbs/yrst.htm"}
+   //              ]
+   //          },
+   //          {file: "zywcrqk", name: "创新点", desc: "创新亮点凝练", href: "sbs/zywcrqk.htm"},
+   //          {
+   //              file: "cgdtgyyxg",
+   //              name: "推广应用效果 ",
+   //              desc: "应用成效与影响",
+   //              expandable: true,
+   //              children: [
+   //                  {file: "jl_tgjl", name: "交流推广", href: "sbs/jl_tgjl.htm"},
+   //                  {file: "jl_cgyy", name: "军工品牌", href: "sbs/jl_cgyy.htm"},
+   //                  {file: "jl_bxsl", name: "办学实力", href: "sbs/jl_bxsl.htm"},
+   //                  {file: "jl_yrex", name: "育人效果", href: "sbs/jl_yrex.htm"}
+   //              ],
+   //              href: "sbs/jl_tgjl.htm"
+   //          },
+   //      ],
+   //
+   //      zccl: [
+   //          {
+   //              file: "cgjd",
+   //              name: "成果鉴定书",
+   //              desc: "专家鉴定意见",
+   //              href: "zccl/cgjd.htm",
+   //              expandable: true,
+   //              children: [
+   //                  {file: "cgjd_jxzyjy", name: "江西省职业教育与继续教育学", href: "zccl/cgjd_jxzyjy.htm"},
+   //                  {file: "cgjd_jxgjxh", name: "江西省高等教育学会", href: "zccl/cgjd_jxgjxh.htm"}
+   //              ]
+   //          },
+   //          {file: "cgjl", name: "成果获奖", desc: "教学成果获奖", href: "zccl/cgjl.htm"},
+   //          {file: "zd_zd_xm", name: "单项奖励", desc: "各类单项荣誉", href: "zccl/zd_zd_xm.htm"},
+   //          {file: "xkzc", name: "综合荣誉", desc: "项目平台综合荣誉", href: "zccl/xkzc.htm"},
+   //          {file: "jgxm", name: "教师成果", desc: "团队与个人荣誉成果", href: "zccl/jgxm.htm"},
+   //          {file: "kcjs", name: "学生成果", desc: "研创竞赛获奖成果", href: "zccl/kcjs.htm"}
+   //      ],
+   //      cgtgyy: [
+   //          {file: "mtbd", name: "育人成效", desc: "素养养成与典型案例", href: "cgtgyy/mtbd.htm"},
+   //          {file: "cgyy", name: "军工品牌", desc: "旗舰先锋文化传播", href: "cgtgyy/cgyy.htm"},
+   //          {file: "rcpycx", name: "综合实力", desc: "双高建设与办学成效", href: "cgtgyy/rcpycx.htm"},
+   //          {file: "tgjl", name: "交流推广", desc: "研讨交流与推广纪要", href: "cgtgyy/tgjl.htm"}
+   //      ],
+   //      tsbk: [
+   //          {
+   //              file: "dpt",
+   //              name: "大平台",
+   //              expandable: true,
+   //              children: [
+   //                  {file: "gjjpt", name: "国家级平台", href: "tsbk/dpt/gjjpt.htm"},
+   //                  {file: "gjlhyjzx", name: "国际联合研究中心", href: "tsbk/dpt/gjlhyjzx.htm"},
+   //                  {file: "sbjpt", name: "省部级平台", href: "tsbk/dpt/sbjpt.htm"}
+   //              ]
+   //          },
+   //          {file: "dtd", name: "大团队", href: "tsbk/dtd.htm"},
+   //          {file: "dxm", name: "大项目", href: "tsbk/dxm.htm"},
+   //          {file: "dgc", name: "大工程", href: "tsbk/dgc.htm"},
+   //          {file: "dcg", name: "特色成果", href: "tsbk/dcg.htm"}
+   //      ]
+   //  };
 
 
     return {

@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151157a8-9e69-4ffb-96ba-413cf9860faf" name="更改" comment="更新视频">
+      <change afterPath="$PROJECT_DIR$/cnpdf/支撑材料/专家组成果鉴定书.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnpdf/申报材料-成果推广/创新点.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnpdf/申报材料-成果推广/成果简介.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnpdf/申报材料-成果推广/推广应用效果.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnpdf/申报材料-成果推广/问题与方案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/promo-jungong.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/promo-yuren.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zccl/cgjd-zjz.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/site-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/site-data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,28 +56,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/电脑管家迁移文件/微信聊天记录搬家/xwechat_files/wxid_hwasnzoevzpg22_35d5/msg/file/2026-09/长安大学官网2/images/theory&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/电脑管家迁移文件/微信聊天记录搬家/xwechat_files/wxid_hwasnzoevzpg22_35d5/msg/file/2026-09/长安大学官网2/zccl",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\images\theory" />
       <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\zccl" />
       <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\cnpdf\支撑材料" />
+      <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\cnpdf\申报材料-成果推广" />
       <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\images" />
-      <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\cnpdf\成果推广应用" />
+      <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\images\theory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\电脑管家迁移文件\微信聊天记录搬家\xwechat_files\wxid_hwasnzoevzpg22_35d5\msg\file\2026-09\长安大学官网2\cnpdf\支撑材料" />
@@ -100,7 +109,7 @@
       <workItem from="1789563562209" duration="15359000" />
       <workItem from="1789633526102" duration="35350000" />
       <workItem from="1789722220853" duration="18689000" />
-      <workItem from="1789803779577" duration="1408000" />
+      <workItem from="1789803779577" duration="3566000" />
     </task>
     <task id="LOCAL-00001" summary="修改标题">
       <option name="closed" value="true" />
