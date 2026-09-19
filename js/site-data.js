@@ -205,46 +205,39 @@ window.SITE_DATA = (function () {
             "<p>【Mock】完成单位与推荐单位对本成果的创新性、应用性与示范性给予肯定，建议继续深化推广。</p>"),
         "sbs/jl_tgjl": sbsPage("jl_tgjl", "推广材料", "\n" +
             "            <div style=\"padding:30px 0;\">\n" +
-            "                <iframe src='../cnpdf/申报材料-成果推广/交流推广.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"推广材料PDF预览\"></iframe>\n" +
+            "                <iframe src='../cnpdf/申报材料-成果推广/交流推广.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"推广材料PDF预览\"></iframe>\n" +
             "            </div>"),
         "sbs/jl_cgyy": sbsPage("jl_cgyy", "军工品牌",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/申报材料-成果推广/军工品牌.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"军工品牌PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/军工品牌.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"军工品牌PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/jl_bxsl": sbsPage("jl_bxsl", "办学实力",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/申报材料-成果推广/办学实力.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"办学实力PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/办学实力.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"办学实力PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/jl_yrex": sbsPage("jl_yrex", "育人效果",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"育人效果PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"育人效果PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/pyjz": sbsPage("pyjz", "培养矩阵",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/主要解决的问题/培养矩阵.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/培养矩阵.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"培养矩阵PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/zhtx": sbsPage("zhtx", "支撑体系",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/主要解决的问题/支撑体系.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"支撑体系PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/支撑体系.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"支撑体系PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/ddtsj": sbsPage("ddtsj", "教导团实践",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/主要解决的问题/教导团实践.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"教导团实践PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/教导团实践.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"教导团实践PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/ltyj": sbsPage("ltyj", "理论研究",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/主要解决的问题/理论研究.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"理论研究PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/理论研究.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"理论研究PDF预览\"></iframe>\n" +
             "</div>"),
-
         "sbs/yrst": sbsPage("yrst", "育人生态",
             "<div style=\"padding:30px 0;\">\n" +
-            "    <iframe src='../cnpdf/主要解决的问题/育人生态.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"育人生态PDF预览\"></iframe>\n" +
+            "    <iframe src='../cnpdf/主要解决的问题/育人生态.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"育人生态PDF预览\" ></iframe>\n" +
             "</div>"),
 
         zccl: {
@@ -278,44 +271,45 @@ window.SITE_DATA = (function () {
             "cgjl",
             "成果获奖",
             "",
-            "../cnpdf/支撑材料/成果获奖.pdf"
+            "../cnpdf/支撑材料/成果获奖.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/zd_zd_xm": zcclMaterial(
             "zd_zd_xm",
             "单项奖励",
             "",
-            "../cnpdf/支撑材料/单项奖励.pdf"
+            "../cnpdf/支撑材料/单项奖励.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/xkzc": zcclMaterial(
             "xkzc",
             "综合荣誉",
             "",
-            "../cnpdf/支撑材料/综合荣誉.pdf"
+            "../cnpdf/支撑材料/综合荣誉.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/jgxm": zcclMaterial(
             "jgxm",
             "教师成果",
             "",
-            "../cnpdf/支撑材料/教师成果.pdf"
+            "../cnpdf/支撑材料/教师成果.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/kcjs": zcclMaterial(
-            "xsry",
+            "kcjs",
             "学生成果",
             "",
-            "../cnpdf/支撑材料/学生成果.pdf"
+            "../cnpdf/支撑材料/学生成果.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/cgjd_jxzyjy": zcclMaterial(
             "cgjd_jxzyjy",
             "江西省职业教育与继续教育学",
             "",
-            "../cnpdf/支撑材料/成果鉴定书-江西省职业教育与继续教育学会.pdf"
+            "../cnpdf/支撑材料/成果鉴定书-江西省职业教育与继续教育学会.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
         "zccl/cgjd_jxgjxh": zcclMaterial(
             "cgjd_jxgjxh",
             "江西省高等教育学会",
             "",
-            "../cnpdf/支撑材料/成果鉴定书-江西省高等教育学会.pdf"
+            "../cnpdf/支撑材料/成果鉴定书-江西省高等教育学会.pdf#view=FitH&toolbar=1&navpanes=1"
         ),
+
 
         // "zccl/jsry": zcclMaterial(
         //     "jsry",
@@ -334,17 +328,13 @@ window.SITE_DATA = (function () {
 
 
         "cgtgyy/mtbd": listPage("cgtgyy", "成果推广应用", "育人成效", "mtbd", "article", [], false,
-            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"育人成效PDF预览\"></iframe></div>"
-        ),
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/育人效果.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"育人成效PDF预览\"></iframe></div>"),
         "cgtgyy/cgyy": listPage("cgtgyy", "成果推广应用", "军工品牌", "cgyy", "article", [], false,
-            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/军工品牌.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"军工品牌PDF预览\"></iframe></div>"
-        ),
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/军工品牌.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"军工品牌PDF预览\"></iframe></div>"),
         "cgtgyy/rcpycx": listPage("cgtgyy", "成果推广应用", "综合实力", "rcpycx", "article", [], false,
-            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/办学实力.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"综合实力PDF预览\"></iframe></div>"
-        ),
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/办学实力.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"综合实力PDF预览\"></iframe></div>"),
         "cgtgyy/tgjl": listPage("cgtgyy", "成果推广应用", "交流推广", "tgjl", "article", [], false,
-            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/交流推广.pdf' style=\"width:100%;height:90vh;border:none;\" title=\"交流推广PDF预览\"></iframe></div>"
-        ),
+            "<div style=\"padding:30px 0;\"><iframe src='../cnpdf/申报材料-成果推广/交流推广.pdf#view=FitH&toolbar=1&navpanes=1' style=\"width:100%;height:90vh;border:none;\" title=\"交流推广PDF预览\"></iframe></div>"),
 
 
         "tsbk/dpt/gjjpt": listPage("tsbk", "特色版块", "国家级平台", "gjjpt", "platform", [
